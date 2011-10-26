@@ -1,0 +1,12 @@
+<?php
+class cron{
+	private $db;
+	
+	function __construct($cfg){
+		$this->db = new PDO($cfg['dsn'], $cfg['user'], $cfg['passwd'], $cfg['options']);
+	}
+}
+
+
+
+?>

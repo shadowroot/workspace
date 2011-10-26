@@ -1,0 +1,14 @@
+<?php
+/*
+* CHACHA CUBE
+*
+* Compression algorithm using cube like bigger 3D sudoku.
+* Using checksums in each square
+* 3sqrt of size in Bytes = resolution of square
+* 
+* Decrypt algorithm
+*
+*/
+
+
+?>

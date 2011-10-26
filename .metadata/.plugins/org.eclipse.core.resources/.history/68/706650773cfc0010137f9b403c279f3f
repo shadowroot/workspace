@@ -1,0 +1,11 @@
+<?php
+class cron{
+	private $db;
+	function __construct(){
+		
+	}
+}
+
+
+
+?>

@@ -1,0 +1,10 @@
+<?php
+class cron{
+	function __construct(){
+		
+	}
+}
+
+
+
+?>

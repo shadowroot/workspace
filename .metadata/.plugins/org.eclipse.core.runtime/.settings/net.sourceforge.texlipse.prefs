@@ -1,0 +1,16 @@
+#Wed Oct 19 15:01:39 CEST 2011
+num.TexColor=127,179,71
+def.BibColor=216,216,216
+key.BibColor=255,255,255
+typ.BibColor=210,82,82
+str.BibColor=255,198,0
+equ.TexColor=255,198,0
+def.TexColor=216,216,216
+spe.TexColor=255,255,255
+slc.BibColor=199,221,12
+sqr.TexColor=121,171,255
+verb.TexColor=190,214,255
+crl.TexColor=121,171,255
+eclipse.preferences.version=1
+cmd.TexColor=255,255,255
+com.TexColor=199,221,12
