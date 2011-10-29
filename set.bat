@@ -6,7 +6,4 @@ cd ..
 git add *
 git commit -a -m "Save %DATE%"
 git push --all sf
-yes
-jonny555
-pause
 exit
