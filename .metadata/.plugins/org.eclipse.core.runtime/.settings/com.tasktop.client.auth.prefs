@@ -1,5 +1,5 @@
-#Wed Oct 26 21:55:27 CEST 2011
-com.tasktop.client.auth.license=\#Wed Oct 26 21\:55\:27 CEST 2011\r\nproperty_updateRcp\=http\\\://tasktop.com/downloads/update/release/standalone\r\nstartDate\=1318843863\r\nproperty_updateIde\=http\\\://tasktop.com/downloads/update/release/ide\r\nsignature\=302c02145f764ee48b956c73e646b06097d3eda41cfa77d502145fcec058dc2fa80fb689bd908ec3916da50328ea\r\nproperty_userId\=serverlock00@gmail.com\r\ncreationDate\=1318843863473\r\nversion\=2\r\nproperty_expiration\=1321439688\r\nhardwareAddresses\=ac72891ddb53\r\nproperty_subscription.type\=trial\r\n
+#Sat Oct 29 03:19:16 CEST 2011
+com.tasktop.client.auth.license=\#Sat Oct 29 03\:19\:16 CEST 2011\r\nproperty_updateRcp\=http\\\://tasktop.com/downloads/update/release/standalone\r\nstartDate\=1318843863\r\nproperty_updateIde\=http\\\://tasktop.com/downloads/update/release/ide\r\nsignature\=302c02145f764ee48b956c73e646b06097d3eda41cfa77d502145fcec058dc2fa80fb689bd908ec3916da50328ea\r\nproperty_userId\=serverlock00@gmail.com\r\ncreationDate\=1318843863473\r\nversion\=2\r\nproperty_expiration\=1321439688\r\nhardwareAddresses\=ac72891ddb53\r\nproperty_subscription.type\=trial\r\n
 com.tasktop.client.auth.mac.blacklist=000c29*,080027*,000f4b*,00144f*,001c42*,00ff*,*20524153,000569*,00163e*,0003ff*,001e101f*,00000000000000e0,0000000000000000,0040ca*,005056c0*,005056*,
 eclipse.preferences.version=1
 com.tasktop.client.auth.lastcheckdate=1319012113169
