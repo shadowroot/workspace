@@ -11951,3 +11951,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.osgi 2 1 2011-10-30 19:25:00.250
 !MESSAGE NLS unused message: CodeAssistPreferencePage_showStub in: org.eclipse.php.internal.ui.PHPUIMessages
+
+!ENTRY org.eclipse.dltk.core 2 0 2011-10-30 23:46:01.086
+!MESSAGE Error decoding problem idenfier "1073741824"
