@@ -11800,3 +11800,53 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.osgi 2 1 2011-10-29 12:40:39.028
 !MESSAGE NLS unused message: CodeAssistPreferencePage_showStub in: org.eclipse.php.internal.ui.PHPUIMessages
+!SESSION 2011-10-29 13:48:54.611 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=cs_CZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-10-29 13:48:56.148
+!MESSAGE Created equinox adaptor hook: org.eclipse.objectteams.otequinox.internal.hook.TransformerHook.
+ 	(To disable this and subsequent INFO messages from OT/Equinox set otequinox.debug to WARN or ERROR).
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-10-29 13:49:02.577
+!MESSAGE OT/Equinox: connected the transformer service
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-10-29 13:49:06.970
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.InstructionHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-10-29 13:49:06.973
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.BranchHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-29 13:49:16.577
+!MESSAGE NLS unused message: CodeAssistPreferencePage_showStub in: org.eclipse.php.internal.ui.PHPUIMessages
+
+!ENTRY org.python.pydev.core 1 1 2011-10-30 01:40:29.379
+!MESSAGE Info: Rebuilding internal caches for: P/video_stream
+!STACK 0
+java.io.IOException: Only 1 modules restored in I/O. org.python.pydev.editor.codecompletion.revisited.ProjectModulesManager dir:D:\+WORKSPACE+\.metadata\.plugins\org.eclipse.core.resources\.projects\video_stream\org.python.pydev\v1_astmanager
+	at org.python.pydev.editor.codecompletion.revisited.ModulesManager.loadFromFile(ModulesManager.java:348)
+	at org.python.pydev.editor.codecompletion.revisited.ASTManager.loadFromFile(ASTManager.java:106)
+	at org.python.pydev.plugin.nature.PythonNature.init(PythonNature.java:548)
+	at org.python.pydev.plugin.nature.PythonNature.setProject(PythonNature.java:309)
+	at org.eclipse.core.internal.resources.NatureManager.createNature(NatureManager.java:234)
+	at org.eclipse.core.internal.resources.Project.getNature(Project.java:448)
+	at org.python.pydev.plugin.nature.PythonNature.getPythonNature(PythonNature.java:701)
+	at org.python.pydev.builder.PyDevBuilder.performFullBuild(PyDevBuilder.java:140)
+	at org.python.pydev.builder.PyDevBuilder.build(PyDevBuilder.java:86)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
