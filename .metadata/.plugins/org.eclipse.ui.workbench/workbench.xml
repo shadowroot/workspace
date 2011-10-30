@@ -74,7 +74,7 @@
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.php.editor" name="test.php" partName="test.php" path="D:/+WORKSPACE+/php_bot/src/test.php" title="test.php" tooltip="php_bot/src/test.php" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/php_bot/src/test.php"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="831" selectionTopPixel="82"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2589" selectionTopPixel="1387"/>
 </editor>
 <editor id="org.eclipse.php.editor" name="rsa.class.php" partName="rsa.class.php" path="D:/+WORKSPACE+/php_bot/src/rsa.class.php" title="rsa.class.php" tooltip="php_bot/src/rsa.class.php" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/php_bot/src/rsa.class.php"/>
