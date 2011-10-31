@@ -11954,3 +11954,124 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.dltk.core 2 0 2011-10-30 23:46:01.086
 !MESSAGE Error decoding problem idenfier "1073741824"
+!SESSION 2011-10-31 16:32:49.915 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=cs_CZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-10-31 16:33:15.198
+!MESSAGE Created equinox adaptor hook: org.eclipse.objectteams.otequinox.internal.hook.TransformerHook.
+ 	(To disable this and subsequent INFO messages from OT/Equinox set otequinox.debug to WARN or ERROR).
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-10-31 16:34:07.586
+!MESSAGE OT/Equinox: connected the transformer service
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-10-31 16:34:31.279
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.InstructionHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-10-31 16:34:31.283
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.BranchHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.osgi 2 0 2011-10-31 16:40:37.875
+!MESSAGE While loading class "org.eclipse.dltk.launching.IInterpreterInstall", thread "Thread[DLTK indexing,4,main]" timed out waiting (5003ms) for thread "Thread[main,6,main]" to finish starting bundle "org.eclipse.dltk.launching_3.0.0.v20110423 [327]". To avoid deadlock, thread "Thread[DLTK indexing,4,main]" is proceeding but "org.eclipse.dltk.launching.IInterpreterInstall" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/org.eclipse.dltk.launching_3.0.0.v20110423.jar" by thread "main".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:462)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.newInstance0(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.core.SimpleClassDLTKExtensionManager.createObject(SimpleClassDLTKExtensionManager.java:52)
+	at org.eclipse.dltk.core.SimpleClassDLTKExtensionManager.getInitObject(SimpleClassDLTKExtensionManager.java:39)
+	at org.eclipse.dltk.internal.core.ModelProviderManager.getProviders(ModelProviderManager.java:77)
+	at org.eclipse.dltk.internal.core.ScriptProject.getAllProjectFragments(ScriptProject.java:3176)
+	at org.eclipse.dltk.internal.core.ScriptProject.getAllProjectFragments(ScriptProject.java:3153)
+	at org.eclipse.dltk.internal.core.index2.ProjectRequest.run(ProjectRequest.java:48)
+	at org.eclipse.dltk.core.search.indexing.AbstractJob.execute(AbstractJob.java:76)
+	at org.eclipse.dltk.internal.core.search.processing.JobManager.run(JobManager.java:467)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 32 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:462)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.newInstance0(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.core.SimpleClassDLTKExtensionManager.createObject(SimpleClassDLTKExtensionManager.java:52)
+	at org.eclipse.dltk.core.SimpleClassDLTKExtensionManager.getInitObject(SimpleClassDLTKExtensionManager.java:39)
+	at org.eclipse.dltk.internal.core.ModelProviderManager.getProviders(ModelProviderManager.java:77)
+	at org.eclipse.dltk.internal.core.ScriptProject.getAllProjectFragments(ScriptProject.java:3176)
+	at org.eclipse.dltk.internal.core.ScriptProject.getAllProjectFragments(ScriptProject.java:3153)
+	at org.eclipse.dltk.internal.core.index2.ProjectRequest.run(ProjectRequest.java:48)
+	at org.eclipse.dltk.core.search.indexing.AbstractJob.execute(AbstractJob.java:76)
+	at org.eclipse.dltk.internal.core.search.processing.JobManager.run(JobManager.java:467)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-31 16:41:10.252
+!MESSAGE NLS unused message: CodeAssistPreferencePage_showStub in: org.eclipse.php.internal.ui.PHPUIMessages
+!SESSION 2011-10-31 18:01:08.393 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=cs_CZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-10-31 18:01:10.893
+!MESSAGE Created equinox adaptor hook: org.eclipse.objectteams.otequinox.internal.hook.TransformerHook.
+ 	(To disable this and subsequent INFO messages from OT/Equinox set otequinox.debug to WARN or ERROR).
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-10-31 18:01:23.344
+!MESSAGE OT/Equinox: connected the transformer service
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-10-31 18:01:30.264
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.InstructionHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-10-31 18:01:30.281
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.BranchHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-31 18:01:46.639
+!MESSAGE NLS unused message: CodeAssistPreferencePage_showStub in: org.eclipse.php.internal.ui.PHPUIMessages
