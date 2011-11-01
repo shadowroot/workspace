@@ -1,0 +1,9 @@
+'''
+Created on 1.11.2011
+
+@author: Jonny
+'''
+import socket
+
+sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM,socket.SOL_TCP)
+sock.bind("0.0.0.0","9998")
