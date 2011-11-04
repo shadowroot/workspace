@@ -11,4 +11,5 @@ sock.listen()
 if sock.accept():
     while buff != "\r\r\n\r":
         buff = sock.recv(4)
+        
     

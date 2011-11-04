@@ -1,0 +1,77 @@
+<?php
+// port FW
+class FW{
+	private $port;
+	private $socket;
+	private $cli;
+	private $buff;
+	private $i;
+	private $max_client=1000;
+	
+	function __construct($port){
+		$this->port = $port;
+		$this->socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
+		socket_bind($this->socket, "0.0.0.0", $this->port);
+		socket_listen($this->socket);
+		while(1){
+			if($this->cli[$this->i]['socket'] = socket_accept($this->socket)){
+				$this->i++;
+			}
+			$readable = socket_select($this->cli, null, null, null);
+			foreach ($this->cli as $key => $array){
+				if($this->cli[$key]['socket'] == $readable){				
+					$this->process($key,$readable);
+				}
+			
+			}
+			
+		}
+	}
+	
+	
+	
+	function process($key,$socket){
+		while(!socket_close($readable)){
+			socket_recvfrom($readable, $data, 4, 0, $ip, $port);
+			$this->cli[$key]['ip'] = $ip;
+			$this->cli[$key]['port'] = $port;
+			$this->buff[$key] .= $data;
+		}
+		
+		
+	}
+	
+	function api($socket)
+	
+	
+	
+}
+
+class proto{
+	private $socket;
+	function __construct($port=9987){
+		$this->socket = new FW($port);
+	}
+	
+	function process_data(){
+		$code = substr($data, '0','4');
+		switch($code){
+			case "EXIT":
+				socket_close($socket);
+				break;
+			case "KEYS":
+				$keys = explode("\r\n\r\n", $data);
+				//domain
+				$keys[0];
+				//public key
+				$keys[1];
+				break;
+		
+					
+		}
+	}
+}
+
+
+
+?>

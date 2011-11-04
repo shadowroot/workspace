@@ -1,0 +1,15 @@
+<?php
+// port FW
+class FW{
+	private $port;
+	
+	function __construct($port){
+		$this->port = $port;
+	}
+	
+	
+}
+
+
+
+?>

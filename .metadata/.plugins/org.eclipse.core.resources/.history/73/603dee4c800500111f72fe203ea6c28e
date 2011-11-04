@@ -1,0 +1,19 @@
+<?php
+// port FW
+class FW{
+	private $port;
+	private $socket;
+	
+	function __construct($port){
+		$this->port = $port;
+		$this->socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
+		socket_listen($this->socket);
+		if()
+	}
+	
+	
+}
+
+
+
+?>

@@ -1,0 +1,30 @@
+<?php
+// port FW
+class FW{
+	private $port;
+	private $socket;
+	private $cli;
+	private $buff;
+	private $i;
+	
+	function __construct($port){
+		$this->port = $port;
+		$this->socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
+		socket_bind($this->socket, "0.0.0.0", $this->port);
+		socket_listen($this->socket);
+		while(1){
+			if($this->cli[$this->i] = socket_accept($this->socket)){
+				$this->i++;
+			}
+			socket_select($this->cli, null, null, null);
+			socket_recvfrom($this->cli, $this->buff, 4, 0, $ip, $port);
+			
+		}
+	}
+	
+	
+}
+
+
+
+?>
