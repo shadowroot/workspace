@@ -1,0 +1,12 @@
+Little crib
+<p>
+Themes
+</p>
+
+<?php
+$user = "root";
+$password = "vertrigo";
+mysql_connect($user,$password);
+
+
+?>

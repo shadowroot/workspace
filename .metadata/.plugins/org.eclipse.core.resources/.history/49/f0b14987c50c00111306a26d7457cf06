@@ -1,0 +1,6 @@
+Little crib
+<?php
+$delimiters = array("<p>","<br>");
+
+
+?>

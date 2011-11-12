@@ -1,0 +1,21 @@
+Little crib
+<p>
+Themes
+</p>
+
+<?php
+$user = "root";
+$password = "vertrigo";
+mysql_connect($user,$password);
+mysql_select_db("crib");
+$query = mysql_query("select keyword,page from indexes");
+$keys = array();
+while($row = mysql_fetch_array($query)){
+	$keys[$row['page']] = $row['keyword'];
+	echo '<a href="'.$row['page'].'">'.$row['keyword'].'</a>';
+}
+$q = mysql_query("select * from completed");
+while($row = mysql_fetch_array($q)){
+	echo '<a name="'.$row['id'].'">'.$keys[$row['id']].'</a><p>'.$row['page'].'</p>';
+}
+?>

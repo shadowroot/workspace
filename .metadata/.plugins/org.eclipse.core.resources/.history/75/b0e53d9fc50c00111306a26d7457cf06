@@ -1,0 +1,11 @@
+Little crib
+<p>
+Themes
+</p>
+
+<?php
+$user = "root";
+mysql_connect($user,$password);
+
+
+?>

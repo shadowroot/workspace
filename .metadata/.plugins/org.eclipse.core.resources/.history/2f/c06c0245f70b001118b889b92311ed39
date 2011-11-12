@@ -1,0 +1,7 @@
+<?php
+$name = "jonny";
+$password = "jonny555";
+if(!isset($_SESSION['privilege'])){
+	echo ""
+}
+?>

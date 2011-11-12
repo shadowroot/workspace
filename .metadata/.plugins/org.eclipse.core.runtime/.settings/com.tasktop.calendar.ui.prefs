@@ -1,7 +1,8 @@
-#Thu Nov 10 09:00:50 CET 2011
+#Fri Nov 11 23:00:20 CET 2011
+com.tasktop.calendar.ui.eventsTrim.preference.nexttrim=
 com.tasktop.preferences.mylar.updatedEvents=;\=;\=;
-com.tasktop.google.calendar.password.moved=true
 com.tasktop.preferences.mylar.deletedEvents=;\=;\=;
+com.tasktop.google.calendar.password.moved=true
 eclipse.preferences.version=1
 com.tasktop.google.calendar.email.moved=true
 com.tasktop.preferences.mylar.addedEvents=;\=;\=;
