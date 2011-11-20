@@ -1,10 +1,10 @@
-#Sun Nov 13 22:43:38 CET 2011
+#Sun Nov 13 23:54:29 CET 2011
 com.tasktop.resources.ui.migration.tasktopfolder.done.bookmarks.xml.zip=true
 com.tasktop.resources.ui.migration.tasktopfolder.done.applications.xml.zip=true
 com.tasktop.resources.ui.task.progress.trim.legacy.copied=true
+com.tasktop.resources.ui.task.progress.trim.preference.nexttrim=com.tasktop.calendar.ui.eventsTrim
 com.tasktop.resources.ui.workingset.trim.pref.legacy.copied=true
 com.tasktop.resources.ui.migration.tasktopfolder.done.credentials.xml.zip=true
 com.tasktop.resources.ui.migration.tasktopfolder.done.calendars-events.xml.zip=true
 eclipse.preferences.version=1
 com.tasktop.resources.ui.migration.tasktopfolder.done.calendars.xml.zip=true
-com.tasktop.resources.ui.task.progress.trim.preference.position=-1

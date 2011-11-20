@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;easy_editor/src/edito.py&apos; to &apos;editor.py&apos;" description="Rename resource &apos;edito.py&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/edito.py" name="editor.py" stamp="1321828669215" updateReferences="true"/>
+</session>

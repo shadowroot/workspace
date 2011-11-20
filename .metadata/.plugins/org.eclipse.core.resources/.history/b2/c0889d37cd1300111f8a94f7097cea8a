@@ -1,0 +1,37 @@
+'''
+Created on 20.11.2011
+
+@author: Jonny
+'''
+import sys,os
+class cteni:
+    
+    i=0
+    def rutina(self):
+        n=0
+        r=0
+        while n <= 25:
+            while r <= 78:
+                print self.array.index(self.i)
+                self.r+=1
+                self.i+=1
+            self.r=0
+            print "\r\n"
+    key = raw_input()
+    if key == "\x0D":
+        rutina()
+    
+    if key == "q":
+        sys.exit()
+    def __init__(self,name):
+        name = sys.argv[0]
+        desc = os.open(name, 'r')
+        #enter 10
+        #escape 27
+        # 80x25
+        data = desc.read()
+        array=data.split("")
+    
+        
+    
+    

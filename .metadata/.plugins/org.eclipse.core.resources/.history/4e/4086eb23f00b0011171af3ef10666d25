@@ -1,5 +1,0 @@
-Little crib
-<?php
-$delimiters = array("\x09","<br>");
-
-?>
