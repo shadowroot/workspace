@@ -11582,3 +11582,57 @@ java.library.path = C:\Windows\system32;C:\Windows\Sun\Java\bin;C:\Windows\syste
 
 !ENTRY org.eclipse.mylyn.tasks.ui 2 0 2011-11-20 23:41:34.060
 !MESSAGE Repository link provider took over 5000 ms to execute and was timed out: "[org.tigris.subversion.subclipse.mylyn.SubclipseTaskRepositoryLinkProvider@79cc7c97]"
+!SESSION 2011-11-21 08:10:26.889 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=cs_CZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-11-21 08:10:27.987
+!MESSAGE Created equinox adaptor hook: org.eclipse.objectteams.otequinox.internal.hook.TransformerHook.
+ 	(To disable this and subsequent INFO messages from OT/Equinox set otequinox.debug to WARN or ERROR).
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-11-21 08:10:31.910
+!MESSAGE OT/Equinox: connected the transformer service
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-11-21 08:10:40.258
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.InstructionHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-11-21 08:10:40.263
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.BranchHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY com.tasktop.client.auth 2 0 2011-11-21 08:11:38.982
+!MESSAGE License update / validation failed.
+!SUBENTRY 1 com.tasktop.client.auth 2 0 2011-11-21 08:11:38.982
+!MESSAGE Your subscription has expired.  Please renew your subscription at tasktop.com or email info@tasktop.com for more information.
+
+!ENTRY com.tasktop.client.auth 4 202 2011-11-21 08:12:05.439
+!MESSAGE Could not connect to Tasktop license server at tasktop.com. Check your network settings and try again.
+!STACK 0
+java.net.UnknownHostException: tasktop.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source)
+	at org.eclipse.mylyn.internal.commons.net.MonitoredRequest.connect(MonitoredRequest.java:97)
+	at org.eclipse.mylyn.internal.commons.net.PollingSslProtocolSocketFactory.createSocket(PollingSslProtocolSocketFactory.java:122)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.eclipse.mylyn.commons.net.WebUtil$2.execute(WebUtil.java:345)
+	at org.eclipse.mylyn.commons.net.WebUtil$2.execute(WebUtil.java:1)
+	at org.eclipse.mylyn.internal.commons.net.MonitoredRequest.call(MonitoredRequest.java:51)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-21 09:36:50.716
+!MESSAGE NLS unused message: CodeAssistPreferencePage_showStub in: org.eclipse.php.internal.ui.PHPUIMessages
