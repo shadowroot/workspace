@@ -1,0 +1,42 @@
+package socket;
+//@Author jonnyATroot
+
+import java.net.*;
+import java.io.*;
+
+
+public class socket{
+	
+	
+	
+	public static void handle() {
+		// TODO Auto-generated constructor stub
+		
+		
+		
+	}
+	
+	public static void main(){
+		try{
+			System.out.println("Hello dolly");
+			ServerSocket sock = new ServerSocket();
+			SocketAddress addr = new InetSocketAddress("0.0.0.0",8889);
+			sock.bind(addr);
+			
+			while (true) {
+				Socket client = sock.accept();
+				InetAddress address = client.getInetAddress();
+				int port = client.getPort();
+				PrintStream stream = new PrintStream(client.getOutputStream());
+				stream.println("ADDRESS"+address.getAddress()+"\r\nPORT"+port+"\r\n");
+				stream.close();
+				sock.close();
+			}
+			
+		}
+		catch (IOException e) {
+			// TODO: handle exception
+			
+		}
+	}
+}

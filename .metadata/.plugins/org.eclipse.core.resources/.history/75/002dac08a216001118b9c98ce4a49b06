@@ -1,0 +1,9 @@
+package socket;
+
+public class run {
+	public void main() {
+		
+	}
+	socket sock = new socket();
+	
+}

@@ -1,7 +1,0 @@
-'''
-Created on 20.11.2011
-
-@author: Jonny
-'''
-import sys
-name = sys.argv[0]

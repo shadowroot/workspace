@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="103" version="2.0">
+<workbench progressCount="99" version="2.0">
 <workbenchAdvisor/>
 <window height="724" maximized="true" width="1024" x="66" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -17,12 +17,13 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="124" y="22"/>
 <coolItem id="org.eclipse.dltk.tcl.ui.debug.consoleActionSet" itemType="typeToolBarContribution" x="50" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="74" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="37" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="185" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.python.pydev.editor.PythonEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.php.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -36,12 +37,15 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="10"/>
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
 <part id="6"/>
 <part id="7"/>
+<part id="8"/>
+<part id="9"/>
 </presentation>
 </folder>
 </info>
@@ -50,9 +54,9 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/php_bot/src/test_all.php"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="586" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.php.editor" name="test.php" partName="test.php" path="D:/+WORKSPACE+/php_bot/src/test.php" title="test.php" tooltip="php_bot/src/test.php" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.php.editor" name="test.php" partName="test.php" path="D:/+WORKSPACE+/php_bot/src/test.php" title="test.php" tooltip="php_bot/src/test.php" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/php_bot/src/test.php"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="438" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="680" selectionTopPixel="352"/>
 </editor>
 <editor id="org.eclipse.php.editor" name="bot.php" partName="bot.php" path="D:/+WORKSPACE+/php_bot/src/bot.php" title="bot.php" tooltip="php_bot/src/bot.php" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/php_bot/src/bot.php"/>
@@ -72,11 +76,23 @@
 </editor>
 <editor id="org.python.pydev.editor.PythonEditor" name="__init__.py" partName="src" path="D:/+WORKSPACE+/easy_editor/src/__init__.py" title="src" tooltip="easy_editor/src/__init__.py" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/easy_editor/src/__init__.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="112" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="editor.py" partName="editor" path="D:/+WORKSPACE+/easy_editor/src/editor.py" title="editor" tooltip="easy_editor/src/editor.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/easy_editor/src/editor.py"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="64" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="editor.py" partName="editor" path="D:/+WORKSPACE+/easy_editor/src/editor.py" title="editor" tooltip="easy_editor/src/editor.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/easy_editor/src/editor.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="13" selectionOffset="51" selectionTopPixel="0"/>
+<editor id="org.python.pydev.editor.PythonEditor" name="paint.py" partName="paint" path="D:/+WORKSPACE+/easy_editor/src/paint.py" title="paint" tooltip="easy_editor/src/paint.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/easy_editor/src/paint.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="65" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="main.java" partName="main.java" path="D:/+WORKSPACE+/sock/src/uni_socks/main.java" title="main.java" tooltip="sock/src/uni_socks/main.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sock/src/uni_socks/main.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="34" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="cfg.inc.php" partName="cfg.inc.php" path="D:/+WORKSPACE+/php_bot/src/cfg.inc.php" title="cfg.inc.php" tooltip="php_bot/src/cfg.inc.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/php_bot/src/cfg.inc.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="13" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -87,7 +103,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (3 items)"/>
+<category IMemento.internal.id="Warnings (1 item)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="75" org.eclipse.ui.ide.markerType="75" org.eclipse.ui.ide.pathField="100" org.eclipse.ui.ide.resourceField="75" org.eclipse.ui.ide.severityAndDescriptionField="250"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -147,10 +163,17 @@
 <expanded IMemento.internal.id="D:/+WORKSPACE+/easy_editor/src"/>
 <expanded IMemento.internal.id="D:/+WORKSPACE+/easy_editor/src/__init__.py"/>
 <expanded IMemento.internal.id="D:/+WORKSPACE+/video_stream"/>
+<expanded IMemento.internal.id="D:/+WORKSPACE+/php_bot"/>
+<expanded IMemento.internal.id="D:/+WORKSPACE+/php_bot/src"/>
+<expanded IMemento.internal.id="D:/+WORKSPACE+/sock"/>
+<expanded IMemento.internal.id="D:/+WORKSPACE+/sock/bin"/>
+<expanded IMemento.internal.id="D:/+WORKSPACE+/sock/src"/>
+<expanded IMemento.internal.id="D:/+WORKSPACE+/sock/src/uni_socks"/>
+<selected IMemento.internal.id="D:/+WORKSPACE+/php_bot/src"/>
 </viewState>
 </view>
 </views>
-<perspectives activePart="org.python.pydev.editor.PythonEditor" activePerspective="org.python.pydev.ui.PythonPerspective">
+<perspectives activePart="org.eclipse.php.editor" activePerspective="org.python.pydev.ui.PythonPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.dltk.tcl.ui.debug.consoleActionSet"/>
@@ -395,7 +418,6 @@
 <fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
 <fastViews>
 <view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29855537"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@7d6fc26" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="1">
@@ -407,7 +429,7 @@
 <layout>
 <mainWindow>
 <info folder="true" part="topLeft">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.python.pydev.navigator.view" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
@@ -421,7 +443,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25973055" ratioLeft="347" ratioRight="989" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.74875206" ratioLeft="450" ratioRight="151" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
@@ -431,7 +453,7 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@7d6fc26" ratio="0.74924165" ratioLeft="741" ratioRight="248" relationship="2" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
@@ -444,166 +466,168 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/php_bot/src/test_all.php"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/video_stream/src/main.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/easy_editor/src/__init__.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/video_stream/src/main.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/php_bot/src/bot.php"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/php_bot/src/test_all.php"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/easy_editor/src/__init__.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/php_bot/src/test.php"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/easy_editor/src/__init__.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/easy_editor/src/edito.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/easy_editor/src/editor.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/easy_editor/src/__init__.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/php_bot/src/test_all.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/easy_editor/src/paint.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/php_bot/src/test.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sock/src/uni_socks/main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/php_bot/src/rsa.class.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/php_bot/src/cfg.inc.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/easy_editor/src/__init__.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/php_bot/src/test_all.php"/>
 </editors>
-<item historyLabel="main" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="test_all.php" index="0">
-<position info="not_deleted" x="398" y="0"/>
-</item>
-<item historyLabel="src" index="2">
-<position info="not_deleted" x="451" y="0"/>
-</item>
-<item historyLabel="src" index="2">
-<position info="not_deleted" x="171" y="0"/>
-</item>
-<item historyLabel="src" index="2">
-<position info="not_deleted" x="332" y="0"/>
-</item>
-<item historyLabel="src" index="2">
-<position info="not_deleted" x="378" y="3"/>
-</item>
-<item historyLabel="src" index="2">
-<position info="not_deleted" x="449" y="0"/>
-</item>
-<item historyLabel="main" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="src" index="2">
-<position info="not_deleted" x="444" y="0"/>
-</item>
-<item historyLabel="src" index="2">
-<position info="not_deleted" x="449" y="0"/>
-</item>
-<item historyLabel="bot.php" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="test_all.php" index="5">
-<position info="not_deleted" x="1683" y="0"/>
-</item>
-<item historyLabel="src" index="6">
-<position info="not_deleted" x="988" y="0"/>
-</item>
-<item historyLabel="src" index="6">
-<position info="not_deleted" x="354" y="0"/>
-</item>
-<item historyLabel="src" index="6">
-<position info="not_deleted" x="519" y="0"/>
-</item>
-<item historyLabel="src" index="6">
-<position info="not_deleted" x="971" y="0"/>
-</item>
-<item historyLabel="src" index="6">
-<position info="not_deleted" x="268" y="0"/>
-</item>
-<item historyLabel="test_all.php" index="5">
-<position info="not_deleted" x="1683" y="0"/>
-</item>
-<item historyLabel="test.php" index="7">
-<position info="not_deleted" x="5" y="0"/>
-</item>
-<item historyLabel="src" index="8">
-<position/>
-</item>
-<item historyLabel="edito" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="editor" index="10">
-<position info="not_deleted" x="798" y="0"/>
-</item>
-<item historyLabel="src" index="8">
-<position info="not_deleted" x="1124" y="0"/>
-</item>
-<item historyLabel="editor" index="10">
-<position info="not_deleted" x="798" y="0"/>
-</item>
-<item historyLabel="src" index="8">
-<position/>
-</item>
-<item historyLabel="editor" index="10">
-<position info="not_deleted" x="798" y="0"/>
-</item>
-<item historyLabel="src" index="8">
-<position/>
-</item>
-<item historyLabel="editor" index="10">
-<position info="not_deleted" x="798" y="0"/>
-</item>
-<item historyLabel="src" index="8">
-<position/>
-</item>
-<item historyLabel="editor" index="10">
-<position info="not_deleted" x="798" y="0"/>
-</item>
-<item historyLabel="editor" index="10">
+<item historyLabel="editor" index="3">
 <position info="not_deleted" x="78" y="0"/>
 </item>
-<item historyLabel="src" index="8">
+<item historyLabel="src" index="2">
 <position info="not_deleted" x="122" y="0"/>
 </item>
-<item historyLabel="editor" index="10">
+<item historyLabel="editor" index="3">
 <position info="not_deleted" x="196" y="0"/>
 </item>
-<item historyLabel="src" index="8">
+<item historyLabel="src" index="2">
 <position info="not_deleted" x="305" y="0"/>
 </item>
-<item historyLabel="editor" index="10">
+<item historyLabel="editor" index="3">
 <position info="not_deleted" x="420" y="0"/>
 </item>
-<item historyLabel="src" index="8">
+<item historyLabel="src" index="2">
 <position info="not_deleted" x="305" y="0"/>
 </item>
-<item historyLabel="editor" index="10">
+<item historyLabel="editor" index="3">
 <position info="not_deleted" x="408" y="0"/>
 </item>
-<item historyLabel="src" index="8">
+<item historyLabel="src" index="2">
 <position info="not_deleted" x="267" y="0"/>
 </item>
-<item historyLabel="editor" index="10">
+<item historyLabel="editor" index="3">
 <position info="not_deleted" x="408" y="0"/>
 </item>
-<item historyLabel="src" index="8">
+<item historyLabel="src" index="2">
 <position info="not_deleted" x="64" y="0"/>
 </item>
-<item historyLabel="editor" index="10">
+<item historyLabel="editor" index="3">
 <position info="not_deleted" x="64" y="0"/>
 </item>
-<item historyLabel="src" index="8">
+<item historyLabel="src" index="2">
 <position info="not_deleted" x="295" y="0"/>
 </item>
-<item historyLabel="editor" index="10">
+<item historyLabel="editor" index="3">
 <position info="not_deleted" x="64" y="0"/>
 </item>
-<item historyLabel="src" index="8">
+<item historyLabel="src" index="2">
 <position info="not_deleted" x="64" y="0"/>
 </item>
-<item historyLabel="editor" index="10">
+<item historyLabel="editor" index="3">
 <position info="not_deleted" x="51" y="13"/>
 </item>
-<item historyLabel="src" index="8">
+<item historyLabel="src" index="2">
 <position info="not_deleted" x="64" y="0"/>
+</item>
+<item historyLabel="test_all.php" index="0">
+<position info="not_deleted" x="586" y="0"/>
+</item>
+<item historyLabel="test.php" index="1">
+<position info="not_deleted" x="438" y="0"/>
+</item>
+<item historyLabel="src" index="2">
+<position info="not_deleted" x="64" y="0"/>
+</item>
+<item historyLabel="editor" index="3">
+<position info="not_deleted" x="51" y="13"/>
+</item>
+<item historyLabel="src" index="4">
+<position info="not_deleted" x="64" y="0"/>
+</item>
+<item historyLabel="editor" index="3">
+<position info="not_deleted" x="51" y="13"/>
 </item>
 <item historyLabel="test_all.php" index="5">
 <position info="not_deleted" x="586" y="0"/>
 </item>
-<item historyLabel="test.php" index="7">
-<position info="not_deleted" x="438" y="0"/>
+<item historyLabel="editor" index="3">
+<position info="not_deleted" x="738" y="0"/>
 </item>
-<item historyLabel="src" index="8">
+<item historyLabel="src" index="4">
+<position info="not_deleted" x="281" y="0"/>
+</item>
+<item historyLabel="editor" index="3">
+<position info="not_deleted" x="738" y="0"/>
+</item>
+<item historyLabel="src" index="4">
+<position info="not_deleted" x="347" y="0"/>
+</item>
+<item historyLabel="editor" index="3">
+<position info="not_deleted" x="738" y="0"/>
+</item>
+<item historyLabel="src" index="4">
+<position info="not_deleted" x="1132" y="0"/>
+</item>
+<item historyLabel="editor" index="3">
+<position info="not_deleted" x="796" y="0"/>
+</item>
+<item historyLabel="src" index="4">
+<position info="not_deleted" x="892" y="0"/>
+</item>
+<item historyLabel="editor" index="3">
+<position info="not_deleted" x="458" y="0"/>
+</item>
+<item historyLabel="src" index="4">
+<position info="not_deleted" x="253" y="0"/>
+</item>
+<item historyLabel="paint" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="paint" index="6">
+<position info="not_deleted" x="65" y="0"/>
+</item>
+<item historyLabel="editor" index="3">
 <position info="not_deleted" x="64" y="0"/>
 </item>
-<item active="true" historyLabel="editor" index="10">
-<position info="not_deleted" x="51" y="13"/>
+<item historyLabel="test.php" index="7">
+<position info="not_deleted" x="275" y="0"/>
+</item>
+<item historyLabel="main.java" index="8">
+<position info="not_deleted" x="34" y="0"/>
+</item>
+<item historyLabel="test.php" index="7">
+<position info="not_deleted" x="5" y="0"/>
+</item>
+<item historyLabel="rsa.class.php" index="9">
+<position info="not_deleted" x="235" y="0"/>
+</item>
+<item historyLabel="test.php" index="7">
+<position info="not_deleted" x="52" y="0"/>
+</item>
+<item historyLabel="cfg.inc.php" index="10">
+<position info="not_deleted" x="13" y="0"/>
+</item>
+<item historyLabel="test.php" index="7">
+<position info="not_deleted" x="52" y="0"/>
+</item>
+<item historyLabel="cfg.inc.php" index="10">
+<position info="not_deleted" x="13" y="0"/>
+</item>
+<item historyLabel="test.php" index="7">
+<position info="not_deleted" x="52" y="0"/>
+</item>
+<item historyLabel="cfg.inc.php" index="10">
+<position info="not_deleted" x="13" y="0"/>
+</item>
+<item historyLabel="test.php" index="7">
+<position info="not_deleted" x="52" y="0"/>
+</item>
+<item historyLabel="src" index="11">
+<position info="not_deleted" x="258" y="0"/>
+</item>
+<item historyLabel="test_all.php" index="12">
+<position info="not_deleted" x="586" y="0"/>
+</item>
+<item active="true" historyLabel="test.php" index="7">
+<position info="not_deleted" x="1975" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -634,6 +658,18 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="cfg.inc.php" tooltip="php_bot/src/cfg.inc.php">
+<persistable path="/php_bot/src/cfg.inc.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="rsa.class.php" tooltip="php_bot/src/rsa.class.php">
+<persistable path="/php_bot/src/rsa.class.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="main.java" tooltip="sock/src/uni_socks/main.java">
+<persistable path="/sock/src/uni_socks/main.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="paint.py" tooltip="easy_editor/src/paint.py">
+<persistable path="/easy_editor/src/paint.py"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="edito.py" tooltip="easy_editor/src/edito.py">
 <persistable path="/easy_editor/src/edito.py"/>
 </file>
@@ -658,23 +694,11 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="test_all.php" tooltip="php_bot/src/test_all.php">
 <persistable path="/php_bot/src/test_all.php"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="rsa.class.php" tooltip="php_bot/src/rsa.class.php">
-<persistable path="/php_bot/src/rsa.class.php"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="crib_add.php" tooltip="php_bot/src/crib_add.php">
 <persistable path="/php_bot/src/crib_add.php"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="crib.php" tooltip="php_bot/src/crib.php">
 <persistable path="/php_bot/src/crib.php"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="tahak.php" tooltip="php_bot/src/tahak.php">
-<persistable path="/php_bot/src/tahak.php"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.php.editor" name="test_ffmpeg.php" tooltip="C:\Users\Jonny\Downloads\ffmpeg-php-0.6.0\ffmpeg-php-0.6.0\test_ffmpeg.php">
-<persistable uri="file:/C:/Users/Jonny/Downloads/ffmpeg-php-0.6.0/ffmpeg-php-0.6.0/test_ffmpeg.php"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="join.py" tooltip="D:\+WORKSPACE+\join.py">
-<persistable uri="file:/D:/+WORKSPACE+/join.py"/>
 </file>
 </mruList>
 </workbench>

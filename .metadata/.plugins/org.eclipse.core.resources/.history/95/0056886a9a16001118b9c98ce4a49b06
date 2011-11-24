@@ -1,0 +1,32 @@
+import java.net.*;
+import java.io.*;
+public class socket {
+	
+	
+	
+	public static void handle() {
+		// TODO Auto-generated constructor stub
+		
+		
+		
+	}
+	
+	public static void main(){
+		try{
+			ServerSocket sock = new ServerSocket(8888);
+			SocketAddress addr = new InetSocketAddress("0.0.0.0",8888);
+			sock.bind(addr);
+			while (1) {
+				if(Socket client = sock.accept()){
+					
+				}
+				
+			}
+			
+		}
+		catch (IOException e) {
+			// TODO: handle exception
+			
+		}
+	}
+}

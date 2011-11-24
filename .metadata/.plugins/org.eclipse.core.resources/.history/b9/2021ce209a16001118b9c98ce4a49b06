@@ -1,0 +1,24 @@
+import java.net.*;
+import java.io.*;
+public class socket {
+	
+	
+	
+	public socket() {
+		// TODO Auto-generated constructor stub
+		sock.bind(addr);
+		
+		
+	}
+	
+	public static void main(){
+		try{
+			ServerSocket sock = new ServerSocket(8888);
+			SocketAddress addr = new InetSocketAddress("0.0.0.0",8888);
+			sock.bind(addr);
+		}
+		catch (IOException e) {
+			// TODO: handle exception
+		}
+	}
+}

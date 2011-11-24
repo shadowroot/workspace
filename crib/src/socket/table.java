@@ -1,0 +1,13 @@
+package socket;
+
+import java.net.InetAddress;
+
+
+public class table {
+	private String[] data;
+	private int[] i;
+	private InetAddress host;
+	private int[] port;
+	
+	
+}

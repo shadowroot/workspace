@@ -1,0 +1,11 @@
+import java.net.*;
+public class socket {
+	Socket sock = new Socket();
+	SocketAddress addr = new SocketAddress();
+	
+	public socket() {
+		// TODO Auto-generated constructor stub
+		sock.bind(addr);
+		
+	}
+}

@@ -1,0 +1,18 @@
+package socket;
+
+import java.util.Date;
+
+
+
+public class run {
+	Date time = new Date();
+	public static void main(String[] args) {
+		Date time = new Date();
+		String now = time.toString();
+		socket sock = new socket();
+		sock.main();		
+		System.out.println("Server shutdown at "+now);
+	}
+	
+	
+}

@@ -1,0 +1,10 @@
+import java.net.*;
+public class socket {
+	Socket sock;
+	
+	
+	public socket() {
+		// TODO Auto-generated constructor stub
+		
+	}
+}

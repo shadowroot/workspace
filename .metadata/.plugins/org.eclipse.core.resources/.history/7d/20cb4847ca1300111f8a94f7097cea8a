@@ -1,8 +1,0 @@
-'''
-Created on 20.11.2011
-
-@author: Jonny
-'''
-import sys,os
-name = sys.argv[0]
-desc = os.open(name, 'r')

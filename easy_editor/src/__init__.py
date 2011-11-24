@@ -7,7 +7,7 @@ import os,sys,re,subprocess,editor
 
 class handler:
     desc=None
-    dir = 'D:\\+PDF+\RFC'
+    dir = 'D:\x5c+PDF+\x5cRFC'
     index = '\rfc-index.txt'
     ids = list()
     help = list()
