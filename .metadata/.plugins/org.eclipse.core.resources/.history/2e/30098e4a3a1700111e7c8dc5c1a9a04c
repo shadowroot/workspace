@@ -7,8 +7,6 @@ public class table {
 	private int i=0;
 	private InetAddress[] host;
 	private int[] port;
-	
-	
 	public void update(InetAddress hos,int por) {
 		if(this.check( hos, por)){
 			host[i] = hos;

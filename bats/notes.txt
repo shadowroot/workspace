@@ -1,0 +1,11 @@
+Make message processing
+
+Promyslet socketing lepe
+1) number of clusters
+2) make tree
+3) output
+
+
+
+
+
