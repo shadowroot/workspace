@@ -1,0 +1,41 @@
+package socket;
+
+import java.net.InetAddress;
+
+
+public class table {
+	private String[] data;
+	private int i=0;
+	private InetAddress[] host;
+	private int[] port;
+	public void update(String dat,InetAddress hos,int por) {
+		data[i] = dat;
+		host[i] = hos;
+		port[i] = por;
+		i++;
+		
+	}
+	
+	public int getLimit(){
+		return i;
+	}
+	
+	public String[] getData(){
+		return data;
+	}
+	
+	public InetAddress[] getHost(){
+		return host;
+	}
+	
+	public int[] getPort(){
+		return port;
+	}
+	
+	private Boolean check(String dat,InetAddress hos,int por){
+		for(int u=0;u<=i;u++){
+			
+		}
+	}
+	
+}
