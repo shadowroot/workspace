@@ -1,0 +1,45 @@
+<?php
+/*
+*	@param $password = "my_password" (string)
+*	@param $filename = "name_of_file" (string)
+*
+*
+*/
+error_reporting(0);
+ob_start();
+session_start();
+session_cache_expire(120);
+$filename = "orders.csv";
+$passwd = "trythispassword";
+if(isset($_POST['passwd']) && $_POST['passwd'] == $passwd){
+	$_SESSION['logged'] = 1;	
+}
+
+
+echo '<table id="results">';
+echo '<tr><td>Jméno</td><td>Příjmení</td><td>Ulice</td><td>Město</td><td>E-mail</td><td>Telefon</td><td>Slevový kupon</td></tr>';
+if(isset($_SESSION['logged']) && $_SESSION['logged'] == 1){
+	
+	$data = file_get_contents($filename);
+	$cols = explode(",", $data);
+	$size = sizeof($cols);
+	$i=0;
+	while($i <= $size){
+		echo '<tr id="result">';
+		for($u=1;$u<=7;$u++){
+				echo "<td>".$cols[$i]."</td>";
+			$i++;
+		}
+		echo '</tr>';
+	}
+	
+}
+else{
+	echo '<form action="" method="POST">';
+	echo '<input type="text" name="passwd" size="20" id="log" />&nbsp;<input type="submit" value="Log me in" />';
+	echo '</form>';
+}
+echo '</table>';
+
+ob_end_flush();
+?>

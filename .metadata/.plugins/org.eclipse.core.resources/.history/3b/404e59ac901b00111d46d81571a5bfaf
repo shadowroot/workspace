@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>Title of the document</title>
+	</head>
+	<body>
+	
+	<?php 
+		if($_GET['error'] == 1){
+			echo 'Nevyplnili jste správnì formuláø';
+		}
+	
+	?>
+		<form action="process.php" method="post">
+			<table id="form">
+				<tr class="form_col"><td>Jméno</td><td><input type="text" size="20" name="jmeno" value="<?php echo $_GET['jmeno']; ?>" /></td></tr>
+				<tr class="form_col"><td>Pøíjmení</td><td><input type="text" size="20" name="prijmeni" value="<?php echo $_GET['prijmeni']; ?>" /></td></tr>
+				<tr class="form_col"><td>Ulice</td><td><input type="text" size="20" name="ulice" value="<?php echo $_GET['jmeno']; ?>" /></td></tr>
+				<tr class="form_col"><td>Mìsto,PSÈ</td><td><input type="text" size="20" name="mesto" value="<?php echo $_GET['jmeno']; ?>" /></td></tr>
+				<tr class="form_col"><td>E-mail</td><td><input type="text" size="20" name="email" value="<?php echo $_GET['jmeno']; ?>" /></td></tr>
+				<tr class="form_col"><td>Telefon</td><td><input type="text" size="20" name="telefon" value="<?php echo $_GET['jmeno']; ?>" /></td></tr>
+				<tr class="form_col"><td>Slevový kupón</td><td><input type="text" size="20" name="sleva" value="<?php echo $_GET['jmeno']; ?>" /></td></tr>
+				<tr><td></td><td><input type="submit" value="Odeslat" /></td></tr>
+			</table>
+		</form>
+	</body>
+</html>
