@@ -1,0 +1,32 @@
+Little crib
+<p>
+Paste your own crib
+<?php 
+if(isset($_SESSION['user']) && $_SESSION['user'] != ""){
+	echo 'Hello '.$_SESSION['user'].' !';
+}
+else{
+	echo '<a href="http://paste.apptester.sexyi.am"'
+}
+
+?>
+</p>
+<p>
+Themes
+</p>
+
+<?php
+require_once 'mysql_connect.php';
+$query = mysql_query("select keyword,page from indexes");
+$keys = array();
+while($row = mysql_fetch_array($query)){
+	$keys[$row['page']] = $row['keyword'];
+	echo '<a href="#'.$row['page'].'">'.$row['keyword'].'</a><br>';
+}
+$q = mysql_query("select * from completed");
+while($row = mysql_fetch_array($q)){
+	echo '<a name="'.$row['id'].'">'.$keys[$row['id']].'</a><p>'.$row['page'].'</p>';
+}
+?>
+<hr size="1" /><br />
+Just cribs use them as you want to. 

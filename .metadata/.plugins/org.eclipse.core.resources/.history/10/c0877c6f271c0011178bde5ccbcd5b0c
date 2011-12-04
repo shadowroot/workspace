@@ -1,0 +1,19 @@
+<?php
+	switch($_GET['a']){
+		case "1":
+			//register
+			$passwd1 = not_inj($_POST['passwd1']);
+			$passwd2 = not_inj($_POST['passwd2']);
+			$user = not_inj($_POST['user']);
+			if($passwd1 == $passwd2){
+				mysql_query("insert into users (user,password,privilege,authorized) values ('$user')");
+			}
+			break;
+		case "2":
+			
+			break;
+		default:
+			echo 'What the fuck you think you are doing???';
+			break;
+	}
+?>

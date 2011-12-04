@@ -1,0 +1,13 @@
+<?php
+	switch($_GET['a']){
+		case "1":
+			//register
+			$passwd1 = htmlspecialchars($_POST['passwd1']);
+			$passwd1 = htmlspecialchars($_POST['passwd2']);
+			$user = htmlspecialchars($_POST['user']);
+			break;
+		case "2":
+			
+			break;
+	}
+?>
