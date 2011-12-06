@@ -29,16 +29,25 @@ public class socket{
 			System.out.println("Server wake up at "+getTime());
 			ServerSocket sock = new ServerSocket();
 			SocketAddress addr = new InetSocketAddress("0.0.0.0",8889);
+			
 			sock.bind(addr);
 			
 			while (true) {
 				Socket client = sock.accept();
+				Thread threads = new Thread();
+				threads.start();
+				System.out.println("Thread started");
 				InetAddress address = client.getInetAddress();
 				int port = client.getPort();
+				
 				PrintStream stream = new PrintStream(client.getOutputStream());
 				stream.println("ADDRESS "+address.getHostAddress()+"\r\nPORT "+port+"\r\n");
 				stream.close();
-				sock.close();
+				client.close();
+		
+				threads.destroy();
+				System.out.println("Thread killed");
+				
 			}
 			
 		}

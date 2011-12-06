@@ -1,0 +1,24 @@
+<?php
+require_once 'functions.php';
+	switch($_GET['a']){
+		case "1":
+			//register
+			$passwd1 = not_inj($_POST['passwd1']);
+			$passwd2 = not_inj($_POST['passwd2']);
+			$user = not_inj($_POST['user']);
+			$email = not_inj($_POST['email']);
+			if($passwd1 == $passwd2){
+				$q = mysql_query("insert into users (user,password,privilege,authorized,email) values ('$user','$passwd1','3','0','$email')");
+				if($q){
+					header("Location:/index/Registrace byla úspěšná/");
+				}
+			}
+			break;
+		case "2":
+			
+			break;
+		default:
+			echo 'What the fuck you think you are doing???';
+			break;
+	}
+?>

@@ -1,0 +1,6 @@
+<?php
+$user = "root";
+$password = "jonny555";
+mysql_connect($host,$user,$password);
+mysql_select_db("crib");
+?>

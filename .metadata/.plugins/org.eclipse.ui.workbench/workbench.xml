@@ -39,37 +39,17 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.php.editor" name="index.php" partName="index.php" path="D:/+WORKSPACE+/tommys_job/index.php" title="index.php" tooltip="tommys_job/index.php" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tommys_job/index.php"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2033" selectionTopPixel="472"/>
+<editor activePart="true" focus="true" id="org.eclipse.php.editor" name="test_all.php" partName="test_all.php" path="D:/+WORKSPACE+/php_bot/src/test_all.php" title="test_all.php" tooltip="php_bot/src/test_all.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/php_bot/src/test_all.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="788"/>
 </editor>
-<editor id="org.eclipse.php.editor" name="process.php" partName="process.php" path="D:/+WORKSPACE+/tommys_job/process.php" title="process.php" tooltip="tommys_job/process.php" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tommys_job/process.php"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1227" selectionTopPixel="322"/>
-</editor>
-<editor id="org.eclipse.php.editor" name="status.php" partName="status.php" path="D:/+WORKSPACE+/tommys_job/status.php" title="status.php" tooltip="tommys_job/status.php" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tommys_job/status.php"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="11" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.php.editor" name="css.css" partName="css.css" path="D:/+WORKSPACE+/tommys_job/css.css" title="css.css" tooltip="tommys_job/css.css" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tommys_job/css.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.php.editor" name="view.php" partName="view.php" path="D:/+WORKSPACE+/tommys_job/view.php" title="view.php" tooltip="tommys_job/view.php" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tommys_job/view.php"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="784" selectionTopPixel="352"/>
-</editor>
-<editor id="org.eclipse.php.editor" name="mysql_connect.php" partName="mysql_connect.php" path="D:/+WORKSPACE+/tommys_job/mysql_connect.php" title="mysql_connect.php" tooltip="tommys_job/mysql_connect.php" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tommys_job/mysql_connect.php"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="150" selectionTopPixel="0"/>
+<editor id="org.eclipse.php.editor" name="test.php" partName="test.php" path="D:/+WORKSPACE+/php_bot/src/test.php" title="test.php" tooltip="php_bot/src/test.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/php_bot/src/test.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="430" selectionTopPixel="180"/>
 </editor>
 </editors>
 <views>
@@ -111,9 +91,7 @@
 </view>
 <view id="org.eclipse.php.ui.explorer" partName="PHP Explorer">
 <viewState group_libraries="1" isWindowWorkingSet="false" layout="1" linkWithEditor="0" rootMode="1" workingSetName="">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.php.ui.explorer.EmptyInnerPackageFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.php.ui.explorer.EmptyInnerPackageFilter" isEnabled="false"/>
 <child filterId="org.eclipse.php.ui.explorer.PHPHTMLFilter" isEnabled="false"/>
 <child filterId="org.eclipse.php.ui.explorer.NonScriptElementFilter" isEnabled="false"/>
 <child filterId="org.eclipse.php.ui.explorer.NonPublicFilter" isEnabled="false"/>
@@ -135,9 +113,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (2 items)"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="75" org.eclipse.ui.ide.markerType="75" org.eclipse.ui.ide.pathField="100" org.eclipse.ui.ide.resourceField="75" org.eclipse.ui.ide.severityAndDescriptionField="250"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -369,7 +344,7 @@
 <layout>
 <mainWindow>
 <info folder="true" part="topLeft">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.php.ui.explorer" label="LabelNotFound"/>
 <page content="org.eclipse.dltk.ui.TypeHierarchy" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
@@ -384,7 +359,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.21906693" ratioLeft="216" ratioRight="770" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.74873525" ratioLeft="444" ratioRight="149" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
@@ -393,7 +368,7 @@
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.74935067" ratioLeft="577" ratioRight="193" relationship="2" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.php.ui.projectOutline" label="LabelNotFound"/>
 <page content="org.eclipse.php.ui.functions" label="LabelNotFound"/>
@@ -765,162 +740,176 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/tommys_job/index.php"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/tommys_job/process.php"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/tommys_job/view.php"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/tommys_job/status.php"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/tommys_job/view.php"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/tommys_job/mysql_connect.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/crib_pasted/functions.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/crib_pasted/crib_add.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/crib_pasted/index.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/crib_pasted/crib.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/crib_pasted/register.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/crib_pasted/action.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/crib_pasted/.htaccess"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/crib_pasted/login.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/crib_pasted/admin.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/crib_pasted/crib_add.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/crib_pasted/index.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/crib_pasted/crib.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/crib_pasted/login.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/crib_pasted/register.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/crib_pasted/action.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/crib_pasted/functions.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/crib_pasted/admin.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/php_bot/src/test_all.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/php_bot/src/test.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/php_bot/src/test_all.php"/>
 </editors>
-<item historyLabel="view.php" index="2">
-<position info="not_deleted" x="486" y="0"/>
+<item historyLabel="crib.php" index="3">
+<position info="not_deleted" x="733" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position info="not_deleted" x="1627" y="0"/>
+<item historyLabel="login.php" index="7">
+<position info="not_deleted" x="881" y="0"/>
 </item>
-<item historyLabel="index.php" index="0">
-<position info="not_deleted" x="2977" y="0"/>
+<item historyLabel="register.php" index="4">
+<position info="not_deleted" x="889" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position/>
+<item historyLabel="action.php" index="5">
+<position info="not_deleted" x="644" y="0"/>
 </item>
-<item historyLabel="index.php" index="0">
-<position info="not_deleted" x="0" y="316"/>
+<item historyLabel="admin.php" index="8">
+<position info="not_deleted" x="889" y="0"/>
 </item>
-<item historyLabel="status.php" index="3">
-<position info="not_deleted" x="11" y="0"/>
+<item historyLabel="functions.php" index="0">
+<position info="not_deleted" x="541" y="0"/>
 </item>
-<item historyLabel="view.php" index="2">
-<position info="not_deleted" x="1389" y="0"/>
+<item historyLabel=".htaccess" index="6">
+<position info="not_deleted" x="198" y="0"/>
 </item>
-<item historyLabel="index.php" index="0">
-<position info="not_deleted" x="3359" y="0"/>
+<item historyLabel="action.php" index="5">
+<position info="not_deleted" x="644" y="0"/>
 </item>
-<item historyLabel="view.php" index="2">
-<position info="not_deleted" x="1389" y="0"/>
+<item historyLabel="admin.php" index="8">
+<position info="not_deleted" x="69" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position/>
+<item historyLabel="index.php" index="2">
+<position info="not_deleted" x="1105" y="0"/>
 </item>
-<item historyLabel="status.php" index="3">
-<position info="not_deleted" x="11" y="0"/>
+<item historyLabel="admin.php" index="8">
+<position info="not_deleted" x="103" y="0"/>
 </item>
-<item historyLabel="view.php" index="2">
-<position info="not_deleted" x="1064" y="0"/>
+<item historyLabel="register.php" index="4">
+<position info="not_deleted" x="889" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position/>
+<item historyLabel="crib.php" index="3">
+<position info="not_deleted" x="733" y="0"/>
 </item>
-<item historyLabel="status.php" index="3">
-<position info="not_deleted" x="11" y="0"/>
+<item historyLabel="crib_add.php" index="1">
+<position info="not_deleted" x="1389" y="32"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position/>
+<item historyLabel="index.php" index="2">
+<position info="not_deleted" x="1105" y="0"/>
 </item>
-<item historyLabel="view.php" index="2">
-<position info="not_deleted" x="695" y="0"/>
+<item historyLabel="crib_add.php" index="1">
+<position info="not_deleted" x="991" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position/>
+<item historyLabel="admin.php" index="8">
+<position info="not_deleted" x="873" y="0"/>
 </item>
-<item historyLabel="status.php" index="3">
-<position info="not_deleted" x="11" y="0"/>
+<item historyLabel="functions.php" index="0">
+<position info="not_deleted" x="541" y="0"/>
 </item>
-<item historyLabel="view.php" index="2">
-<position info="not_deleted" x="953" y="0"/>
+<item historyLabel="action.php" index="5">
+<position info="not_deleted" x="644" y="0"/>
 </item>
-<item historyLabel="index.php" index="0">
-<position info="not_deleted" x="3359" y="0"/>
+<item historyLabel="admin.php" index="8">
+<position info="not_deleted" x="201" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position/>
+<item historyLabel="register.php" index="4">
+<position info="not_deleted" x="723" y="0"/>
 </item>
-<item historyLabel="view.php" index="4">
-<position/>
+<item historyLabel="action.php" index="5">
+<position info="not_deleted" x="644" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position/>
+<item historyLabel="admin.php" index="8">
+<position info="not_deleted" x="467" y="0"/>
 </item>
-<item historyLabel="view.php" index="4">
-<position info="not_deleted" x="571" y="0"/>
+<item historyLabel="functions.php" index="0">
+<position info="not_deleted" x="541" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position info="not_deleted" x="38" y="0"/>
+<item historyLabel="action.php" index="5">
+<position info="not_deleted" x="638" y="0"/>
 </item>
-<item historyLabel="mysql_connect.php" index="5">
-<position info="not_deleted" x="146" y="0"/>
+<item historyLabel="admin.php" index="8">
+<position info="not_deleted" x="487" y="0"/>
 </item>
-<item historyLabel="index.php" index="0">
-<position info="not_deleted" x="2507" y="0"/>
+<item historyLabel="functions.php" index="0">
+<position info="not_deleted" x="541" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position info="not_deleted" x="38" y="0"/>
+<item historyLabel="action.php" index="5">
+<position info="not_deleted" x="638" y="0"/>
 </item>
-<item historyLabel="mysql_connect.php" index="5">
-<position info="not_deleted" x="150" y="0"/>
+<item historyLabel="admin.php" index="8">
+<position info="not_deleted" x="487" y="0"/>
 </item>
-<item historyLabel="view.php" index="4">
-<position info="not_deleted" x="571" y="0"/>
+<item historyLabel="action.php" index="5">
+<position info="not_deleted" x="632" y="0"/>
 </item>
-<item historyLabel="status.php" index="3">
-<position info="not_deleted" x="11" y="0"/>
+<item historyLabel="admin.php" index="8">
+<position info="not_deleted" x="487" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position info="not_deleted" x="604" y="0"/>
+<item historyLabel="action.php" index="5">
+<position info="not_deleted" x="777" y="0"/>
 </item>
-<item historyLabel="index.php" index="0">
-<position info="not_deleted" x="2983" y="0"/>
+<item historyLabel="admin.php" index="8">
+<position info="not_deleted" x="818" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position info="not_deleted" x="1353" y="0"/>
+<item historyLabel="action.php" index="5">
+<position info="not_deleted" x="777" y="0"/>
 </item>
-<item historyLabel="view.php" index="4">
-<position info="not_deleted" x="667" y="0"/>
+<item historyLabel="admin.php" index="8">
+<position info="not_deleted" x="857" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position info="not_deleted" x="1324" y="0"/>
+<item historyLabel="action.php" index="5">
+<position info="not_deleted" x="585" y="0"/>
 </item>
-<item historyLabel="view.php" index="4">
-<position info="not_deleted" x="667" y="0"/>
+<item historyLabel=".htaccess" index="6">
+<position info="not_deleted" x="198" y="0"/>
 </item>
-<item historyLabel="view.php" index="4">
-<position info="not_deleted" x="1663" y="0"/>
+<item historyLabel=".htaccess" index="6">
+<position info="not_deleted" x="18" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position info="not_deleted" x="1317" y="0"/>
+<item historyLabel="crib_add.php" index="9">
+<position info="not_deleted" x="897" y="0"/>
 </item>
-<item historyLabel="index.php" index="0">
-<position info="not_deleted" x="2983" y="0"/>
+<item historyLabel="index.php" index="10">
+<position info="not_deleted" x="1105" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position info="not_deleted" x="1509" y="0"/>
+<item historyLabel="crib.php" index="11">
+<position info="not_deleted" x="733" y="0"/>
 </item>
-<item historyLabel="view.php" index="4">
-<position info="not_deleted" x="1112" y="0"/>
+<item historyLabel="login.php" index="12">
+<position info="not_deleted" x="881" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position info="not_deleted" x="1509" y="0"/>
+<item historyLabel="register.php" index="13">
+<position info="not_deleted" x="723" y="0"/>
 </item>
-<item historyLabel="mysql_connect.php" index="5">
-<position info="not_deleted" x="150" y="0"/>
+<item historyLabel="action.php" index="14">
+<position info="not_deleted" x="585" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position info="not_deleted" x="1317" y="0"/>
+<item historyLabel=".htaccess" index="6">
+<position info="not_deleted" x="201" y="0"/>
 </item>
-<item historyLabel="mysql_connect.php" index="5">
-<position info="not_deleted" x="150" y="0"/>
+<item historyLabel="functions.php" index="15">
+<position info="not_deleted" x="541" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position info="not_deleted" x="1317" y="0"/>
+<item historyLabel="admin.php" index="16">
+<position info="not_deleted" x="857" y="0"/>
 </item>
-<item historyLabel="index.php" index="0">
-<position info="not_deleted" x="2033" y="0"/>
+<item historyLabel="test_all.php" index="17">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="process.php" index="1">
-<position info="not_deleted" x="1227" y="0"/>
+<item historyLabel="test.php" index="18">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="view.php" index="4">
-<position info="not_deleted" x="1112" y="0"/>
+<item active="true" historyLabel="test_all.php" index="19">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -951,47 +940,47 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="mysql_connect.php" tooltip="tommys_job/mysql_connect.php">
-<persistable path="/tommys_job/mysql_connect.php"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="test.php" tooltip="php_bot/src/test.php">
+<persistable path="/php_bot/src/test.php"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="view.php" tooltip="tommys_job/view.php">
-<persistable path="/tommys_job/view.php"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="test_all.php" tooltip="php_bot/src/test_all.php">
+<persistable path="/php_bot/src/test_all.php"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="status.php" tooltip="tommys_job/status.php">
-<persistable path="/tommys_job/status.php"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="admin.php" tooltip="crib_pasted/admin.php">
+<persistable path="/crib_pasted/admin.php"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="process.php" tooltip="tommys_job/process.php">
 <persistable path="/tommys_job/process.php"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="functions.php" tooltip="crib_pasted/functions.php">
+<persistable path="/crib_pasted/functions.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="mysql_connect.php" tooltip="crib_pasted/mysql_connect.php">
+<persistable path="/crib_pasted/mysql_connect.php"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="index.php" tooltip="tommys_job/index.php">
 <persistable path="/tommys_job/index.php"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="interresting_code.php" tooltip="php_bot/interresting_code.php">
-<persistable path="/php_bot/interresting_code.php"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="action.php" tooltip="crib_pasted/action.php">
+<persistable path="/crib_pasted/action.php"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="run.java" tooltip="crib/src/socket/run.java">
-<persistable path="/crib/src/socket/run.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="register.php" tooltip="crib_pasted/register.php">
+<persistable path="/crib_pasted/register.php"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="socket.java" tooltip="crib/src/socket/socket.java">
-<persistable path="/crib/src/socket/socket.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="login.php" tooltip="crib_pasted/login.php">
+<persistable path="/crib_pasted/login.php"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="table.java" tooltip="crib/src/socket/table.java">
-<persistable path="/crib/src/socket/table.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="crib.php" tooltip="crib_pasted/crib.php">
+<persistable path="/crib_pasted/crib.php"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="cfg.inc.php" tooltip="php_bot/src/cfg.inc.php">
-<persistable path="/php_bot/src/cfg.inc.php"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="index.php" tooltip="crib_pasted/index.php">
+<persistable path="/crib_pasted/index.php"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="rsa.class.php" tooltip="php_bot/src/rsa.class.php">
-<persistable path="/php_bot/src/rsa.class.php"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="crib_add.php" tooltip="crib_pasted/crib_add.php">
+<persistable path="/crib_pasted/crib_add.php"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="main.java" tooltip="sock/src/uni_socks/main.java">
-<persistable path="/sock/src/uni_socks/main.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="paint.py" tooltip="easy_editor/src/paint.py">
-<persistable path="/easy_editor/src/paint.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="edito.py" tooltip="easy_editor/src/edito.py">
-<persistable path="/easy_editor/src/edito.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="mysql_connect.php" tooltip="tommys_job/mysql_connect.php">
+<persistable path="/tommys_job/mysql_connect.php"/>
 </file>
 </mruList>
 </workbench>

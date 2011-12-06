@@ -1,0 +1,10 @@
+<?php
+require_once 'mysql_connect.php';
+$q = mysql_query("select * from users");
+while($row = mysql_fetch_array($q)){
+	$row['privilege'];
+
+}
+
+
+?>

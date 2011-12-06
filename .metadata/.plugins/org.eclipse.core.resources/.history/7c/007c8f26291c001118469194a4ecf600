@@ -1,0 +1,3 @@
+RewriteCond %{HTTP_HOST} ^paste.apptester.sexyi.am$
+RewriteRule ^/index/([a-zA-Z0-9-]+)/$ /index.php?p=$1&err=$2 [L]
+RewriteRule ^/([a-zA-Z0-9-]+)/([0-9]+)/$ /index.php?p=$1&a=$2 [L]
