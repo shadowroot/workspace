@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;/sockets/crackit&apos; to &apos;crackit.c&apos;&#x0D;&#x0A;- Original element: &apos;crackit&apos;" description="Rename resource &apos;crackit&apos;" flags="7" id="org.eclipse.dltk.ui.rename.resource" input="crackit" name="crackit.c" stamp="1323341450732" version="1.0"/>
+</session>

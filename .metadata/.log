@@ -2646,3 +2646,503 @@ java.io.IOException: Server returned HTTP response code: 500 for URL: https://pi
 	at org.python.pydev.logging.ping.AsyncLogPing.access$0(AsyncLogPing.java:100)
 	at org.python.pydev.logging.ping.AsyncLogPing$1.run(AsyncLogPing.java:47)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2011-12-08 10:29:36.997 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_01
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=cs_CZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-08 10:29:46.203
+!MESSAGE Created equinox adaptor hook: org.eclipse.objectteams.otequinox.internal.hook.TransformerHook.
+ 	(To disable this and subsequent INFO messages from OT/Equinox set otequinox.debug to WARN or ERROR).
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-08 10:30:19.969
+!MESSAGE OT/Equinox: connected the transformer service
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-08 10:30:31.817
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.InstructionHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-08 10:30:31.823
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.BranchHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.osgi 2 1 2011-12-08 11:34:17.508
+!MESSAGE NLS unused message: CodeAssistPreferencePage_showStub in: org.eclipse.php.internal.ui.PHPUIMessages
+
+!ENTRY com.tasktop.client.auth 2 0 2011-12-08 11:35:38.764
+!MESSAGE License update / validation failed.
+!SUBENTRY 1 com.tasktop.client.auth 2 0 2011-12-08 11:35:38.764
+!MESSAGE Your subscription has expired.  Please renew your subscription at tasktop.com or email info@tasktop.com for more information.
+
+!ENTRY org.python.pydev.core 4 4 2011-12-08 11:36:11.890
+!MESSAGE Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at org.python.pydev.logging.ping.LogPingSender.sendPing(LogPingSender.java:72)
+	at org.python.pydev.logging.ping.SynchedLogPing.send(SynchedLogPing.java:164)
+	at org.python.pydev.logging.ping.AsyncLogPing.consumeAllCommands(AsyncLogPing.java:131)
+	at org.python.pydev.logging.ping.AsyncLogPing.access$0(AsyncLogPing.java:100)
+	at org.python.pydev.logging.ping.AsyncLogPing$1.run(AsyncLogPing.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2011-12-08 11:49:36.993
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2011-12-08 11:49:36.993
+!MESSAGE Conflict for 'org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu':
+HandlerActivation(commandId=org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu,
+	handler=org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@351ea34a,
+	expression=AndExpression(ActivePartExpression(org.eclipse.php.internal.ui.explorer.PHPExplorerPart@6bf57219),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@a8e6df5)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu,
+	handler=org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@6e726a84,
+	expression=AndExpression(ActivePartExpression(org.eclipse.php.internal.ui.explorer.PHPExplorerPart@6bf57219),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@a8e6df5)),sourcePriority=1064960)
+
+!ENTRY org.eclipse.jface 2 0 2011-12-08 11:49:37.002
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2011-12-08 11:49:37.002
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.dltk.ui.edit.text.script.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.dltk.ui.category.refactoring,Refactor - DLTK,DLTK Refactoring Actions,true),
+		ActionHandler(org.eclipse.dltk.internal.ui.actions.refactoring.RenameAction@3eb755ba),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.dltk.ui.context.views,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.php.ui.edit.text.rename.element,Rename - Refactoring ,
+		Renames the selected element,
+		Category(org.eclipse.php.ui.category.refactoring,Refactor - PHP,PHP Refactoring Actions,true),
+		ActionDelegateHandlerProxy(null,org.eclipse.php.internal.ui.actions.RenameAction),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.php.ui.contexts.window,,,system)
+
+!ENTRY org.python.pydev.core 1 1 2011-12-08 11:55:55.833
+!MESSAGE Info: Rebuilding internal caches for: P/cribs
+!STACK 0
+java.io.IOException: Only 0 modules restored in I/O. org.python.pydev.editor.codecompletion.revisited.ProjectModulesManager dir:D:\+WORKSPACE+\.metadata\.plugins\org.eclipse.core.resources\.projects\cribs\org.python.pydev\v1_astmanager
+	at org.python.pydev.editor.codecompletion.revisited.ModulesManager.loadFromFile(ModulesManager.java:348)
+	at org.python.pydev.editor.codecompletion.revisited.ASTManager.loadFromFile(ASTManager.java:106)
+	at org.python.pydev.plugin.nature.PythonNature.init(PythonNature.java:548)
+	at org.python.pydev.plugin.nature.PythonNature.setProject(PythonNature.java:309)
+	at org.eclipse.core.internal.resources.NatureManager.createNature(NatureManager.java:234)
+	at org.eclipse.core.internal.resources.Project.getNature(Project.java:448)
+	at org.python.pydev.plugin.nature.PythonNature.getPythonNature(PythonNature.java:701)
+	at org.python.pydev.navigator.ProjectInfoForPackageExplorer.getConfigErrorsAndInfo(ProjectInfoForPackageExplorer.java:74)
+	at org.python.pydev.navigator.ProjectInfoForPackageExplorer.recreateInfo(ProjectInfoForPackageExplorer.java:59)
+	at org.python.pydev.navigator.ProjectInfoForPackageExplorer.<init>(ProjectInfoForPackageExplorer.java:51)
+	at org.python.pydev.navigator.PythonBaseModelProvider.getProjectInfo(PythonBaseModelProvider.java:425)
+	at org.python.pydev.navigator.PythonBaseModelProvider.getProjectSourceFolders(PythonBaseModelProvider.java:439)
+	at org.python.pydev.navigator.PythonBaseModelProvider.getResourceInPythonModel(PythonBaseModelProvider.java:384)
+	at org.python.pydev.navigator.PythonBaseModelProvider.getResourceInPythonModel(PythonBaseModelProvider.java:370)
+	at org.python.pydev.navigator.PythonModelProvider.wrapChildren(PythonModelProvider.java:459)
+	at org.python.pydev.navigator.PythonModelProvider.convertToPythonElementsAddOrRemove(PythonModelProvider.java:365)
+	at org.python.pydev.navigator.PythonModelProvider.getPipelinedChildren(PythonModelProvider.java:135)
+	at org.python.pydev.navigator.PythonModelProvider.getPipelinedElements(PythonModelProvider.java:162)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getPipelinedElements(SafeDelegateTreeContentProvider.java:192)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.pipelineChildren(NavigatorContentServiceContentProvider.java:204)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.access$1(NavigatorContentServiceContentProvider.java:192)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$1.run(NavigatorContentServiceContentProvider.java:161)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.internalGetChildren(NavigatorContentServiceContentProvider.java:139)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getElements(NavigatorContentServiceContentProvider.java:114)
+	at org.eclipse.jface.viewers.StructuredViewer.getRawChildren(StructuredViewer.java:1010)
+	at org.eclipse.jface.viewers.ColumnViewer.getRawChildren(ColumnViewer.java:703)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getRawChildren(AbstractTreeViewer.java:1336)
+	at org.eclipse.jface.viewers.TreeViewer.getRawChildren(TreeViewer.java:391)
+	at org.eclipse.jface.viewers.StructuredViewer.getFilteredChildren(StructuredViewer.java:917)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSortedChildren(AbstractTreeViewer.java:605)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$1.run(AbstractTreeViewer.java:805)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:782)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:644)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:753)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalInitializeTree(AbstractTreeViewer.java:1533)
+	at org.eclipse.jface.viewers.TreeViewer.internalInitializeTree(TreeViewer.java:833)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$5.run(AbstractTreeViewer.java:1517)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1443)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:403)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1404)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.inputChanged(AbstractTreeViewer.java:1510)
+	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:280)
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1690)
+	at org.eclipse.ui.navigator.CommonNavigator.createPartControl(CommonNavigator.java:212)
+	at org.eclipse.ui.navigator.resources.ProjectExplorer.createPartControl(ProjectExplorer.java:75)
+	at org.eclipse.ui.internal.ViewReference.createPartHelper(ViewReference.java:375)
+	at org.eclipse.ui.internal.ViewReference.createPart(ViewReference.java:229)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:595)
+	at org.eclipse.ui.internal.PartPane.setVisible(PartPane.java:313)
+	at org.eclipse.ui.internal.ViewPane.setVisible(ViewPane.java:534)
+	at org.eclipse.ui.internal.presentations.PresentablePart.setVisible(PresentablePart.java:180)
+	at org.eclipse.ui.internal.presentations.util.PresentablePartFolder.select(PresentablePartFolder.java:270)
+	at org.eclipse.ui.internal.presentations.util.LeftToRightTabOrder.select(LeftToRightTabOrder.java:65)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation.selectPart(TabbedStackPresentation.java:473)
+	at org.eclipse.ui.internal.PartStack.refreshPresentationSelection(PartStack.java:1245)
+	at org.eclipse.ui.internal.PartStack.setSelection(PartStack.java:1198)
+	at org.eclipse.ui.internal.PartStack.showPart(PartStack.java:1597)
+	at org.eclipse.ui.internal.PartStack.createControl(PartStack.java:643)
+	at org.eclipse.ui.internal.PartStack.createControl(PartStack.java:570)
+	at org.eclipse.ui.internal.PartSashContainer.createControl(PartSashContainer.java:568)
+	at org.eclipse.ui.internal.PerspectiveHelper.activate(PerspectiveHelper.java:272)
+	at org.eclipse.ui.internal.Perspective.onActivate(Perspective.java:981)
+	at org.eclipse.ui.internal.WorkbenchPage.setPerspective(WorkbenchPage.java:3713)
+	at org.eclipse.ui.internal.WorkbenchPage.busySetPerspective(WorkbenchPage.java:1115)
+	at org.eclipse.ui.internal.WorkbenchPage.access$16(WorkbenchPage.java:1099)
+	at org.eclipse.ui.internal.WorkbenchPage$19.run(WorkbenchPage.java:3814)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.setPerspective(WorkbenchPage.java:3812)
+	at org.eclipse.ui.handlers.ShowPerspectiveHandler.openPerspective(ShowPerspectiveHandler.java:146)
+	at org.eclipse.ui.handlers.ShowPerspectiveHandler.openOther(ShowPerspectiveHandler.java:118)
+	at org.eclipse.ui.handlers.ShowPerspectiveHandler.execute(ShowPerspectiveHandler.java:57)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:293)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:178)
+	at org.eclipse.ui.internal.handlers.SlaveHandlerService.executeCommand(SlaveHandlerService.java:247)
+	at org.eclipse.ui.actions.PerspectiveMenu.runOther(PerspectiveMenu.java:376)
+	at org.eclipse.ui.actions.PerspectiveMenu$3.runWithEvent(PerspectiveMenu.java:130)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+!SESSION 2011-12-09 18:04:50.180 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_01
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=cs_CZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-09 18:04:53.111
+!MESSAGE Created equinox adaptor hook: org.eclipse.objectteams.otequinox.internal.hook.TransformerHook.
+ 	(To disable this and subsequent INFO messages from OT/Equinox set otequinox.debug to WARN or ERROR).
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-09 18:05:07.451
+!MESSAGE OT/Equinox: connected the transformer service
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-09 18:05:20.480
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.InstructionHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-09 18:05:20.488
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.BranchHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.osgi 2 1 2011-12-09 18:05:46.495
+!MESSAGE NLS unused message: CodeAssistPreferencePage_showStub in: org.eclipse.php.internal.ui.PHPUIMessages
+
+!ENTRY com.tasktop.client.auth 2 0 2011-12-09 18:06:42.159
+!MESSAGE License update / validation failed.
+!SUBENTRY 1 com.tasktop.client.auth 2 0 2011-12-09 18:06:42.159
+!MESSAGE Your subscription has expired.  Please renew your subscription at tasktop.com or email info@tasktop.com for more information.
+
+!ENTRY org.python.pydev.core 4 4 2011-12-09 18:07:04.360
+!MESSAGE Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at org.python.pydev.logging.ping.LogPingSender.sendPing(LogPingSender.java:72)
+	at org.python.pydev.logging.ping.SynchedLogPing.send(SynchedLogPing.java:164)
+	at org.python.pydev.logging.ping.AsyncLogPing.consumeAllCommands(AsyncLogPing.java:131)
+	at org.python.pydev.logging.ping.AsyncLogPing.access$0(AsyncLogPing.java:100)
+	at org.python.pydev.logging.ping.AsyncLogPing$1.run(AsyncLogPing.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2011-12-10 13:01:04.306 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_01
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=cs_CZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-10 13:01:04.950
+!MESSAGE Created equinox adaptor hook: org.eclipse.objectteams.otequinox.internal.hook.TransformerHook.
+ 	(To disable this and subsequent INFO messages from OT/Equinox set otequinox.debug to WARN or ERROR).
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-10 13:01:13.953
+!MESSAGE OT/Equinox: connected the transformer service
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-10 13:01:21.327
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.InstructionHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-10 13:01:21.329
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.BranchHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.osgi 2 1 2011-12-10 13:01:34.161
+!MESSAGE NLS unused message: CodeAssistPreferencePage_showStub in: org.eclipse.php.internal.ui.PHPUIMessages
+
+!ENTRY com.tasktop.client.auth 2 0 2011-12-10 13:01:56.833
+!MESSAGE License update / validation failed.
+!SUBENTRY 1 com.tasktop.client.auth 2 0 2011-12-10 13:01:56.833
+!MESSAGE Your subscription has expired.  Please renew your subscription at tasktop.com or email info@tasktop.com for more information.
+
+!ENTRY org.python.pydev.core 4 4 2011-12-10 13:02:13.011
+!MESSAGE Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at org.python.pydev.logging.ping.LogPingSender.sendPing(LogPingSender.java:72)
+	at org.python.pydev.logging.ping.SynchedLogPing.send(SynchedLogPing.java:164)
+	at org.python.pydev.logging.ping.AsyncLogPing.consumeAllCommands(AsyncLogPing.java:131)
+	at org.python.pydev.logging.ping.AsyncLogPing.access$0(AsyncLogPing.java:100)
+	at org.python.pydev.logging.ping.AsyncLogPing$1.run(AsyncLogPing.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2011-12-10 19:21:52.373 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_01
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=cs_CZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-10 19:22:17.088
+!MESSAGE Created equinox adaptor hook: org.eclipse.objectteams.otequinox.internal.hook.TransformerHook.
+ 	(To disable this and subsequent INFO messages from OT/Equinox set otequinox.debug to WARN or ERROR).
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-10 19:25:13.967
+!MESSAGE OT/Equinox: connected the transformer service
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-10 19:25:36.017
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.InstructionHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-10 19:25:36.019
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.BranchHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.osgi 2 1 2011-12-10 19:26:12.955
+!MESSAGE NLS unused message: CodeAssistPreferencePage_showStub in: org.eclipse.php.internal.ui.PHPUIMessages
+
+!ENTRY com.tasktop.client.auth 2 0 2011-12-10 19:27:40.662
+!MESSAGE License update / validation failed.
+!SUBENTRY 1 com.tasktop.client.auth 2 0 2011-12-10 19:27:40.662
+!MESSAGE Your subscription has expired.  Please renew your subscription at tasktop.com or email info@tasktop.com for more information.
+
+!ENTRY org.python.pydev.core 4 4 2011-12-10 19:28:05.587
+!MESSAGE Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at org.python.pydev.logging.ping.LogPingSender.sendPing(LogPingSender.java:72)
+	at org.python.pydev.logging.ping.SynchedLogPing.send(SynchedLogPing.java:164)
+	at org.python.pydev.logging.ping.AsyncLogPing.consumeAllCommands(AsyncLogPing.java:131)
+	at org.python.pydev.logging.ping.AsyncLogPing.access$0(AsyncLogPing.java:100)
+	at org.python.pydev.logging.ping.AsyncLogPing$1.run(AsyncLogPing.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2011-12-11 21:39:36.822 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_01
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=cs_CZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-11 21:40:29.381
+!MESSAGE Created equinox adaptor hook: org.eclipse.objectteams.otequinox.internal.hook.TransformerHook.
+ 	(To disable this and subsequent INFO messages from OT/Equinox set otequinox.debug to WARN or ERROR).
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-11 21:40:51.313
+!MESSAGE OT/Equinox: connected the transformer service
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-11 21:40:57.509
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.InstructionHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-11 21:40:57.510
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.BranchHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.osgi 2 1 2011-12-11 21:47:09.072
+!MESSAGE NLS unused message: CodeAssistPreferencePage_showStub in: org.eclipse.php.internal.ui.PHPUIMessages
+
+!ENTRY com.tasktop.client.auth 2 0 2011-12-11 21:47:29.923
+!MESSAGE License update / validation failed.
+!SUBENTRY 1 com.tasktop.client.auth 2 0 2011-12-11 21:47:29.923
+!MESSAGE Your subscription has expired.  Please renew your subscription at tasktop.com or email info@tasktop.com for more information.
+
+!ENTRY com.tasktop.client.auth 4 202 2011-12-11 21:47:57.561
+!MESSAGE Could not connect to Tasktop license server at tasktop.com. Check your network settings and try again.
+!STACK 0
+java.net.UnknownHostException: tasktop.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source)
+	at org.eclipse.mylyn.internal.commons.net.MonitoredRequest.connect(MonitoredRequest.java:97)
+	at org.eclipse.mylyn.internal.commons.net.PollingSslProtocolSocketFactory.createSocket(PollingSslProtocolSocketFactory.java:122)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.eclipse.mylyn.commons.net.WebUtil$2.execute(WebUtil.java:345)
+	at org.eclipse.mylyn.commons.net.WebUtil$2.execute(WebUtil.java:1)
+	at org.eclipse.mylyn.internal.commons.net.MonitoredRequest.call(MonitoredRequest.java:51)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2011-12-12 09:32:09.380 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_01
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=cs_CZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-12 09:32:11.309
+!MESSAGE Created equinox adaptor hook: org.eclipse.objectteams.otequinox.internal.hook.TransformerHook.
+ 	(To disable this and subsequent INFO messages from OT/Equinox set otequinox.debug to WARN or ERROR).
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-12 09:32:24.645
+!MESSAGE OT/Equinox: connected the transformer service
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-12 09:32:33.282
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.InstructionHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-12 09:32:33.283
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.BranchHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.osgi 2 1 2011-12-12 09:32:53.413
+!MESSAGE NLS unused message: CodeAssistPreferencePage_showStub in: org.eclipse.php.internal.ui.PHPUIMessages
+
+!ENTRY com.tasktop.client.auth 2 0 2011-12-12 09:33:20.711
+!MESSAGE License update / validation failed.
+!SUBENTRY 1 com.tasktop.client.auth 2 0 2011-12-12 09:33:20.712
+!MESSAGE Your subscription has expired.  Please renew your subscription at tasktop.com or email info@tasktop.com for more information.
+
+!ENTRY org.python.pydev.core 4 4 2011-12-12 09:33:38.333
+!MESSAGE Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at org.python.pydev.logging.ping.LogPingSender.sendPing(LogPingSender.java:72)
+	at org.python.pydev.logging.ping.SynchedLogPing.send(SynchedLogPing.java:164)
+	at org.python.pydev.logging.ping.AsyncLogPing.consumeAllCommands(AsyncLogPing.java:131)
+	at org.python.pydev.logging.ping.AsyncLogPing.access$0(AsyncLogPing.java:100)
+	at org.python.pydev.logging.ping.AsyncLogPing$1.run(AsyncLogPing.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2011-12-12 17:36:50.598 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_01
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=cs_CZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-12 17:36:52.890
+!MESSAGE Created equinox adaptor hook: org.eclipse.objectteams.otequinox.internal.hook.TransformerHook.
+ 	(To disable this and subsequent INFO messages from OT/Equinox set otequinox.debug to WARN or ERROR).
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-12 17:37:19.006
+!MESSAGE OT/Equinox: connected the transformer service
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-12 17:37:24.089
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.InstructionHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-12 17:37:24.091
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.BranchHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.osgi 2 1 2011-12-12 17:37:35.358
+!MESSAGE NLS unused message: CodeAssistPreferencePage_showStub in: org.eclipse.php.internal.ui.PHPUIMessages
+
+!ENTRY com.tasktop.client.auth 2 0 2011-12-12 17:37:54.112
+!MESSAGE License update / validation failed.
+!SUBENTRY 1 com.tasktop.client.auth 2 0 2011-12-12 17:37:54.112
+!MESSAGE Your subscription has expired.  Please renew your subscription at tasktop.com or email info@tasktop.com for more information.
+
+!ENTRY org.python.pydev.core 4 4 2011-12-12 17:38:08.452
+!MESSAGE Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at org.python.pydev.logging.ping.LogPingSender.sendPing(LogPingSender.java:72)
+	at org.python.pydev.logging.ping.SynchedLogPing.send(SynchedLogPing.java:164)
+	at org.python.pydev.logging.ping.AsyncLogPing.consumeAllCommands(AsyncLogPing.java:131)
+	at org.python.pydev.logging.ping.AsyncLogPing.access$0(AsyncLogPing.java:100)
+	at org.python.pydev.logging.ping.AsyncLogPing$1.run(AsyncLogPing.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2011-12-12 22:02:47.157 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_01
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=cs_CZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-12 22:02:47.659
+!MESSAGE Created equinox adaptor hook: org.eclipse.objectteams.otequinox.internal.hook.TransformerHook.
+ 	(To disable this and subsequent INFO messages from OT/Equinox set otequinox.debug to WARN or ERROR).
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-12 22:03:11.579
+!MESSAGE OT/Equinox: connected the transformer service
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-12 22:03:16.995
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.InstructionHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.objectteams.otequinox.hook 1 0 2011-12-12 22:03:16.997
+!MESSAGE hot-patched a bug in class org.apache.bcel.generic.BranchHandle
+	see https://bugs.eclipse.org/bugs/show_bug.cgi?id=344350
+
+!ENTRY org.eclipse.osgi 2 1 2011-12-12 22:03:26.922
+!MESSAGE NLS unused message: CodeAssistPreferencePage_showStub in: org.eclipse.php.internal.ui.PHPUIMessages
+
+!ENTRY com.tasktop.client.auth 2 0 2011-12-12 22:03:45.902
+!MESSAGE License update / validation failed.
+!SUBENTRY 1 com.tasktop.client.auth 2 0 2011-12-12 22:03:45.902
+!MESSAGE Your subscription has expired.  Please renew your subscription at tasktop.com or email info@tasktop.com for more information.
+
+!ENTRY org.python.pydev.core 4 4 2011-12-12 22:03:58.466
+!MESSAGE Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at org.python.pydev.logging.ping.LogPingSender.sendPing(LogPingSender.java:72)
+	at org.python.pydev.logging.ping.SynchedLogPing.send(SynchedLogPing.java:164)
+	at org.python.pydev.logging.ping.AsyncLogPing.consumeAllCommands(AsyncLogPing.java:131)
+	at org.python.pydev.logging.ping.AsyncLogPing.access$0(AsyncLogPing.java:100)
+	at org.python.pydev.logging.ping.AsyncLogPing$1.run(AsyncLogPing.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

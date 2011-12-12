@@ -1,2 +1,0 @@
-RewriteCond %{HTTP_HOST} ^paste.apptester.sexyi.am$
-RewriteRule ^/(.+).html$ /index.php?p=$1 [L]

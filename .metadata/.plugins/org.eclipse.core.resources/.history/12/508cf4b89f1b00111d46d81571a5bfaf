@@ -1,4 +1,0 @@
-<?php
-mysql_connect("localhost","root","jonny555");
-mysql_select_db("test") or die("Nešlo se pøipojit k DB.");
-?>

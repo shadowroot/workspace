@@ -1,0 +1,4 @@
+#Thu Dec 08 13:19:37 CET 2011
+org.eclipse.cdt.core.showSourceRootsAtTopLevelOfProject=true
+eclipse.preferences.version=1
+build.proj.ref.configs.enabled=true
