@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 #Mon Dec 12 22:03:56 CET 2011
 com.tasktop.client.auth.license=\#Mon Dec 12 22\:03\:56 CET 2011\r\nproperty_updateRcp\=http\\\://tasktop.com/downloads/update-archive/Tasktop-2.1.0.v20110807-1100/standalone\r\nstartDate\=1321556171\r\nproperty_updateIde\=http\\\://tasktop.com/downloads/update-archive/Tasktop-2.1.0.v20110807-1100/ide\r\nsignature\=302c0214321203e4d37c2778af3311d7f611c9e64d5ac66202144a36ab66c282e011a80949a1d767c08807d118ae\r\nproperty_userId\=serverlock00@gmail.com\r\ncreationDate\=1321556173316\r\nversion\=2\r\nproperty_expiration\=1321439688\r\nhardwareAddresses\=ac72891ddb53\r\nproperty_subscription.type\=trial\r\n
 com.tasktop.client.auth.mac.blacklist=000c29*,080027*,000f4b*,00144f*,001c42*,00ff*,*20524153,000569*,00163e*,0003ff*,001e101f*,00000000000000e0,0000000000000000,0040ca*,005056c0*,005056*,
 eclipse.preferences.version=1
 com.tasktop.client.auth.lastcheckdate=1323723836240
 com.tasktop.client.auth.last-valid=73 76 73 84 85 81 81 85 73 75 75 82 84 
+=======
+#Sat Dec 03 14:08:57 CET 2011
+com.tasktop.client.auth.license=\#Sat Dec 03 14\:08\:57 CET 2011\r\nproperty_updateRcp\=http\\\://tasktop.com/downloads/update-archive/Tasktop-2.1.0.v20110807-1100/standalone\r\nstartDate\=1321556171\r\nproperty_updateIde\=http\\\://tasktop.com/downloads/update-archive/Tasktop-2.1.0.v20110807-1100/ide\r\nsignature\=302c0214321203e4d37c2778af3311d7f611c9e64d5ac66202144a36ab66c282e011a80949a1d767c08807d118ae\r\nproperty_userId\=serverlock00@gmail.com\r\ncreationDate\=1321556173316\r\nversion\=2\r\nproperty_expiration\=1321439688\r\nhardwareAddresses\=ac72891ddb53\r\nproperty_subscription.type\=trial\r\n
+com.tasktop.client.auth.mac.blacklist=000c29*,080027*,000f4b*,00144f*,001c42*,00ff*,*20524153,000569*,00163e*,0003ff*,001e101f*,00000000000000e0,0000000000000000,0040ca*,005056c0*,005056*,
+eclipse.preferences.version=1
+com.tasktop.client.auth.lastcheckdate=1322852996202
+com.tasktop.client.auth.last-valid=73 76 73 84 85 81 81 85 73 75 75 82 84 
+>>>>>>> ab09edaaba59a3e337c0735bdc0bd0224ad31e90

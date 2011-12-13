@@ -1,0 +1,32 @@
+<form action="action.php?a=1" method="post">
+			<table id="form">
+				<tr class="form_col">
+					<td>*Jméno</td>
+					<td><input type="text" size="20" name="user"
+						value="<?php if(isset($_GET['jmeno'])){echo $_GET['jmeno'];} ?>" />
+					</td>
+				</tr>
+				<tr class="form_col">
+					<td>*Pøijmení</td>
+					<td><input type="password" size="20" name="passwd1"
+						value="<?php if(isset($_GET['prijmeni'])){echo $_GET['prijmeni'];} ?>" />
+					</td>
+				</tr>
+				<tr class="form_col">
+					<td>*Ulice</td>
+					<td><input type="password" size="20" name="passwd2"
+						value="<?php if(isset($_GET['ulice']))echo $_GET['ulice']; ?>" />
+					</td>
+				</tr>
+				<tr class="form_col">
+					<td>*Mìsto</td>
+					<td><input type="text" size="20" name="email"
+						value="<?php if(isset($_GET['email']))echo $_GET['email']; ?>" />
+					</td>
+
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Koupit" /></td>
+				</tr>
+			</table>
+		</form>

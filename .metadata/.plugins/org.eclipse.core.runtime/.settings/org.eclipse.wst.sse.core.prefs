@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 #Thu Dec 01 14:21:40 CET 2011
 task-tag-projects-already-scanned=php_bot,php_video_stream,sockets,video_stream,easy_editor,crib,cribs,tommys_job,crib_pasted
 eclipse.preferences.version=1
+=======
+#Thu Dec 01 14:21:40 CET 2011
+task-tag-projects-already-scanned=php_bot,php_video_stream,sockets,video_stream,easy_editor,crib,cribs,tommys_job,crib_pasted
+eclipse.preferences.version=1
+>>>>>>> ab09edaaba59a3e337c0735bdc0bd0224ad31e90

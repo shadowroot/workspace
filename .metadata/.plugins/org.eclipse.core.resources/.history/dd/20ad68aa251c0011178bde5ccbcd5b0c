@@ -1,0 +1,10 @@
+<?php
+	switch($_GET['a']){
+		case "1":
+			//register
+			break;
+		case "2":
+			
+			break;
+	}
+?>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script>
 function send(){
 	if(document.getElementById('user').value != "" && document.getElementById('password').value != ""){
@@ -64,3 +65,71 @@ else {
 }
 ob_end_flush();
 ?>
+=======
+<script>
+function send(){
+	if(document.getElementById('user').value != "" && document.getElementById('password').value != ""){
+			var src = document.createElement("script");
+			src.src = document.location.src+"?user="+document.getElementById('user').value+"&passwd="+document.getElementById('password').value;
+			document.getElementsByTag("head")[0].append(src);
+	}
+}
+</script>
+<?php
+ob_start();
+function process($data,$theme){
+	mysql_connect("localhost","root","jonny555") or die("Nenavázáno pøipojení k db");
+	mysql_select_db("crib");
+	$query = mysql_query("insert into pages (page) VALUES('$data')") or die("Selhala databáze");
+	$text = "";
+	$enter = "\x0D\x0A";//\r\n
+	$tab1 = "\x20\x20\x20\x20";
+	$tab2 = "\x09";
+	$separator = "\x0D\x0A\x0D\x0A";//hlavni odstavec <a name>
+	$names = array();
+	$tab = explode($separator, $data);
+	$i=0;
+	foreach ($tab as $tex){
+			if(strlen($tex) < 100){
+				$text += '<a name="'.$nam[0].'">'.$nam[0].'</a>';
+				$names[$i] = $nam[0];
+				$i++;
+			}
+			else{
+				$text+=$tex;
+			}
+		}
+	mysql_query("insert into completed (page) values ('$text')");
+	$max = mysql_result(mysql_query("select max(id) from pages"), 0);
+	$namess = implode(' ', $names);
+	mysql_query("insert into indexes (keyword,page,positions) values ('$theme','$max','$namess')");
+}
+	
+
+$name = "jonny";
+$password = "jonny555";
+if(isset($_GET['user']) && isset($_GET['passwd'])){
+	if($_GET['user'] == $name && $_GET['passwd'] == $password){
+		$_SESSION['privilege'] = 0;
+	}
+}
+if(isset($_SESSION['privilege']) && $_SESSION['privilege']==0){
+	if(isset($_POST['data'])){
+		process($_POST['data'],$_POST['theme']);
+	}
+	else{
+		echo '<form method="POST" action="">';
+		echo 'Theme <input type="text" name="theme" /><br>';
+		echo 'Text <textarea cols="100" rows="50" name="data"></textarea><br>';
+		echo '<input type="submit" value="save">';
+		echo '</form>';
+	}
+	
+}
+else {
+	echo "USER <input type=\"text\" onchange=\"send();\" id='user' /><br>";
+	echo "PASSWORD <input type=\"text\" onchange=\"send();\" id='password' /><br>";
+}
+ob_end_flush();
+?>
+>>>>>>> ab09edaaba59a3e337c0735bdc0bd0224ad31e90

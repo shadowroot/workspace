@@ -1,0 +1,55 @@
+<form action="process.php" method="post">
+			<table id="form">
+				<tr class="form_col">
+					<td>*Jméno</td>
+					<td><input type="text" size="20" name="jmeno"
+						value="<?php if(isset($_GET['jmeno'])){echo $_GET['jmeno'];} ?>" />
+					</td>
+				</tr>
+				<tr class="form_col">
+					<td>*Pøijmení</td>
+					<td><input type="text" size="20" name="prijmeni"
+						value="<?php if(isset($_GET['prijmeni'])){echo $_GET['prijmeni'];} ?>" />
+					</td>
+				</tr>
+				<tr class="form_col">
+					<td>*Ulice</td>
+					<td><input type="text" size="20" name="ulice"
+						value="<?php if(isset($_GET['ulice']))echo $_GET['ulice']; ?>" />
+					</td>
+				</tr>
+				<tr class="form_col">
+					<td>*Mìsto</td>
+					<td><input type="text" size="20" name="mesto"
+						value="<?php if(isset($_GET['mesto']))echo $_GET['mesto']; ?>" />
+					</td>
+				</tr>
+				<tr class="form_col">
+					<td>*PSÈ</td>
+					<td><input type="text" size="20" name="psc"
+						value="<?php if(isset($_GET['psc']))echo $_GET['psc']; ?>" />
+					</td>
+				</tr>
+				<tr class="form_col">
+					<td>*E-mail</td>
+					<td><input type="text" size="20" name="email"
+						value="<?php if(isset($_GET['email']))echo $_GET['email']; ?>" />
+					</td>
+				</tr>
+				<tr class="form_col">
+					<td>Telefon</td>
+					<td><input type="text" size="20" name="telefon"
+						value="<?php if(isset($_GET['tel']))echo $_GET['tel']; ?>" /></td>
+				</tr>
+				<tr class="form_col">
+					<td>Slevový kupón</td>
+					<td><input type="text" size="20" name="sleva"
+						value="<?php if(isset($_GET['sleva']))echo $_GET['sleva']; ?>" />
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Koupit" /></td>
+				</tr>
+			</table>
+		</form>

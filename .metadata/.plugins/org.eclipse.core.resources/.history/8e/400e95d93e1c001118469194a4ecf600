@@ -1,0 +1,15 @@
+<?php
+require_once 'mysql_connect.php';
+require_once 'functions.php';
+if($_SESSION['privilege'] == 0){
+	echo '<table><tr><td>ID</td><td>USER</td><td>PRIVILEGE</td><td>AUTHORIZED</td><td>E-mail</td></tr>';
+	$q = mysql_query("select * from users");
+		while($row = mysql_fetch_array($q)){
+			echo '<tr><td>'.$row['id'].'</td><td>'.$row['user'].'</td><td>'.$row['privilege'].'</td><td>'.$row['authorized'].'</td><td>'.$row['email'].'</td><td><a href="/admin/2/?id='.$row['id'].'">Autorize</a>';
+			
+		
+		}
+}
+
+
+?>

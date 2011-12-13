@@ -1,0 +1,23 @@
+<?php
+require_once 'functions.php';
+
+echo '<form action="" method="post">
+			<table id="form">
+				<tr class="form_col">
+					<td>*Username</td>
+					<td><input type="text" size="20" name="user" onchange="check_user(this.value);"
+						value="" />
+					</td>
+				</tr>
+				<tr class="form_col">
+					<td>*Password</td>
+					<td><input type="password" size="20" name="passwd"
+						value="" />
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Log In!" /></td>
+				</tr>
+			</table>
+		</form>';

@@ -1,0 +1,14 @@
+<?php
+require_once 'mysql_connect.php';
+require_once 'functions.php';
+if($_SESSION['privilege'] == 0){
+$q = mysql_query("select * from users");
+	while($row = mysql_fetch_array($q)){
+		$row['id'];
+		$row['privilege'];
+	
+	}
+}s
+
+
+?>

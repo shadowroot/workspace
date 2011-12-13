@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Thu Dec 01 15:16:02 CET 2011
 eclipse.preferences.version=1
 encoding/action.php=UTF-8
@@ -7,3 +8,14 @@ encoding/functions.php=UTF-8
 encoding/index.php=UTF-8
 encoding/login.php=UTF-8
 encoding/register.php=UTF-8
+=======
+#Thu Dec 01 15:16:02 CET 2011
+eclipse.preferences.version=1
+encoding/action.php=UTF-8
+encoding/crib.php=UTF-8
+encoding/crib_add.php=UTF-8
+encoding/functions.php=UTF-8
+encoding/index.php=UTF-8
+encoding/login.php=UTF-8
+encoding/register.php=UTF-8
+>>>>>>> ab09edaaba59a3e337c0735bdc0bd0224ad31e90

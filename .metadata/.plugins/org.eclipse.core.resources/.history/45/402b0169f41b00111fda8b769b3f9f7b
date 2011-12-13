@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Little crib
 <p>
 Themes
@@ -20,4 +21,28 @@ while($row = mysql_fetch_array($q)){
 }
 ?>
 <hr size="1" /><br />
+=======
+Little crib
+<p>
+Themes
+</p>
+
+<?php
+$user = "root";
+$password = "jonny555";
+mysql_connect("localhost",$user,$password);
+mysql_select_db("crib");
+$query = mysql_query("select keyword,page from indexes");
+$keys = array();
+while($row = mysql_fetch_array($query)){
+	$keys[$row['page']] = $row['keyword'];
+	echo '<a href="#'.$row[''].'">'.$row['keyword'].'</a><br>';
+}
+$q = mysql_query("select * from completed");
+while($row = mysql_fetch_array($q)){
+	echo '<a name="'.$row['id'].'">'.$keys[$row['id']].'</a><p>'.$row['page'].'</p>';
+}
+?>
+<hr size="1" /><br />
+>>>>>>> ab09edaaba59a3e337c0735bdc0bd0224ad31e90
 Just cribs use them as you want to. 
