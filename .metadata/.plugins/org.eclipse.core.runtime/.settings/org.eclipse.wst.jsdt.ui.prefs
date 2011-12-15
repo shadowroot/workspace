@@ -1,4 +1,4 @@
-#Fri Nov 11 01:28:03 CET 2011
+#Tue Dec 13 13:52:36 CET 2011
 java_doc_keyword=217,229,119
 org.eclipse.wst.jsdt.ui.text.templates_migrated=true
 semanticHighlighting.methodDeclarationName.color=190,214,255
@@ -29,6 +29,7 @@ java_doc_link=217,229,119
 java_operator=216,216,216
 useQuickDiffPrefPage=true
 java_doc_default=204,223,50
+org.eclipse.wst.jsdt.internal.ui.navigator.layout=1
 semanticHighlighting.localVariable.color=121,171,255
 org.eclipse.wst.jsdt.ui.formatterprofiles.version=11
 content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>

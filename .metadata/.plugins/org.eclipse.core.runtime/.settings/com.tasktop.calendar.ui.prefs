@@ -1,21 +1,12 @@
-<<<<<<< HEAD
-#Tue Dec 13 00:15:39 CET 2011
-com.tasktop.calendar.ui.eventsTrim.preference.nexttrim=bottom
+#Thu Dec 15 13:32:16 CET 2011
+com.tasktop.preferences.mylar.addedEvents=;\=;\=;
+com.tasktop.google.calendar.password.moved=true
+com.tasktop.preferences.calendar.first.run=true
+>>>>>>>=ab09edaaba59a3e337c0735bdc0bd0224ad31e90
+com.tasktop.google.calendar.email.moved=true
+com.tasktop.calendar.ui.eventsTrim.preference.nexttrim=bottomRight
 com.tasktop.preferences.mylar.updatedEvents=;\=;\=;
 com.tasktop.preferences.mylar.deletedEvents=;\=;\=;
-com.tasktop.google.calendar.password.moved=true
+<<<<<<<=HEAD
 eclipse.preferences.version=1
-com.tasktop.google.calendar.email.moved=true
-com.tasktop.preferences.mylar.addedEvents=;\=;\=;
-com.tasktop.preferences.calendar.first.run=true
-=======
-#Sat Dec 03 23:49:55 CET 2011
-com.tasktop.calendar.ui.eventsTrim.preference.nexttrim=bottom
-com.tasktop.preferences.mylar.updatedEvents=;\=;\=;
-com.tasktop.preferences.mylar.deletedEvents=;\=;\=;
-com.tasktop.google.calendar.password.moved=true
-eclipse.preferences.version=1
-com.tasktop.google.calendar.email.moved=true
-com.tasktop.preferences.mylar.addedEvents=;\=;\=;
-com.tasktop.preferences.calendar.first.run=true
->>>>>>> ab09edaaba59a3e337c0735bdc0bd0224ad31e90
+=\=\=\=\=\=\=
