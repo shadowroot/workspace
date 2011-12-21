@@ -1,4 +1,4 @@
-#Tue Dec 13 13:52:36 CET 2011
+#Wed Dec 21 23:51:52 CET 2011
 java_doc_keyword=217,229,119
 org.eclipse.wst.jsdt.ui.text.templates_migrated=true
 semanticHighlighting.methodDeclarationName.color=190,214,255
@@ -16,7 +16,7 @@ java_single_line_comment=199,221,12
 semanticHighlighting.localVariableDeclaration.enabled=true
 useAnnotationsPrefPage=true
 eclipse.preferences.version=1
-org.eclipse.jface.textfont=1|Consolas|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
+org.eclipse.jface.textfont=1|Monospace|9.0|0|GTK|1|;
 tabWidthPropagated=true
 fontPropagated=true
 proposalOrderMigrated=true
