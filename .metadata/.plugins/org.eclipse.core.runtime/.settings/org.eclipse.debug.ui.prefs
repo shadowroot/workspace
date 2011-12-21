@@ -1,4 +1,4 @@
-#Wed Dec 21 23:51:52 CET 2011
+#Thu Dec 22 00:41:05 CET 2011
 org.eclipse.debug.core.USE_STEP_FILTERS=true
 org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<launchPerspectives/>\n
 >>>>>>>=ab09edaaba59a3e337c0735bdc0bd0224ad31e90
@@ -6,6 +6,6 @@ pref_state_memento.org.eclipse.debug.ui.DebugVieworg.eclipse.debug.ui.DebugView=
 <<<<<<<=HEAD
 preferredDetailPanes=DefaultDetailPane\:DefaultDetailPane|
 org.eclipse.debug.ui.switch_perspective_on_suspend=always
-preferredTargets=default\:default|default,org.eclipse.cdt.debug.ui.toggleCBreakpointTarget\:default|org.eclipse.cdt.debug.ui.toggleCBreakpointTarget,org.eclipse.php.debug.ui.PHPtoggleTargetFactory\:org.eclipse.php.debug.ui.PHPtoggleTargetFactory|org.eclipse.cdt.debug.ui.toggleCBreakpointTarget\:org.eclipse.cdt.debug.ui.toggleCBreakpointTarget|org.eclipse.php.debug.ui.PHPtoggleTargetFactory,org.eclipse.ptp.debug.parallel.breakpoint\:org.eclipse.ptp.debug.parallel.breakpoint|org.eclipse.php.debug.ui.PHPtoggleTargetFactory\:org.eclipse.php.debug.ui.PHPtoggleTargetFactory|default,org.eclipse.php.debug.ui.PHPtoggleTargetFactory\:default|
+preferredTargets=default\:default|default,org.eclipse.cdt.debug.ui.toggleCBreakpointTarget\:default|org.eclipse.cdt.debug.ui.toggleCBreakpointTarget\:org.eclipse.cdt.debug.ui.toggleCBreakpointTarget|org.eclipse.cdt.debug.ui.toggleCBreakpointTarget,org.eclipse.php.debug.ui.PHPtoggleTargetFactory\:org.eclipse.php.debug.ui.PHPtoggleTargetFactory|org.eclipse.php.debug.ui.PHPtoggleTargetFactory,org.eclipse.ptp.debug.parallel.breakpoint\:org.eclipse.ptp.debug.parallel.breakpoint|org.eclipse.php.debug.ui.PHPtoggleTargetFactory\:org.eclipse.php.debug.ui.PHPtoggleTargetFactory|org.eclipse.ptp.debug.parallel.breakpoint\:org.eclipse.ptp.debug.parallel.breakpoint|default,org.eclipse.php.debug.ui.PHPtoggleTargetFactory\:default|
 eclipse.preferences.version=1
 =\=\=\=\=\=\=
