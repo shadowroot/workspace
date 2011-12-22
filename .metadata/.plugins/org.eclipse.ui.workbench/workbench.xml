@@ -39,7 +39,6 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
 </presentation>
 </folder>
 </info>
@@ -315,15 +314,15 @@
 <view id="org.eclipse.debug.ui.PHPBrowserOutput" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
-<fastViewBar fastViewLocation="16384" id="org.eclipse.php.debug.ui.NavigatorFolderView" orientation="256" selectedTabId="org.eclipse.debug.ui.DebugView" style="1">
-<fastViews>
-<view id="org.eclipse.debug.ui.DebugView" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
 <fastViewBar fastViewLocation="131072" id="org.eclipse.php.debug.ui.ToolsFolderView" orientation="256" selectedTabId="org.eclipse.debug.ui.VariableView" style="1">
 <fastViews>
 <view id="org.eclipse.debug.ui.VariableView" ratio="0.3"/>
 <view id="org.eclipse.debug.ui.BreakpointView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="16384" id="org.eclipse.php.debug.ui.NavigatorFolderView" orientation="256" selectedTabId="org.eclipse.debug.ui.DebugView" style="1">
+<fastViews>
+<view id="org.eclipse.debug.ui.DebugView" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="16384" id="org.eclipse.php.debug.ui.ConsoleFolderView" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
@@ -336,7 +335,7 @@
 <layout>
 <mainWindow>
 <info folder="true" part="org.eclipse.php.debug.ui.NavigatorFolderView">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.debug.ui.DebugView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
@@ -350,14 +349,14 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.php.debug.ui.debugInfoFolder" ratio="0.7496148" ratioLeft="973" ratioRight="325" relationship="2" relative="org.eclipse.php.debug.ui.NavigatorFolderView">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.debug.ui.PHPDebugOutput" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.PHPBrowserOutput" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.php.debug.ui.ConsoleFolderView" ratio="0.74873525" ratioLeft="444" ratioRight="149" relationship="4" relative="org.eclipse.php.debug.ui.NavigatorFolderView">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
@@ -367,7 +366,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.4481982" ratioLeft="199" ratioRight="245" relationship="4" relative="org.eclipse.php.debug.ui.NavigatorFolderView"/>
 <info folder="true" part="org.eclipse.php.debug.ui.ToolsFolderView" ratio="0.49948612" ratioLeft="486" ratioRight="487" relationship="2" relative="org.eclipse.php.debug.ui.NavigatorFolderView">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.debug.ui.VariableView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.PHPStackView" label="LabelNotFound"/>
