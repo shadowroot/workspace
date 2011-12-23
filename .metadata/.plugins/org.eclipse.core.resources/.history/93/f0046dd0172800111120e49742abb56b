@@ -2,6 +2,11 @@
 // port FW
 // Options array
 class FW{
+	/**
+	 * 
+	 * Enter description here ...
+	 * @var unknown_type
+	 */
 	private $port;
 	private $socket;
 	private $cli;
@@ -9,33 +14,57 @@ class FW{
 	private $max_client=1000;
 	private $ready;
 	private $listenning = 1;
+	private $limit = 300; 
+	private $log;
 	
 	
 	
 	function __construct($port,$options){
+		$date = "[".date("d.m.Y H:i:s")."]";
 		$this->port = $options['port'];
 		$this->socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 		socket_bind($this->socket, "0.0.0.0", $this->port);
 		socket_listen($this->socket);
 		$i=0;
+		$this->log .= $date." Server STARTED listenning ...";
 		while($this->listenning){
 			if($this->cli[$i]['socket'] = socket_accept($this->socket)){
-				$this->process($i,$this->cli[$this->i]['socket']);
+				$this->process($i,$this->cli[$i]['socket']);
 				$i++;
 			}
-							
+			if($i > $this->limit){
+				$this->listenning=0;
+			}
 			
 		}
+		$this->log .= $date." Server STOP listenning ...";
+		if(file_exists(".log")){
+			$hFile = fopen(".log", "w");
+			fwrite($hFile, $this->log);
+			fclose($hFile);
+		}
+		else{
+			touch(".log");
+			$hFile = fopen(".log", "w");
+			fwrite($hFile, $this->log);
+			fclose($hFile);
+		}
 	}
-	
+	/*
+	 * Data limit 512 chars
+	 * End of message CR-LF (\x0D\x0A)
+	 */
 	
 	
 	function process($key,$socket){
 		while(!socket_close($socket)){
-			socket_recvfrom($socket, $data, 4, 0, $ip, $port);
+			socket_recvfrom($socket, $data, 1, 0, $ip, $port);
 			$this->cli[$key]['ip'] = $ip;
 			$this->cli[$key]['port'] = $port;
 			$this->cli[$key]['data'] .= $data;
+			if($data == "!"){
+				
+			}
 			$this->key[] = $key;
 		}
 		
@@ -55,7 +84,11 @@ class FW{
 }
 
 class IRC{
-	
+	/**
+	 * 
+	 * Enter description here ...
+	 * @var unknown_type
+	 */
 	private $socket;
 	private $cli;
 	
