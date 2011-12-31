@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.126 OT2+D:\+WORKSPACE+\.metadata\.plugins\org.eclipse.jdt.core
 163172794.index
 2947732100.index
@@ -29,3 +30,7 @@ INDEX VERSION 1.126 OT2+D:\+WORKSPACE+\.metadata\.plugins\org.eclipse.jdt.core
 4155206848.index
 320077736.index
 2197926351.index
+=======
+INDEX VERSION 1.126+/projects/workspace/.metadata/.plugins/org.eclipse.jdt.core
+3973479297.index
+>>>>>>> ab75318b5a0cc58621903f6bd34e1933a7c9104b

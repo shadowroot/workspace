@@ -1,0 +1,8 @@
+#Thu Dec 22 00:36:01 CET 2011
+org.eclipse.php.debug.coreinstalledPHPInis=/etc/php5/apache2/php.ini;null
+org.eclipse.php.debug.coreinstalledPHPDebuggers=org.eclipse.php.debug.core.xdebugDebugger;org.eclipse.php.debug.core.zendDebugger
+org.eclipse.php.debug.coreinstalledPHPDefaults=org.eclipse.php.debug.core.xdebugDebugger\=php5;org.eclipse.php.debug.core.zendDebugger\=PHP 5.3.6 (CLI)
+eclipse.preferences.version=1
+org.eclipse.php.debug.coreinstalledPHPLocations=/usr/bin/php5;/etc/alternatives/php
+org.eclipse.php.debug.corephp_versions=null;null
+org.eclipse.php.debug.coreinstalledPHPNames=php5;PHP 5.3.6 (CLI)

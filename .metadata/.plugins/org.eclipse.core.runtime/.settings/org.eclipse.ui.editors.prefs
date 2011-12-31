@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Tue Dec 27 17:47:30 CET 2011
 matchingTagIndicationColor=0,0,0
 secondaryIPColor=42,42,42
@@ -33,3 +34,43 @@ AbstractTextEditor.Color.FindScope=17,17,17
 spellingEnabled=true
 AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
 =\=\=\=\=\=\=
+=======
+#Wed Dec 21 23:48:41 CET 2011
+spellingEnabled=true
+lineNumberColor=208,208,208
+AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
+PHPWriteOccurrenceIndicationColor=0,0,0
+indexResultIndicationInVerticalRuler=false
+currentIPColor=42,42,42
+indexResultIndication=false
+<<<<<<<=HEAD
+secondaryIPColor=42,42,42
+AbstractTextEditor.Color.FindScope=17,17,17
+asOccurencesIndicationColor=0,0,0
+printMarginColor=208,208,208
+filteredSearchResultIndicationColor=0,0,0
+AbstractTextEditor.Color.Foreground=216,216,216
+PHPReadOccurrenceIndicationColor=0,0,0
+AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
+AbstractTextEditor.Color.Background=30,30,30
+AbstractTextEditor.Color.Foreground.SystemDefault=false
+occurrenceIndicationColor=0,0,0
+org.eclipse.ptp.rdt.ui.hasRun=true
+>>>>>>>=ab09edaaba59a3e337c0735bdc0bd0224ad31e90
+currentLineColor=42,42,42
+deletionIndicationColor=210,82,82
+AbstractTextEditor.Color.Background.SystemDefault=false
+javaScriptOccurrenceIndicationColor=0,0,0
+spellingEngine=org.eclipse.jdt.internal.ui.text.spelling.DefaultSpellingEngine
+eclipse.preferences.version=1
+writeOccurrenceIndicationColor=0,0,0
+matchingTagIndicationColor=0,0,0
+org.eclipse.ui.internal.editors.text.URLHyperlinkDetector=true
+searchResultIndicationColor=0,0,0
+overviewRuler_migration=migrated_3.1
+pydevOccurrenceIndicationColor=0,0,0
+AbstractTextEditor.Color.SelectionForeground=208,208,208
+indexResultIndicationInOverviewRuler=false
+AbstractTextEditor.Color.SelectionBackground=0,0,0
+=\=\=\=\=\=\=
+>>>>>>> ab75318b5a0cc58621903f6bd34e1933a7c9104b

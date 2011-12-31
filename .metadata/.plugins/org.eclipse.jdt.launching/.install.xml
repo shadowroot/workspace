@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
 <entry loc="/usr/lib/jvm/java-6-openjdk/jre" stamp="1318958155000"/>
@@ -9,3 +10,11 @@
 <entry loc="C:\Program Files\Java\jdk1.7.0_01" stamp="1322998665759"/>
 <entry loc="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows-x86-64" stamp="1323011542732"/>
 </dirs>
+=======
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dirs>
+<entry loc="/usr/lib/jvm/java-6-openjdk/jre" stamp="1323433686000"/>
+<entry loc="/usr/lib/jvm/java-6-openjdk" stamp="1323433700000"/>
+<entry loc="C:\Program Files\Java\jre7" stamp="1322998631150"/>
+</dirs>
+>>>>>>> ab75318b5a0cc58621903f6bd34e1933a7c9104b
