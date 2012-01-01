@@ -1,0 +1,42 @@
+'''
+Created on 1.1.2012
+
+@author: Jonny
+'''
+"""
+
+You have 30 seconds time to send the solution.
+    
+    
+List of scrambled words:        
+boocsy
+    
+leaplcmb
+    
+ndiarle
+    
+aktemr
+    
+ahrdow
+    
+ndamaa
+    
+yfrejfe
+    
+udsteay
+    
+alsolni
+    
+dscacae
+"""
+
+import os
+
+f = "wordlist.txt"
+fp = os.open(f, os.R_OK)
+dat = os.read(fp, os.path.getsize(f))
+data = dat.split("\r\n")
+print "[+]hello CRYPTO"
+
+
+#print ''.join(data)

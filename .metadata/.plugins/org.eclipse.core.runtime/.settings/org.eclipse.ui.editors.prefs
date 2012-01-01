@@ -1,18 +1,20 @@
-<<<<<<< HEAD
-#Thu Dec 01 15:15:31 CET 2011
+#Tue Dec 27 17:47:30 CET 2011
 matchingTagIndicationColor=0,0,0
 secondaryIPColor=42,42,42
 AbstractTextEditor.Color.Background=30,30,30
 javaScriptOccurrenceIndicationColor=0,0,0
 eclipse.preferences.version=1
-writeOccurrenceIndicationColor=0,0,0
 AbstractTextEditor.Color.Foreground.SystemDefault=false
+writeOccurrenceIndicationColor=0,0,0
 AbstractTextEditor.Color.Foreground=216,216,216
 AbstractTextEditor.Color.SelectionBackground=0,0,0
 currentIPColor=42,42,42
+>>>>>>>=ab09edaaba59a3e337c0735bdc0bd0224ad31e90
 org.eclipse.ui.internal.editors.text.URLHyperlinkDetector=true
 overviewRuler_migration=migrated_3.1
+<<<<<<<=HEAD
 spellingEngine=org.eclipse.jdt.internal.ui.text.spelling.DefaultSpellingEngine
+lineNumberRuler=true
 deletionIndicationColor=210,82,82
 currentLineColor=42,42,42
 searchResultIndicationColor=0,0,0
@@ -30,36 +32,4 @@ lineNumberColor=208,208,208
 AbstractTextEditor.Color.FindScope=17,17,17
 spellingEnabled=true
 AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
-=======
-#Thu Dec 01 15:15:31 CET 2011
-matchingTagIndicationColor=0,0,0
-secondaryIPColor=42,42,42
-AbstractTextEditor.Color.Background=30,30,30
-javaScriptOccurrenceIndicationColor=0,0,0
-eclipse.preferences.version=1
-writeOccurrenceIndicationColor=0,0,0
-AbstractTextEditor.Color.Foreground.SystemDefault=false
-AbstractTextEditor.Color.Foreground=216,216,216
-AbstractTextEditor.Color.SelectionBackground=0,0,0
-currentIPColor=42,42,42
-org.eclipse.ui.internal.editors.text.URLHyperlinkDetector=true
-overviewRuler_migration=migrated_3.1
-spellingEngine=org.eclipse.jdt.internal.ui.text.spelling.DefaultSpellingEngine
-deletionIndicationColor=210,82,82
-currentLineColor=42,42,42
-searchResultIndicationColor=0,0,0
-asOccurencesIndicationColor=0,0,0
-PHPReadOccurrenceIndicationColor=0,0,0
-AbstractTextEditor.Color.SelectionForeground=208,208,208
-filteredSearchResultIndicationColor=0,0,0
-PHPWriteOccurrenceIndicationColor=0,0,0
-printMarginColor=208,208,208
-pydevOccurrenceIndicationColor=0,0,0
-AbstractTextEditor.Color.Background.SystemDefault=false
-occurrenceIndicationColor=0,0,0
-AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
-lineNumberColor=208,208,208
-AbstractTextEditor.Color.FindScope=17,17,17
-spellingEnabled=true
-AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
->>>>>>> ab09edaaba59a3e337c0735bdc0bd0224ad31e90
+=\=\=\=\=\=\=

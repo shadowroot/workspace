@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 package socket;
 //@Author jonnyATroot
 

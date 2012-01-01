@@ -1,0 +1,13 @@
+'''
+Created on 1.1.2012
+
+@author: Jonny
+'''
+import os
+
+f = "wordlist.txt"
+fp = os.open(f, os.R_OK)
+data = os.read(fp, os.path.getsize(f))
+data = data.split("\r\n")
+print "[+]hello CRYPTO"
+data

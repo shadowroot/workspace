@@ -1,0 +1,7 @@
+<?php
+$host = "www.hackthissite.org";
+$data = "<h1>HEHE</h1>";
+$fp = fsockopen($host,80);
+fwrite($fp, );
+
+?>

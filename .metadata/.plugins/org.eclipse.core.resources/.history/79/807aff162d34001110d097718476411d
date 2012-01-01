@@ -1,0 +1,10 @@
+'''
+Created on 1.1.2012
+
+@author: Jonny
+'''
+import os
+file = "wordlist.txt"
+fp = os.open(file, os.R_OK)
+data = os.read(fp, os.path.getsize(file))
+print "[+]hello "

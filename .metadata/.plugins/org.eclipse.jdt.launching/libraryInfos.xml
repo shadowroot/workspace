@@ -38,6 +38,24 @@
 <entry path="/usr/lib/jvm/java-6-openjdk/jre/lib/endorsed"/>
 </endorsedDirs>
 </libraryInfo>
+<libraryInfo home="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows" version="1.6.0_10">
+<bootpath>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows\lib\resources.jar"/>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows\lib\rt.jar"/>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows\lib\jsse.jar"/>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows\lib\jce.jar"/>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows\lib\charsets.jar"/>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 <libraryInfo home="C:\Program Files\Java\jre7" version="1.7.0_01">
 <bootpath>
 <entry path="C:\Program Files\Java\jre7\lib\resources.jar"/>
@@ -54,6 +72,80 @@
 </extensionDirs>
 <endorsedDirs>
 <entry path="C:\Program Files\Java\jre7\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files (x86)\Common Files\i4j_jres\1.6.0_27" version="1.6.0_26">
+<bootpath>
+<entry path="C:\Program Files (x86)\Common Files\i4j_jres\1.6.0_27\lib\resources.jar"/>
+<entry path="C:\Program Files (x86)\Common Files\i4j_jres\1.6.0_27\lib\rt.jar"/>
+<entry path="C:\Program Files (x86)\Common Files\i4j_jres\1.6.0_27\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files (x86)\Common Files\i4j_jres\1.6.0_27\lib\jsse.jar"/>
+<entry path="C:\Program Files (x86)\Common Files\i4j_jres\1.6.0_27\lib\jce.jar"/>
+<entry path="C:\Program Files (x86)\Common Files\i4j_jres\1.6.0_27\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\Common Files\i4j_jres\1.6.0_27\lib\modules\jdk.boot.jar"/>
+<entry path="C:\Program Files (x86)\Common Files\i4j_jres\1.6.0_27\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\Common Files\i4j_jres\1.6.0_27\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files (x86)\Common Files\i4j_jres\1.6.0_27\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files (x86)\Jitsi" version="1.6.0_24">
+<bootpath>
+<entry path="C:\Program Files (x86)\Jitsi\jre\lib\resources.jar"/>
+<entry path="C:\Program Files (x86)\Jitsi\jre\lib\rt.jar"/>
+<entry path="C:\Program Files (x86)\Jitsi\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files (x86)\Jitsi\jre\lib\jsse.jar"/>
+<entry path="C:\Program Files (x86)\Jitsi\jre\lib\jce.jar"/>
+<entry path="C:\Program Files (x86)\Jitsi\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\Jitsi\jre\lib\modules\jdk.boot.jar"/>
+<entry path="C:\Program Files (x86)\Jitsi\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\Jitsi\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files (x86)\Jitsi\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\Java\jdk1.7.0_01" version="1.7.0_01">
+<bootpath>
+<entry path="C:\Program Files\Java\jdk1.7.0_01\jre\lib\resources.jar"/>
+<entry path="C:\Program Files\Java\jdk1.7.0_01\jre\lib\rt.jar"/>
+<entry path="C:\Program Files\Java\jdk1.7.0_01\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\Java\jdk1.7.0_01\jre\lib\jsse.jar"/>
+<entry path="C:\Program Files\Java\jdk1.7.0_01\jre\lib\jce.jar"/>
+<entry path="C:\Program Files\Java\jdk1.7.0_01\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files\Java\jdk1.7.0_01\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Java\jdk1.7.0_01\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Java\jdk1.7.0_01\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows-x86-64" version="1.6.0_10">
+<bootpath>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows-x86-64\lib\resources.jar"/>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows-x86-64\lib\rt.jar"/>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows-x86-64\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows-x86-64\lib\jsse.jar"/>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows-x86-64\lib\jce.jar"/>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows-x86-64\lib\charsets.jar"/>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows-x86-64\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows-x86-64\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Wolfram Research\Mathematica\8.0\SystemFiles\Java\Windows-x86-64\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
 </libraryInfos>

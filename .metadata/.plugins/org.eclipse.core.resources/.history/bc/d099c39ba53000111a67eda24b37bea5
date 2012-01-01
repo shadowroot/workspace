@@ -1,0 +1,20 @@
+package auta;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.TooManyListenersException;
+
+import javax.comm.*;
+
+
+public class serial {
+	CommPortIdentifier port = new CommPortIdentifier();
+	
+	public void main(){
+		serial.addEventListener("handle");
+	}
+	public void handle(){
+		
+	}
+}

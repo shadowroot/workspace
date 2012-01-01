@@ -1,0 +1,8 @@
+'''
+Created on 1.1.2012
+
+@author: Jonny
+'''
+import os
+os.open(file, flag)
+print "hello"
