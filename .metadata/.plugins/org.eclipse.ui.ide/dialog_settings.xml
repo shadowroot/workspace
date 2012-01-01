@@ -1,31 +1,11 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="ChooseWorkspaceDialogSettings">
-		<item value="172" key="DIALOG_Y_ORIGIN"/>
-		<item value="211" key="DIALOG_X_ORIGIN"/>
+		<item value="133" key="DIALOG_Y_ORIGIN"/>
+		<item value="336" key="DIALOG_X_ORIGIN"/>
 	</section>
-	<section name="SaveAsDialogSettings">
-		<item value="438" key="DIALOG_WIDTH"/>
-		<item value="21" key="DIALOG_Y_ORIGIN"/>
-		<item value="81" key="DIALOG_X_ORIGIN"/>
-		<item value="552" key="DIALOG_HEIGHT"/>
-		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
 	</section>
 </section>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<section name="Workbench">
-	<section name="ChooseWorkspaceDialogSettings">
-		<item value="172" key="DIALOG_Y_ORIGIN"/>
-		<item value="211" key="DIALOG_X_ORIGIN"/>
-	</section>
-	<section name="SaveAsDialogSettings">
-		<item value="438" key="DIALOG_WIDTH"/>
-		<item value="21" key="DIALOG_Y_ORIGIN"/>
-		<item value="81" key="DIALOG_X_ORIGIN"/>
-		<item value="552" key="DIALOG_HEIGHT"/>
-		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
-	</section>
-</section>
->>>>>>> ab09edaaba59a3e337c0735bdc0bd0224ad31e90
