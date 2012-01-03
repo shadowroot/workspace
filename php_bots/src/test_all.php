@@ -7,8 +7,6 @@ class FW{
 	private $cli;
 	private $i;
 	private $max_client=1000;
-	private $ready;
-	private $listenning = 1;
 	private $limit = 300; 
 	private $log;
 	
@@ -16,9 +14,11 @@ class FW{
 	
 	function __construct($port,$options){
 		$date = "[".date("d.m.Y H:i:s")."]";
-		$this->port = $options['port'];
 		$this->socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
-		socket_bind($this->socket, "0.0.0.0", $this->port);
+		foreach ($options as $key => $option){
+			$this->$key = $option;
+		}
+		socket_bind($this->socket, "0.0.0.0", $this->port=9987);
 		socket_listen($this->socket);
 		$i=0;
 		$this->log .= $date." Server STARTED listenning ...";
