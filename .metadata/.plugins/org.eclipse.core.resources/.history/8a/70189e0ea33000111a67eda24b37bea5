@@ -1,9 +1,0 @@
-package auta;
-import javax.comm.*;
-public class serial {
-	public void serial(){
-		
-	
-	}
-
-}
