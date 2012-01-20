@@ -297,17 +297,17 @@ Window.prototype.scrollBy=function(arg1,arg2){};
  * @param {Object} arg1
  * @param {Number} arg2
  * @memberOf  Window
- * @returns {Number}
+ * @returns {Object}
  */
-Window.prototype.setInterval=function(arg1, arg2){return 0;};
+Window.prototype.setInterval=function(arg1, arg2){return new Object();};
 /**
  * function setTimeout(arg1, arg2) 
  * @param {Object} arg1
  * @param {Number} arg2
  * @memberOf  Window
- * @returns {Number}
+ * @returns {Object}
  */
-Window.prototype.setTimeout=function(arg1, arg2){ return 0;};
+Window.prototype.setTimeout=function(arg1, arg2){return new Object();};
 /**
  * function atob(arg) 
  * @param {String} arg

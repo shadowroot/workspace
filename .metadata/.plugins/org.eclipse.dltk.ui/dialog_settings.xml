@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="2" key="TypeHierarchyViewPart.hierarchyview"/>
+	<item value="0" key="TypeHierarchyViewPart.orientation"/>
 	<section name="OptionalMessageDialog.hide.">
 		<item value="true" key="PROMPT_ADD_JAVASCRIPT_SUPPORT"/>
 	</section>
