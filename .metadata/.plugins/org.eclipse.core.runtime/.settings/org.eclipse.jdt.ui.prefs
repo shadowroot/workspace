@@ -1,4 +1,4 @@
-#Thu Jan 19 13:43:51 CET 2012
+#Wed Jan 25 14:33:37 CET 2012
 pf_coloring_argument=255,255,255
 sp_cleanup.remove_private_constructors=true
 semanticHighlighting.methodDeclarationName.enabled=true
@@ -35,7 +35,7 @@ semanticHighlighting.method.color=255,255,255
 semanticHighlighting.interface.color=209,151,217
 semanticHighlighting.method.enabled=true
 sp_cleanup.make_variable_declarations_final=true
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.util.Timer"><rhs name\="java.util.Timer"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.Date"/></lhs><lhs name\="java.util.Date"><rhs name\="java.util.Date"/></lhs><lhs name\="javax.accessibility.Accessible"><rhs name\="javax.swing.JFrame"/><rhs name\="java.awt.Panel"/><rhs name\="java.awt.TextField"/><rhs name\="java.awt.Label"/><rhs name\="java.awt.Button"/></lhs><lhs name\="java.awt.Container"><rhs name\="javax.swing.JFrame"/><rhs name\="java.awt.Panel"/></lhs><lhs name\="java.awt.Component"><rhs name\="javax.swing.JFrame"/><rhs name\="java.awt.Panel"/><rhs name\="java.awt.TextField"/><rhs name\="java.awt.Label"/><rhs name\="java.awt.Button"/></lhs><lhs name\="java.awt.image.ImageObserver"><rhs name\="javax.swing.JFrame"/><rhs name\="java.awt.Panel"/><rhs name\="java.awt.TextField"/><rhs name\="java.awt.Label"/><rhs name\="java.awt.Button"/></lhs><lhs name\="java.awt.MenuContainer"><rhs name\="javax.swing.JFrame"/><rhs name\="java.awt.Panel"/><rhs name\="java.awt.TextField"/><rhs name\="java.awt.Label"/><rhs name\="java.awt.Button"/></lhs><lhs name\="java.awt.Panel"><rhs name\="java.awt.Panel"/></lhs><lhs name\="java.awt.Button"><rhs name\="java.awt.Button"/></lhs><lhs name\="javax.swing.WindowConstants"><rhs name\="javax.swing.JFrame"/></lhs><lhs name\="javax.swing.RootPaneContainer"><rhs name\="javax.swing.JFrame"/></lhs><lhs name\="javax.swing.TransferHandler$HasGetTransferHandler"><rhs name\="javax.swing.JFrame"/></lhs><lhs name\="java.awt.Frame"><rhs name\="javax.swing.JFrame"/></lhs><lhs name\="java.awt.Window"><rhs name\="javax.swing.JFrame"/></lhs><lhs name\="javax.swing.JFrame"><rhs name\="javax.swing.JFrame"/></lhs><lhs name\="java.awt.TextComponent"><rhs name\="java.awt.TextField"/></lhs><lhs name\="java.awt.TextField"><rhs name\="java.awt.TextField"/></lhs><lhs name\="java.awt.Label"><rhs name\="java.awt.Label"/></lhs><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.String"/></lhs></history>
 semanticHighlighting.field.enabled=true
 sp_cleanup.on_save_use_additional_actions=false
 sp_cleanup.remove_unnecessary_nls_tags=false

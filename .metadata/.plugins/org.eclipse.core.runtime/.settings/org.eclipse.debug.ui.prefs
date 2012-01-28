@@ -1,26 +1,13 @@
-<<<<<<< HEAD
-#Tue Dec 27 14:21:41 CET 2011
-org.eclipse.debug.core.USE_STEP_FILTERS=true
-org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<launchPerspectives/>\r\n
-org.eclipse.debug.ui.cancel_launch_with_compile_errors=always
->>>>>>>=ab09edaaba59a3e337c0735bdc0bd0224ad31e90
-pref_state_memento.org.eclipse.debug.ui.DebugVieworg.eclipse.debug.ui.DebugView=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<DebugViewMemento org.eclipse.debug.ui.BREADCRUMB_DROPDOWN_AUTO_EXPAND\="false"/>
-<<<<<<<=HEAD
-preferredDetailPanes=DefaultDetailPane\:DefaultDetailPane|
-org.eclipse.debug.ui.switch_perspective_on_suspend=always
-preferredTargets=default\:default|default,org.eclipse.cdt.debug.ui.toggleCBreakpointTarget\:default|org.eclipse.cdt.debug.ui.toggleCBreakpointTarget\:org.eclipse.cdt.debug.ui.toggleCBreakpointTarget|org.eclipse.cdt.debug.ui.toggleCBreakpointTarget,org.eclipse.php.debug.ui.PHPtoggleTargetFactory\:org.eclipse.php.debug.ui.PHPtoggleTargetFactory|org.eclipse.php.debug.ui.PHPtoggleTargetFactory\:org.eclipse.php.debug.ui.PHPtoggleTargetFactory|default,org.eclipse.php.debug.ui.PHPtoggleTargetFactory\:default|
-eclipse.preferences.version=1
-=\=\=\=\=\=\=
-=======
-#Thu Dec 22 00:41:05 CET 2011
+#Thu Jan 26 14:08:08 CET 2012
 org.eclipse.debug.core.USE_STEP_FILTERS=true
 org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<launchPerspectives/>\n
->>>>>>>=ab09edaaba59a3e337c0735bdc0bd0224ad31e90
-pref_state_memento.org.eclipse.debug.ui.DebugVieworg.eclipse.debug.ui.DebugView=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<DebugViewMemento org.eclipse.debug.ui.BREADCRUMB_DROPDOWN_AUTO_EXPAND\="false"/>
+org.eclipse.debug.ui.cancel_launch_with_compile_errors=always
+pref_state_memento.org.eclipse.debug.ui.VariableView=<?xml version\="1.0" encoding\="UTF-8"?>\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="315" org.eclipse.debug.ui.SASH_VIEW_PART\="684"/>
+>>>>>>>=ab75318b5a0cc58621903f6bd34e1933a7c9104b
+pref_state_memento.org.eclipse.debug.ui.DebugVieworg.eclipse.debug.ui.DebugView=<?xml version\="1.0" encoding\="UTF-8"?>\n<DebugViewMemento org.eclipse.debug.ui.BREADCRUMB_DROPDOWN_AUTO_EXPAND\="false"/>
 <<<<<<<=HEAD
 preferredDetailPanes=DefaultDetailPane\:DefaultDetailPane|
 org.eclipse.debug.ui.switch_perspective_on_suspend=always
 preferredTargets=default\:default|default,org.eclipse.cdt.debug.ui.toggleCBreakpointTarget\:default|org.eclipse.cdt.debug.ui.toggleCBreakpointTarget\:org.eclipse.cdt.debug.ui.toggleCBreakpointTarget|org.eclipse.cdt.debug.ui.toggleCBreakpointTarget,org.eclipse.php.debug.ui.PHPtoggleTargetFactory\:org.eclipse.php.debug.ui.PHPtoggleTargetFactory|org.eclipse.php.debug.ui.PHPtoggleTargetFactory,org.eclipse.ptp.debug.parallel.breakpoint\:org.eclipse.ptp.debug.parallel.breakpoint|org.eclipse.php.debug.ui.PHPtoggleTargetFactory\:org.eclipse.php.debug.ui.PHPtoggleTargetFactory|org.eclipse.ptp.debug.parallel.breakpoint\:org.eclipse.ptp.debug.parallel.breakpoint|default,org.eclipse.php.debug.ui.PHPtoggleTargetFactory\:default|
 eclipse.preferences.version=1
 =\=\=\=\=\=\=
->>>>>>> ab75318b5a0cc58621903f6bd34e1933a7c9104b
