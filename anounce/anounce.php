@@ -26,7 +26,7 @@ while (true){
 	$sock = fsockopen("https://".$host,$port);
 	fwrite($sock, $data.$request);
 	fclose($sock);
-	sleep(1);
+	sleep(5);
 }
 
 ?>

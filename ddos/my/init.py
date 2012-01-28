@@ -46,7 +46,22 @@ def main():
             
             s.connect(("https://"+inp,80))
             r = random.randrange(0,99999999999999)
-            headers = "\x08"+rhost+lhost
+            """
+            bit offset     0–3     4–7     8–13     14-15     16–18     19–31
+            0             VersionHeader Length  Differentiated Services Code Point     Explicit Congestion Notification     Total Length
+            32     Identification     Flags     Fragment Offset
+            64     Time to Live     Protocol     Header Checksum
+            96     Source IP Address
+            128     Destination IP Address
+            160     Options ( if Header Length > 5 )
+            160
+            or
+            192+      
+                                                                                        Data
+            
+            """
+            # TODO: Structure of packet
+            headers = "\x85\x00\x00"+rhost+lhost # Not complete
             headers = headers*count
             data = "GET /"+r+" HTTP/1.1\r\nHOST: "+inp+"\r\n"
             s.send(headers+data, None)
