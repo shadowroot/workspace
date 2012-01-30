@@ -1329,3 +1329,6 @@ Binding(CTRL+SHIFT+T,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.python.pydev.ui.editor.scope,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2012-01-28 21:26:44.383
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.
