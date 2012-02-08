@@ -1,0 +1,31 @@
+<?php
+
+function inject($data){
+	$data = htmlspecialchars($data);
+	$data = strip_tags($data);
+	$data = stripslashes($data);
+	if(find("&", $data)){
+		return false;
+	}
+	if(find("#", $data)){
+		return false;
+	}
+	if(find("\"", $data)){
+		return false;
+	}
+	if(find("'", $data)){
+		return false;
+	}
+	
+	return $data;
+}
+function find($what,$where){
+	$c = count($what);
+	for ($i=0;i<=len($where);$i++){
+		if($where[$i] == $what){
+			return true;
+		}
+	}
+	return false;	
+}
+?>

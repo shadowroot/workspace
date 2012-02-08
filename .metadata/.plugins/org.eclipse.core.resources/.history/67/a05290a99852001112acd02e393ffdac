@@ -1,0 +1,156 @@
+<canvas id="gamespace" width="300" height="300"
+	style="background: #000000;"></canvas>
+<?php
+
+?>
+<script type="text/javascript">
+function game(){
+	var game = this;
+	game.hero = null;
+	
+
+	game.canvas = document.getElementById("gamespace");
+	game.ctx = game.canvas.getContext("2d");
+	/*
+	ctx.beginPath();
+	ctx.moveTo(100,100);
+	ctx.lineTo(101,101);
+	ctx.lineTo(102,102);
+	ctx.lineWidth = 10;
+	ctx.strokeStyle = "black";
+	ctx.stroke();
+	ctx.fillStyle="#000000";
+	ctx.fillRect(0,0,300,300);
+	var data = ctx.getImageData(0,0,300,300);
+	var i=0;
+	
+	for (i=0;i<=5;i++){
+		//90% alfa
+		if((data.data[i] | 0x00) != 0x00){
+			document.write("collision");
+		}
+		
+	}
+	*/
+	game.loop = function(){
+		//console.log("Not Running");
+		if(game.status){
+			//console.log("Running");
+			for(var i=0;i<=game.hero.length-1;i++){
+				game.change_vector(i);
+				game.draw(i);
+				
+			}
+		}
+	};
+	game.init = function(){
+		game.hero = new Array();
+		console.log("init");
+		game.status = false;
+		/*18*/
+		
+		game.butt = document.createElement("input");
+		game.butt.type = "button";
+		game.butt.id="pause";
+		game.butt.value="Start/Stop";
+		game.butt.onclick = function(){
+			if(!game.status){
+				game.status = true;
+
+			}
+			else{
+				game.status = false;
+			}
+
+		};
+			game.hero.push({
+				/*
+					Start coordinates
+				*/
+			name:"Jonny",
+			running:true,
+			x:50,
+			y:50,
+			//[x,y] vector 
+			direction:new Array(0,0),
+			angle:0,
+			color:"#ffffff"
+			});
+			
+		
+		document.getElementsByTagName("body")[0].appendChild(game.butt);
+		window.document.onkeydown = function(e){
+			console.log(e.keyCode);
+			switch(e.keyCode){
+				case 81/*q*/:
+
+					game.hero[0].angle++;
+					break;
+				case 87/*w*/:
+					game.hero[0].angle--;
+					break;
+				case 70/*f*/:
+					game.hero[1].angle++;
+					break;
+				case 71/*g*/:
+					game.hero[1].angle++;
+					break;
+				default:
+					break;
+			}
+
+		};
+	};
+	game.draw = function(i){
+		if(game.hero[i].running){
+			var x = game.hero[i].x+game.hero[i].direction[0];
+			var y = game.hero[i].y+game.hero[i].direction[1];
+			game.ctx.moveTo(game.hero[i].x,game.hero[i].y);
+			if((game.ctx.getImageData(x+2,y+2,1,1).data[0] == 0)/* && 
+			(game.ctx.getImageData(x,y,1,1).data[1] == 0) && (game.ctx.getImageData(x,y,1,1).data[2] == 0) && 
+			(game.ctx.getImageData(x,y,1,1)[3] == 0) && (x<game.canvas.width) && (x>0) && (y<game.canvas.height) && (y>0)*/){
+						game.ctx.lineTo(x,y);
+						
+						game.ctx.strokeStyle=game.hero[i].color;
+						game.ctx.stroke();
+						
+						game.hero[i].x = x;
+						game.hero[i].y = y;
+			}
+			else{
+				game.hero[i].running = false;
+				console.log(game.hero[i].name+ " ended.");
+				var div = document.createElement("div");
+				div.innerHTML = game.hero[i].name+ " ended.";
+				document.body.appendChild(div);
+			}
+			
+		}////next point color check && frame limits
+		
+	};
+	game.change_vector = function(i){
+		if(game.hero[i].running){
+			var x = Math.cos(game.hero[i].angle)*2;
+			var y = Math.sin(game.hero[i].angle)*2;
+	
+			game.hero[i].direction = [x,y];
+			
+		}
+	};
+
+}
+/*
+ * Constructor
+ */
+var curve = new game();
+curve.init();
+setInterval("curve.loop()","20");
+
+/*
+ * Controllers
+
+ sin 5° =  0,0872
+ */
+
+</script>
+

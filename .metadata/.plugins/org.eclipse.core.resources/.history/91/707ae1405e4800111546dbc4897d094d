@@ -1,0 +1,7 @@
+<?php
+$host = "";
+$port = 6667;
+$request = "";
+$proxy = "";
+$sock = fsockopen($host,)
+?>

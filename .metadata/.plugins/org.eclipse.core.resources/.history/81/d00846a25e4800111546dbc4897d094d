@@ -1,0 +1,10 @@
+<?php
+$host = "";
+$port = 6667;
+$request = "";
+$proxy = "";
+$sock = fsockopen($host,$port);
+while(!feof($sock)){
+	$data = fread($sock, 2048);
+}
+?>

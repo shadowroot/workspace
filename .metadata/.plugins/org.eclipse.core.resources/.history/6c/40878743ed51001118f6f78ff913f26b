@@ -1,0 +1,128 @@
+<canvas id="gamespace" width="300" height="300"></canvas>
+<?php
+
+?>
+<script type="text/javascript">
+function game(){
+		
+	this.const = 5;/*18*/
+	this.hero = new Array();
+	this.hero = {
+			/*
+				Start coordinates
+			*/
+		running:true,
+		x:50,
+		y:50,
+		points:new Array(),
+		//[x,y] vector 
+		direction:[1,0],
+		multipler:1,
+		color:"black"
+	};
+	var player1 = {
+		x:0,
+		y:0,
+		bez_1:0,
+		bez_2:0
+	};
+	var player2 = {
+			
+	};
+	var player3 = {
+			
+	};
+	var player4 = {
+			
+	};
+	hero.points.push([22,33]);
+	this.canvas = document.getElementById("gamespace");
+	this.ctx = this.canvas.getContext("2d");
+	/*
+	ctx.beginPath();
+	ctx.moveTo(100,100);
+	ctx.lineTo(101,101);
+	ctx.lineTo(102,102);
+	ctx.lineWidth = 10;
+	ctx.strokeStyle = "black";
+	ctx.stroke();
+	ctx.fillStyle="#000000";
+	ctx.fillRect(0,0,300,300);
+	var data = ctx.getImageData(0,0,300,300);
+	var i=0;
+	
+	for (i=0;i<=5;i++){
+		//90% alfa
+		if((data.data[i] | 0x00) != 0x00){
+			document.write("collision");
+		}
+		
+	}
+	*/
+	this.init = function(){
+		
+	};
+	this.draw = function(){
+		if(this.hero.running){
+
+			this.ctx.beginPath();
+			this.ctx.moveTo(this.hero.x,this.hero.y);
+			this.ctx.arc(2,1,1,0,2*Math.PI,true);
+			this.ctx.fillStyle=this.hero.color;
+			this.ctx.fill();
+			this.hero.push([this.hero.x,this.hero.y]);
+
+		}
+	};
+	this.change_vector = function(){
+		if(this.hero.running){
+			var x = Math.sin(this.const*this.hero.multipler);
+			
+			var y = Math.sqrt(1-x*x);
+	
+			this.hero.direction[x,y];
+		}
+	};
+	this.collision_loopup = function(){
+		if(this.hero.running){
+
+		}
+	};
+}
+/*
+ * Constructor
+ */
+var game = new game();
+game.init();
+function loop(){
+	this.change_vector();
+	this.draw();
+	this.collision_lookup();
+}
+setInterval(loop(),100);
+/*
+ * Controllers
+
+ sin 5° =  0,0872
+ */
+document.prototype.onkeydown = function(e){
+			switch(e.keyCode){
+				case 113/*q*/:
+					this.hero.multipler++;
+					break;
+				case 119/*w*/:
+					this.hero.multipler--;
+					break;
+				case 102/*f*/:
+					
+					break;
+				case 103/*g*/:
+					
+					break;
+				default:
+					break;
+			}
+
+};
+</script>
+

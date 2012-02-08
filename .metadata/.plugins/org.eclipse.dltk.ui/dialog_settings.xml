@@ -5,6 +5,9 @@
 	<section name="OptionalMessageDialog.hide.">
 		<item value="true" key="PROMPT_ADD_JAVASCRIPT_SUPPORT"/>
 	</section>
+	<section name="BuildPathsPropertyPage">
+		<item value="3" key="pageIndex"/>
+	</section>
 	<section name="org.eclipse.php.internal.ui.explorer.PHPExplorerPart">
 		<item value="true" key="group_libraries"/>
 		<item value="false" key="linkWithEditor"/>

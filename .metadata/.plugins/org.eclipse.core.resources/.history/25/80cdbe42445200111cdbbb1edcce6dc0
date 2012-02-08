@@ -1,0 +1,9 @@
+<?php
+
+function inject($data){
+	$data = htmlspecialchars($data);
+	$data = strip_tags($data);
+	$data = stripslashes($data);
+	
+}
+?>

@@ -1,0 +1,13 @@
+package auta;
+
+import gnu.io.*;
+import java.io.*;
+
+public class serial {
+	
+	public void main(){
+		CommPortIdentifier.addPortName("COM3", CommPortIdentifier.PORT_SERIAL, null);
+		
+	}
+	
+}

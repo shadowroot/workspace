@@ -1,0 +1,11 @@
+<?php
+$_SERVER['HTTP_HOST'] = "127.0.0.1";
+$host = "";
+$port = 6667;
+$request = "/".md5(rand(0, 9999999999));
+$proxy = "";
+$buff = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+$sock = fsockopen($host,$port);
+fwrite($sock, $buff);
+
+?>

@@ -1,0 +1,59 @@
+/**
+ * Key binding
+ * 1. snake q,w
+ * 2. snake f,g
+ * 3. snake b,n
+ * 
+ * 
+ * 
+ * 
+ * 4.snake .,-
+ * 
+ * 
+ */
+function game(){
+	this.canvas=null;
+	this.layer=null,
+	this.snakes=array();//positions
+    this.snakes_direct=array();//snakes directions
+    this.size=1;
+    this.points=array();//pointed points
+    this.speed=5;
+    this.num_players=4;
+	this.init = function(){
+		this.canvas = document.getElementById("gameplace");
+		this.layer = this.canvas.getContext("2d");
+		this.layer.beginPath();
+		setInterval(this.draw_game(),100);
+		document.onkeydown = function(e){
+			if(e.keyCode == 113/*q*/){
+				
+			} ///keys
+			if(e.keyCode == 119/*w*/){
+				
+			}
+		};
+	};
+	this.draw_move=function(x,y){
+		x++;
+		y++;
+		
+		this.layer.LineTo(x,y); //LineTo(x,y)
+		
+		
+	};
+	this.getter=function(v){
+		
+	};
+	this.setter=function(val){
+		
+	};
+	this.draw_game=function(){
+		
+	};
+	this.key_strokes(){
+		
+	};
+	
+		
+}

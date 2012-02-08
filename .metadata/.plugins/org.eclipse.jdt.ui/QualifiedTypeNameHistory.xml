@@ -1,23 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.sql.Time"/>
-<fullyQualifiedTypeName name="java.util.Timer"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
-<fullyQualifiedTypeName name="auta.serial.SerialReader"/>
-<fullyQualifiedTypeName name="auta.SerialReader"/>
-<fullyQualifiedTypeName name="java.sql.Timestamp"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="java.awt.Frame"/>
-<fullyQualifiedTypeName name="java.awt.event.MouseListener"/>
-<fullyQualifiedTypeName name="java.awt.Event"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
-<fullyQualifiedTypeName name="javax.swing.JFrame"/>
-<fullyQualifiedTypeName name="java.awt.GraphicsConfiguration"/>
-<fullyQualifiedTypeName name="java.awt.Panel"/>
-<fullyQualifiedTypeName name="java.awt.TextField"/>
-<fullyQualifiedTypeName name="java.awt.Label"/>
-<fullyQualifiedTypeName name="java.awt.Button"/>
-<fullyQualifiedTypeName name="auta.racer"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
-</qualifiedTypeNameHistroy>
+<qualifiedTypeNameHistroy/>

@@ -1,0 +1,35 @@
+<?php
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>
+<<script type="text/javascript" src="engine.js">
+<!--
+
+//-->
+</script>
+<script>
+var g = new game()
+
+g.init(
+
+
+
+
+
+</script>
+
+<canvas id="gameplace" width="300px" height="300px"></canvas>
+
+
+

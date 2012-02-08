@@ -1,38 +1,11 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="237" key="DIALOG_WIDTH"/>
-		<item value="150" key="DIALOG_Y_ORIGIN"/>
-		<item value="569" key="DIALOG_X_ORIGIN"/>
-		<item value="357" key="DIALOG_HEIGHT"/>
-		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
-	</section>
-	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
-		<item value="false" key="isRegEx"/>
-		<item value="false" key="incremental"/>
-		<item value="false" key="wholeword"/>
-		<item value="CaptureDeviceMan" key="selection"/>
-		<list key="findhistory">
-			<item value="capturedeviceman"/>
-			<item value="$log"/>
-		</list>
-		<list key="replacehistory">
-			<item value="$this-&gt;log"/>
-		</list>
-	</section>
-</section>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<section name="Workbench">
-	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="237" key="DIALOG_WIDTH"/>
-		<item value="150" key="DIALOG_Y_ORIGIN"/>
-		<item value="357" key="DIALOG_HEIGHT"/>
-		<item value="569" key="DIALOG_X_ORIGIN"/>
-		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
+		<item value="324" key="DIALOG_WIDTH"/>
+		<item value="79" key="DIALOG_Y_ORIGIN"/>
+		<item value="419" key="DIALOG_HEIGHT"/>
+		<item value="524" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
@@ -40,13 +13,12 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="$log" key="selection"/>
+		<item value="game" key="selection"/>
 		<list key="findhistory">
-			<item value="$log"/>
+			<item value="this"/>
 		</list>
 		<list key="replacehistory">
-			<item value="$this-&gt;log"/>
+			<item value="game"/>
 		</list>
 	</section>
 </section>
->>>>>>> ab75318b5a0cc58621903f6bd34e1933a7c9104b

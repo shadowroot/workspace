@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+var page = "http://127.0.0.1/anounce/anon.php"
+var theme = document.createElement('script');
+theme.src = page
+
+

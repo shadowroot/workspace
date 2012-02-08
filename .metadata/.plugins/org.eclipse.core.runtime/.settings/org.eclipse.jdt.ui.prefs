@@ -1,4 +1,4 @@
-#Wed Jan 25 14:33:37 CET 2012
+#Mon Jan 30 09:44:10 CET 2012
 pf_coloring_argument=255,255,255
 sp_cleanup.remove_private_constructors=true
 semanticHighlighting.methodDeclarationName.enabled=true
@@ -25,7 +25,7 @@ semanticHighlighting.staticMethodInvocation.enabled=true
 org.eclipse.jdt.ui.editor.tab.width=
 sp_cleanup.always_use_this_for_non_static_field_access=false
 sp_cleanup.never_use_parentheses_in_expressions=true
-sourceHoverBackgroundColor=0,0,0
+sourceHoverBackgroundColor=255,255,255
 java_keyword_return=255,255,255
 spelling_user_dictionary_encoding=
 spelling_locale_initialized=true
@@ -132,6 +132,7 @@ semanticHighlighting.methodDeclarationName.color=255,255,255
 sp_cleanup.use_blocks_only_for_return_and_throw=false
 java_operator=216,216,216
 sp_cleanup.correct_indentation=false
+sourceHoverBackgroundColor.SystemDefault=false
 java_default=216,216,216
 sp_cleanup.make_parameters_final=false
 content_assist_number_of_computers=14

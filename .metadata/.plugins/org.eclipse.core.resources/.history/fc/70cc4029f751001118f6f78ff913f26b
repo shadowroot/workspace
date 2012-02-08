@@ -1,0 +1,130 @@
+<canvas id="gamespace" width="300" height="300" style="background: #000000;"></canvas>
+<?php
+
+?>
+<script type="text/javascript">
+function game(){
+	this.status = false;
+	this.const = 5;/*18*/
+	this.hero = [];
+	this.hero.push({
+			/*
+				Start coordinates
+			*/
+		running:true,
+		x:50,
+		y:50,
+		points:new Array(),
+		//[x,y] vector 
+		direction:[1,0],
+		multipler:1,
+		color:"#ffffff"
+	});
+
+	this.canvas = document.getElementById("gamespace");
+	this.ctx = this.canvas.getContext("2d");
+	/*
+	ctx.beginPath();
+	ctx.moveTo(100,100);
+	ctx.lineTo(101,101);
+	ctx.lineTo(102,102);
+	ctx.lineWidth = 10;
+	ctx.strokeStyle = "black";
+	ctx.stroke();
+	ctx.fillStyle="#000000";
+	ctx.fillRect(0,0,300,300);
+	var data = ctx.getImageData(0,0,300,300);
+	var i=0;
+	
+	for (i=0;i<=5;i++){
+		//90% alfa
+		if((data.data[i] | 0x00) != 0x00){
+			document.write("collision");
+		}
+		
+	}
+	*/
+	this.loop = function(){
+		//console.log("Not Running");
+		if(this.status){
+			//console.log("Running");
+			for(var i=0;i<=this.hero.length;i++){
+				this.change_vector();
+				this.draw();
+				this.collision_lookup();
+			}
+		}
+	};
+	this.init = function(){
+		console.log("init");
+		this.butt = document.createElement("input");
+		this.butt.type = "button";
+		this.butt.id="pause";
+		this.butt.value="Start/Stop";
+		this.butt.onclick = function(){
+			this.status = !this.status;
+		};
+		document.getElementsByTagName("body")[0].appendChild(this.butt);
+		document.onkeydown = function(e){
+			switch(e.keyCode){
+				case 113/*q*/:
+					consol.log("q");
+					this.hero[0].multipler++;
+					break;
+				case 119/*w*/:
+					this.hero[0].multipler--;
+					break;
+				case 102/*f*/:
+					
+					break;
+				case 103/*g*/:
+					
+					break;
+				default:
+					break;
+			}
+
+		};
+	};
+	this.draw = function(i){
+		if(this.hero[i].running){
+
+			this.ctx.beginPath();
+			this.ctx.moveTo(this.hero.x,this.hero.y);
+			this.ctx.arc(2,1,1,0,2*Math.PI,true);
+			this.ctx.fillStyle=this.hero.color;
+			this.ctx.fill();
+			this.hero[i].push([this.hero.x,this.hero.y]);
+
+		}
+	};
+	this.change_vector = function(i){
+		if(this.hero[i].running){
+			var x = Math.sin(this.const*this.hero[i].multipler);
+			
+			var y = Math.sqrt(1-x*x);
+	
+			this.hero[i].direction[x,y];
+		}
+	};
+	this.collision_loopup = function(i){
+		if(this.hero.running){
+
+		}
+	};
+}
+/*
+ * Constructor
+ */
+var game = new game();
+game.init();
+
+setInterval("game.loop()","100");
+/*
+ * Controllers
+
+ sin 5° =  0,0872
+ */
+
+</script>
+

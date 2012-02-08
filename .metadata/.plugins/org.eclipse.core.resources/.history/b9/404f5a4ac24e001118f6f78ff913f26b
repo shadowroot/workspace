@@ -1,0 +1,46 @@
+/**
+ * Key binding
+ * 1. snake q,w
+ * 2. snake f,g
+ * 3. snake b,n
+ * 
+ * 
+ * 
+ * 
+ * 4.snake .,-
+ * 
+ * 
+ */
+var game = {
+	canvas: null,
+	layer: null,
+	snakes:array(),//positions
+    snakes_direct: array(),//snakes directions
+    size:1,
+    points:array(),//pointed points
+    speed:5,
+    num_players:4,
+	init: function(){
+		this.canvas = document.getElementById("gameplace");
+		this.layer = this.canvas.getContext("2d");
+		
+		
+	},
+	draw_move:function(x,y){
+		x++;
+		y++;
+		this.layer.beginPath();
+		this.layer.LineTo(x,y); //LineTo(x,y)
+		
+		
+	},
+	getter:function(v){
+		
+	},
+	setter:function(val){
+		
+	}
+
+
+		
+}

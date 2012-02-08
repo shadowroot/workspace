@@ -1,0 +1,47 @@
+<canvas id="gamespace" width="300" height="300"></canvas>
+<?php
+
+?>
+<script type="text/javascript">
+function game(){
+		
+	
+	var hero = {
+		image:"/",
+		x:0,
+		y:0,
+		points:new Array()
+	};
+	var player1 = {
+		x:0,
+		y:0,
+		bez_1:0,
+		bez_2:0
+	};
+	var player2 = {
+			
+	};
+	var player3 = {
+			
+	};
+	var player4 = {
+			
+	};
+	hero.points[0] = [22,33];
+	var canvas = document.getElementById("gamespace");
+	var ctx = canvas.getContext("2d");
+	ctx.beginPath();
+	ctx.moveTo(100,100);
+	ctx.lineTo(101,101);
+	ctx.lineTo(102,102);
+	ctx.lineWidth = 10;
+	ctx.strokeStyle = "black";
+	ctx.stroke();
+}
+var game = new game();
+function loop(){
+	game.init();
+}
+setInterval(loop(),100);
+</script>
+

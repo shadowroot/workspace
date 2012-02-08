@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="12" version="2.0">
+<workbench progressCount="11" version="2.0">
 <workbenchAdvisor/>
 <window height="714" maximized="true" width="1024" x="0" y="30">
 <fastViewData fastViewLocation="1024"/>
@@ -15,25 +15,24 @@
 <coolItem id="adt.actionSet.wizards" itemType="typeToolBarContribution" x="88" y="26"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="112" y="26"/>
 <coolItem id="org.eclipse.dltk.tcl.ui.debug.consoleActionSet" itemType="typeToolBarContribution" x="44" y="26"/>
-<coolItem id="org.eclipse.gmt.modisco.common.editor.actionSet" itemType="typeToolBarContribution" x="36" y="27"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="70" y="26"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="96" y="26"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="114" y="26"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="36" y="26"/>
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="36" y="26"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ptp.pldt.common.toolbar1" itemType="typeToolBarContribution" x="44" y="27"/>
-<coolItem id="org.eclipse.amalgam.discovery.modeling.toolbars.sampleToolbar" itemType="typeToolBarContribution" x="36" y="27"/>
+<coolItem id="com.aptana.ui.globalActionSet" itemType="typeToolBarContribution" x="44" y="26"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="172" y="26"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.php.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.php.editor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.python.pydev.editor.PythonEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1325428428083" focus="true" label="Workspace - Java">
+<page aggregateWorkingSetId="Aggregate for window 1328049558605" focus="true" label="Workspace - Java">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -42,30 +41,80 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="serial.java" partName="serial.java" path="/projects/workspace/auta/src/auta/serial.java" title="serial.java" tooltip="auta/src/auta/serial.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/auta/src/auta/serial.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1860" selectionTopPixel="735"/>
+<editor id="org.python.pydev.editor.PythonEditor" name="init.py" partName="init" path="/projects/workspace/ddos/my/init.py" title="init" tooltip="ddos/my/init.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ddos/my/init.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="775" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="run.java" partName="run.java" path="/projects/workspace/auta/src/auta/run.java" title="run.java" tooltip="auta/src/auta/run.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/auta/src/auta/run.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1344" selectionTopPixel="215"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="play.java" partName="play.java" path="/projects/workspace/2dgame/src/pisq/play.java" title="play.java" tooltip="2dgame/src/pisq/play.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/2dgame/src/pisq/play.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="racer.java" partName="racer.java" path="/projects/workspace/auta/src/auta/racer.java" title="racer.java" tooltip="auta/src/auta/racer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/auta/src/auta/racer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1029" selectionTopPixel="383"/>
+<editor id="org.python.pydev.editor.PythonEditor" name="sniffer.py" partName="sniffer" path="/projects/workspace/ddos/my/sniffer.py" title="sniffer" tooltip="ddos/my/sniffer.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ddos/my/sniffer.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AccelerometerPlayActivity.java" partName="AccelerometerPlayActivity.java" path="/projects/workspace/AccelerometerPlayActivity/src/com/example/android/accelerometerplay/AccelerometerPlayActivity.java" title="AccelerometerPlayActivity.java" tooltip="AccelerometerPlayActivity/src/com/example/android/accelerometerplay/AccelerometerPlayActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AccelerometerPlayActivity/src/com/example/android/accelerometerplay/AccelerometerPlayActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="532" selectionTopPixel="0"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" partName="AccelerometerPlayActivity Manifest" path="/projects/workspace/AccelerometerPlayActivity/AndroidManifest.xml" title="AccelerometerPlayActivity Manifest" tooltip="AccelerometerPlayActivity/AndroidManifest.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AccelerometerPlayActivity/AndroidManifest.xml"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="game.php" partName="game.php" path="/projects/workspace/javascript_achtung_die_kurve/game.php" title="game.php" tooltip="javascript_achtung_die_kurve/game.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/javascript_achtung_die_kurve/game.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="70" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="anounce.php" partName="anounce.php" path="/projects/workspace/anounce/anounce.php" title="anounce.php" tooltip="anounce/anounce.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/anounce/anounce.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Balance_botActivity.java" partName="Balance_botActivity.java" path="/projects/workspace/balance_bot/src/am/sexy/apptester/Balance_botActivity.java" title="Balance_botActivity.java" tooltip="balance_bot/src/am/sexy/apptester/Balance_botActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/balance_bot/src/am/sexy/apptester/Balance_botActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="engine.js" partName="engine.js" path="/projects/workspace/javascript_achtung_die_kurve/engine.js" title="engine.js" tooltip="javascript_achtung_die_kurve/engine.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/javascript_achtung_die_kurve/engine.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7882" selectionTopPixel="5453"/>
+</editor>
+<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="dos.js" partName="dos.js" path="/projects/workspace/javascript_achtung_die_kurve/dos.js" title="dos.js" tooltip="javascript_achtung_die_kurve/dos.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/javascript_achtung_die_kurve/dos.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.php.editor" name="test.php" partName="test.php" path="/projects/workspace/javascript_achtung_die_kurve/test.php" title="test.php" tooltip="javascript_achtung_die_kurve/test.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/javascript_achtung_die_kurve/test.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2572" selectionTopPixel="1391"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="controller.php" partName="controller.php" path="/projects/workspace/javascript_achtung_die_kurve/controller.php" title="controller.php" tooltip="javascript_achtung_die_kurve/controller.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/javascript_achtung_die_kurve/controller.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="261" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="mysql_connect.php" partName="mysql_connect.php" path="/projects/workspace/javascript_achtung_die_kurve/mysql_connect.php" title="mysql_connect.php" tooltip="javascript_achtung_die_kurve/mysql_connect.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/javascript_achtung_die_kurve/mysql_connect.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="157" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" CommonNavigator.LINKING_ENABLED.delayed="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
-<view id="org.eclipse.dltk.ui.TypeHierarchy" partName="Type Hierarchy">
-<viewState isWindowWorkingSet="false" mv_vertical_scroll="0" org.eclipse.dltk.ui.packages.linktypehierarchytoeditor="0" orientation="3" ratio="350" showinherited="false" sortbydefiningtype="false" vertical_scroll="0" view="2" workingSetName=""/>
+<view id="org.eclipse.ui.views.ProgressView" partName="Progress">
+<viewState/>
 </view>
+<view id="org.eclipse.dltk.ui.TypeHierarchy" partName="Type Hierarchy"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <columnWidths org.eclipse.ui.ide.locationField="120" org.eclipse.ui.ide.markerType="522" org.eclipse.ui.ide.pathField="160" org.eclipse.ui.ide.resourceField="120" org.eclipse.ui.ide.severityAndDescriptionField="400"/>
@@ -100,7 +149,9 @@
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
-<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">
+<xmlDefinedFilters>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
 <child filterId="org.eclipse.pde.ui.ExternalPluginLibrariesFilter1" isEnabled="true"/>
@@ -133,7 +184,9 @@
 </view>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List">
 <viewState linkWithEditor="true" presentation="org.eclipse.mylyn.tasks.ui.categorized">
-<sorter groupBy="CATEGORY_QUERY">&#x0A;<sorter>&#x0A;<sort0 sortDirection="1" sortKey="PRIORITY"/>
+<sorter groupBy="CATEGORY_QUERY">
+<sorter>
+<sort0 sortDirection="1" sortKey="PRIORITY"/>
 <sort1 sortDirection="1" sortKey="RANK"/>
 <sort2 sortDirection="1" sortKey="DATE_CREATED"/>
 <sort3 sortDirection="1" sortKey="NONE"/>
@@ -164,7 +217,7 @@
 </view>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.php.editor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -175,17 +228,16 @@
 <alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="adt.actionSet.wizards"/>
+<alwaysOnActionSet id="adt.actionSet.refactorings"/>
+<alwaysOnActionSet id="adt.actionSet.avdManager"/>
+<alwaysOnActionSet id="adt.actionSet.lint"/>
 <alwaysOnActionSet id="org.eclipse.dltk.tcl.ui.debug.consoleActionSet"/>
-<alwaysOnActionSet id="org.eclipse.gmf.examples.runtime.common.service.client.actionSet"/>
-<alwaysOnActionSet id="org.eclipse.gmf.examples.runtime.diagram.actionSet"/>
-<alwaysOnActionSet id="org.eclipse.gmt.modisco.common.editor.actionSet"/>
-<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
-<alwaysOnActionSet id="org.eclipse.ptp.debug.ui.debugActionSet"/>
 <alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
 <alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
-<alwaysOnActionSet id="org.eclipse.m2m.qvt.oml.runtime.actions"/>
 <alwaysOnActionSet id="org.eclipse.rephraserengine.ui.DebugActionSet"/>
 <show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <show_view_action id="org.eclipse.ui.views.BookmarkView"/>
@@ -201,15 +253,12 @@
 <new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
 <new_wizard_action id="org.eclipse.mylyn.tasks.ui.wizards.new.repository.task"/>
 <new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+<perspective_action id="com.android.ide.eclipse.ddms.Perspective"/>
 <perspective_action id="org.eclipse.cdt.ui.CPerspective"/>
 <perspective_action id="org.eclipse.dltk.tcl.ui.TclPerspective"/>
-<perspective_action id="org.eclipse.hyades.ui.perspective.TestPerspective"/>
-<perspective_action id="org.eclipse.hyades.trace.internal.ui.tracePerspective"/>
 <perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
 <perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
 <perspective_action id="org.eclipse.php.perspective"/>
-<perspective_action id="org.eclipse.ptp.debug.ui.PTPDebugPerspective"/>
-<perspective_action id="org.eclipse.ptp.ui.PTPRunPerspective"/>
 <perspective_action id="org.eclipse.team.cvs.ui.cvsPerspective"/>
 <perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
 <perspective_action id="org.eclipse.wst.jsdt.ui.JavaPerspective"/>
@@ -220,9 +269,6 @@
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
 <view id="org.eclipse.ui.views.TaskList"/>
-<view id="org.eclipse.emf.cdo.ui.CDOSessionsView" removed="true"/>
-<view id="org.eclipse.m2m.atl.profiler.ui.executionviewer.view.ExecutionView" removed="true"/>
-<view id="org.eclipse.ptp.pldt.openmp.ui.pv.views.OpenMPProblemsView" removed="true"/>
 <fastViewBars/>
 <layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
@@ -244,27 +290,12 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@d642fd" ratio="0.5" ratioLeft="374" ratioRight="374" relationship="2" relative="bottomRight">&#x0A;<folder activePageID="org.eclipse.m2m.atl.profiler.ui.executionviewer.view.ExecutionView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.m2m.atl.profiler.ui.executionviewer.view.ExecutionView" label="ATL Profiler - Execution View"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
-</presentation>
-</folder>
-</info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@c7f38c" ratio="0.5" ratioLeft="187" ratioRight="187" relationship="2" relative="bottomRight">&#x0A;<folder activePageID="org.eclipse.ptp.pldt.openmp.ui.pv.views.OpenMPProblemsView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ptp.pldt.openmp.ui.pv.views.OpenMPProblemsView" label="OpenMP Problems"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
-</presentation>
-</folder>
-</info>
 <info part="org.eclipse.ui.editorss" ratio="0.1590909" ratioLeft="119" ratioRight="629" relationship="2" relative="org.eclipse.gef.ui.palette_view"/>
 <info folder="true" part="bottomLeft" ratio="0.49915683" ratioLeft="296" ratioRight="297" relationship="4" relative="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
-</presentation>
-</folder>
-</info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1ddcd5f" ratio="0.19932432" ratioLeft="59" ratioRight="237" relationship="4" relative="topLeft">&#x0A;<folder activePageID="org.eclipse.emf.cdo.ui.CDOSessionsView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.emf.cdo.ui.CDOSessionsView" label="CDO Sessions"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -281,20 +312,21 @@
 <alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="adt.actionSet.wizards"/>
+<alwaysOnActionSet id="adt.actionSet.refactorings"/>
+<alwaysOnActionSet id="adt.actionSet.avdManager"/>
+<alwaysOnActionSet id="adt.actionSet.lint"/>
 <alwaysOnActionSet id="org.eclipse.dltk.tcl.ui.debug.consoleActionSet"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
 <alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
 <alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
 <alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
 <alwaysOnActionSet id="org.eclipse.php.ui.PHPActionSet"/>
 <alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
 <alwaysOnActionSet id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet"/>
 <alwaysOnActionSet id="org.eclipse.php.ui.text.php.actionSet.presentation"/>
-<alwaysOnActionSet id="adt.actionSet.wizards"/>
-<alwaysOnActionSet id="adt.actionSet.refactorings"/>
-<alwaysOnActionSet id="adt.actionSet.avdManager"/>
-<alwaysOnActionSet id="adt.actionSet.lint"/>
 <show_view_action id="org.eclipse.php.ui.explorer"/>
 <show_view_action id="org.eclipse.dltk.ui.TypeHierarchy"/>
 <show_view_action id="org.eclipse.php.ui.functions"/>
@@ -334,13 +366,13 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.21944036" ratioLeft="298" ratioRight="1060" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.74873525" ratioLeft="444" ratioRight="149" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<info part="org.eclipse.ui.editorss" ratio="0.21980198" ratioLeft="222" ratioRight="788" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.749577" ratioLeft="443" ratioRight="148" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
@@ -350,11 +382,10 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="right" ratio="0.75" ratioLeft="795" ratioRight="265" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="right" ratio="0.75" ratioLeft="591" ratioRight="197" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
 <page content="org.eclipse.php.ui.projectOutline" label="LabelNotFound"/>
 <page content="org.eclipse.php.ui.functions" label="LabelNotFound"/>
-<page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
@@ -429,16 +460,17 @@
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <fastViewBars>
-<fastViewBar fastViewLocation="131072" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@95525e" orientation="256" selectedTabId="org.eclipse.mylyn.tasks.ui.views.tasks" style="1">
+<fastViews>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="131072" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.views.ProblemView" style="1">
 <fastViews>
 <view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
 <view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
 <view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@f2a45d" orientation="256" selectedTabId="org.eclipse.mylyn.tasks.ui.views.tasks" style="1">
-<fastViews>
-<view id="org.eclipse.mylyn.tasks.ui.views.tasks" ratio="0.3"/>
+<view id="org.eclipse.ui.views.ProgressView" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="16384" id="left" orientation="512" selectedTabId="org.eclipse.jdt.ui.PackageExplorer" style="1">
@@ -455,7 +487,7 @@
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder appearance="2" expanded="2">
+<folder appearance="2" expanded="0">
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
@@ -473,25 +505,25 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2496318" ratioLeft="339" ratioRight="1019" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.74873525" ratioLeft="444" ratioRight="149" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
+<folder appearance="2" expanded="0">
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
-<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@f2a45d" ratio="0.74975467" ratioLeft="764" ratioRight="255" relationship="2" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@95525e" ratio="0.74975467" ratioLeft="764" ratioRight="255" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="0">
 <page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="right" ratio="0.5" ratioLeft="222" ratioRight="222" relationship="4" relative="org.eclipse.ui.internal.ViewStack@f2a45d">
-<folder appearance="2" expanded="2">
+<info folder="true" part="right" ratio="0.5" ratioLeft="222" ratioRight="222" relationship="4" relative="org.eclipse.ui.internal.ViewStack@95525e">
+<folder appearance="2" expanded="0">
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
@@ -505,158 +537,170 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/auta/src/auta/racer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/auta/src/auta/run.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/2dgame/src/pisq/play.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/ddos/my/sniffer.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AccelerometerPlayActivity/src/com/example/android/accelerometerplay/AccelerometerPlayActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/javascript_achtung_die_kurve/game.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AccelerometerPlayActivity/src/com/example/android/accelerometerplay/AccelerometerPlayActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/ddos/my/init.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/javascript_achtung_die_kurve/game.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/AccelerometerPlayActivity/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/anounce/anounce.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/balance_bot/src/am/sexy/apptester/Balance_botActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/javascript_achtung_die_kurve/engine.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/javascript_achtung_die_kurve/dos.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/javascript_achtung_die_kurve/test.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/javascript_achtung_die_kurve/game.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/javascript_achtung_die_kurve/controller.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/javascript_achtung_die_kurve/mysql_connect.php"/>
 </editors>
-<item historyLabel="run.java" index="1">
-<position info="not_deleted" x="2245" y="0"/>
+<item historyLabel="play.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="racer.java" index="0">
+<item historyLabel="sniffer" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="AccelerometerPlayActivity.java" index="2">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="sniffer" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="game.php" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="AccelerometerPlayActivity.java" index="4">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="init" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="game.php" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="AccelerometerPlayActivity Manifest" index="7"/>
+<item historyLabel="game.php" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="anounce.php" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Balance_botActivity.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="AccelerometerPlayActivity.java" index="4">
+<position info="not_deleted" x="532" y="0"/>
+</item>
+<item historyLabel="Balance_botActivity.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="game.php" index="6">
 <position/>
 </item>
-<item historyLabel="run.java" index="1">
-<position info="not_deleted" x="253" y="0"/>
+<item historyLabel="engine.js" index="10">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="racer.java" index="0">
+<item historyLabel="dos.js" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="engine.js" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="game.php" index="6">
+<position info="not_deleted" x="31" y="0"/>
+</item>
+<item historyLabel="engine.js" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="engine.js" index="10">
+<position info="not_deleted" x="572" y="2"/>
+</item>
+<item historyLabel="engine.js" index="10">
+<position info="not_deleted" x="537" y="0"/>
+</item>
+<item historyLabel="engine.js" index="10">
+<position info="not_deleted" x="166" y="0"/>
+</item>
+<item historyLabel="engine.js" index="10">
+<position info="not_deleted" x="414" y="0"/>
+</item>
+<item historyLabel="Balance_botActivity.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="game.php" index="6">
+<position info="not_deleted" x="120" y="0"/>
+</item>
+<item historyLabel="engine.js" index="10">
+<position info="not_deleted" x="414" y="0"/>
+</item>
+<item historyLabel="engine.js" index="10">
+<position info="not_deleted" x="537" y="0"/>
+</item>
+<item historyLabel="engine.js" index="10">
+<position info="not_deleted" x="566" y="0"/>
+</item>
+<item historyLabel="engine.js" index="10">
+<position info="not_deleted" x="469" y="0"/>
+</item>
+<item historyLabel="test.php" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="test.php" index="12">
+<position info="not_deleted" x="1943" y="0"/>
+</item>
+<item historyLabel="game.php" index="13">
 <position/>
 </item>
-<item historyLabel="run.java" index="1">
-<position info="not_deleted" x="253" y="0"/>
+<item historyLabel="engine.js" index="10">
+<position info="not_deleted" x="7882" y="0"/>
 </item>
-<item historyLabel="racer.java" index="0">
-<position/>
+<item historyLabel="game.php" index="13">
+<position info="not_deleted" x="70" y="0"/>
 </item>
-<item historyLabel="racer.java" index="0">
-<position/>
+<item historyLabel="controller.php" index="14">
+<position info="not_deleted" x="37" y="0"/>
 </item>
-<item historyLabel="run.java" index="1">
-<position info="not_deleted" x="219" y="0"/>
+<item historyLabel="mysql_connect.php" index="15">
+<position info="not_deleted" x="539" y="0"/>
 </item>
-<item historyLabel="racer.java" index="0">
-<position/>
+<item historyLabel="controller.php" index="14">
+<position info="not_deleted" x="39" y="0"/>
 </item>
-<item historyLabel="run.java" index="1">
-<position info="not_deleted" x="219" y="0"/>
+<item historyLabel="mysql_connect.php" index="15">
+<position info="not_deleted" x="231" y="0"/>
 </item>
-<item historyLabel="run.java" index="1">
-<position info="not_deleted" x="253" y="0"/>
+<item historyLabel="controller.php" index="14">
+<position info="not_deleted" x="80" y="0"/>
 </item>
-<item historyLabel="run.java" index="1">
-<position info="not_deleted" x="392" y="0"/>
+<item historyLabel="mysql_connect.php" index="15">
+<position info="not_deleted" x="231" y="0"/>
 </item>
-<item historyLabel="racer.java" index="0">
-<position/>
+<item historyLabel="mysql_connect.php" index="15">
+<position info="not_deleted" x="343" y="0"/>
 </item>
-<item historyLabel="run.java" index="1">
-<position info="not_deleted" x="765" y="0"/>
+<item historyLabel="mysql_connect.php" index="15">
+<position info="not_deleted" x="231" y="0"/>
 </item>
-<item historyLabel="racer.java" index="0">
-<position/>
+<item historyLabel="mysql_connect.php" index="15">
+<position info="not_deleted" x="343" y="0"/>
 </item>
-<item historyLabel="run.java" index="1">
-<position info="not_deleted" x="765" y="0"/>
+<item historyLabel="test.php" index="12">
+<position info="not_deleted" x="2676" y="0"/>
 </item>
-<item historyLabel="racer.java" index="0">
-<position/>
+<item historyLabel="mysql_connect.php" index="15">
+<position info="not_deleted" x="343" y="0"/>
 </item>
-<item historyLabel="run.java" index="1">
-<position info="not_deleted" x="765" y="0"/>
+<item historyLabel="mysql_connect.php" index="15">
+<position info="not_deleted" x="157" y="0"/>
 </item>
-<item historyLabel="run.java" index="1">
-<position info="not_deleted" x="838" y="0"/>
+<item historyLabel="game.php" index="13">
+<position info="not_deleted" x="70" y="0"/>
 </item>
-<item historyLabel="racer.java" index="0">
-<position/>
+<item historyLabel="controller.php" index="14">
+<position info="not_deleted" x="261" y="0"/>
 </item>
-<item historyLabel="racer.java" index="0">
-<position/>
-</item>
-<item historyLabel="run.java" index="1">
-<position info="not_deleted" x="838" y="0"/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position info="not_deleted" x="275" y="0"/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position info="not_deleted" x="412" y="0"/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position/>
-</item>
-<item historyLabel="run.java" index="1">
-<position info="not_deleted" x="838" y="0"/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position info="not_deleted" x="263" y="0"/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position/>
-</item>
-<item historyLabel="run.java" index="1">
-<position info="not_deleted" x="2154" y="112"/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position/>
-</item>
-<item historyLabel="run.java" index="1">
-<position info="not_deleted" x="1344" y="0"/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position/>
-</item>
-<item historyLabel="run.java" index="1">
-<position info="not_deleted" x="1344" y="0"/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position info="not_deleted" x="1052" y="0"/>
-</item>
-<item historyLabel="run.java" index="1">
-<position info="not_deleted" x="1344" y="0"/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position info="not_deleted" x="1116" y="0"/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position info="not_deleted" x="1116" y="0"/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position info="not_deleted" x="601" y="0"/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position info="not_deleted" x="599" y="0"/>
-</item>
-<item historyLabel="racer.java" index="0">
-<position info="not_deleted" x="785" y="0"/>
-</item>
-<item active="true" historyLabel="racer.java" index="0">
-<position info="not_deleted" x="782" y="0"/>
+<item active="true" historyLabel="test.php" index="12">
+<position info="not_deleted" x="2676" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -670,7 +714,7 @@
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="bottom"/>
 <trimItem IMemento.internal.id="right"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@f2a45d"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@95525e"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -683,47 +727,44 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="racer.java" tooltip="auta/src/auta/racer.java">
-<persistable path="/auta/src/auta/racer.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="mysql_connect.php" tooltip="javascript_achtung_die_kurve/mysql_connect.php">
+<persistable path="/javascript_achtung_die_kurve/mysql_connect.php"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="run.java" tooltip="auta/src/auta/run.java">
-<persistable path="/auta/src/auta/run.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="controller.php" tooltip="javascript_achtung_die_kurve/controller.php">
+<persistable path="/javascript_achtung_die_kurve/controller.php"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="serial.java" tooltip="auta/src/auta/serial.java">
-<persistable path="/auta/src/auta/serial.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="test.php" tooltip="javascript_achtung_die_kurve/test.php">
+<persistable path="/javascript_achtung_die_kurve/test.php"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SwingCapture.java" tooltip="auta/src/auta/SwingCapture.java">
-<persistable path="/auta/src/auta/SwingCapture.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="dos.js" tooltip="javascript_achtung_die_kurve/dos.js">
+<persistable path="/javascript_achtung_die_kurve/dos.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="test_all.php" tooltip="php_bots/src/test_all.php">
-<persistable path="/php_bots/src/test_all.php"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="engine.js" tooltip="javascript_achtung_die_kurve/engine.js">
+<persistable path="/javascript_achtung_die_kurve/engine.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="tahak.php" tooltip="php_bots/src/tahak.php">
-<persistable path="/php_bots/src/tahak.php"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Balance_botActivity.java" tooltip="balance_bot/src/am/sexy/apptester/Balance_botActivity.java">
+<persistable path="/balance_bot/src/am/sexy/apptester/Balance_botActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="bot.php" tooltip="php_bots/src/bot.php">
-<persistable path="/php_bots/src/bot.php"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="anounce.php" tooltip="anounce/anounce.php">
+<persistable path="/anounce/anounce.php"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="interresting_code.php" tooltip="php_bots/interresting_code.php">
-<persistable path="/php_bots/interresting_code.php"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="game.php" tooltip="javascript_achtung_die_kurve/game.php">
+<persistable path="/javascript_achtung_die_kurve/game.php"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="cfg.inc.php" tooltip="php_bots/src/cfg.inc.php">
-<persistable path="/php_bots/src/cfg.inc.php"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="AccelerometerPlayActivity/AndroidManifest.xml">
+<persistable path="/AccelerometerPlayActivity/AndroidManifest.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="chacha_decrypt.php" tooltip="php_bots/src/chacha_decrypt.php">
-<persistable path="/php_bots/src/chacha_decrypt.php"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AccelerometerPlayActivity.java" tooltip="AccelerometerPlayActivity/src/com/example/android/accelerometerplay/AccelerometerPlayActivity.java">
+<persistable path="/AccelerometerPlayActivity/src/com/example/android/accelerometerplay/AccelerometerPlayActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="chacha_encrypt.php" tooltip="php_bots/src/chacha_encrypt.php">
-<persistable path="/php_bots/src/chacha_encrypt.php"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="sniffer.py" tooltip="ddos/my/sniffer.py">
+<persistable path="/ddos/my/sniffer.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="rsa.class.php" tooltip="php_bots/src/rsa.class.php">
-<persistable path="/php_bots/src/rsa.class.php"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="play.java" tooltip="2dgame/src/pisq/play.java">
+<persistable path="/2dgame/src/pisq/play.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="test.php" tooltip="php_bots/src/test.php">
-<persistable path="/php_bots/src/test.php"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="php_ini.php" tooltip="test/php_ini.php">
-<persistable path="/test/php_ini.php"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="init.py" tooltip="ddos/my/init.py">
+<persistable path="/ddos/my/init.py"/>
 </file>
 </mruList>
 </workbench>
