@@ -5167,3 +5167,6 @@ org.jruby.embed.EvalFailedException: (LoadError) no such file to load -- ruble/u
 	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:131)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 Caused by: org.jruby.exceptions.RaiseException: (LoadError) no such file to load -- ruble/ui
+
+!ENTRY org.eclipse.core.jobs 2 2 2012-02-08 23:57:53.593
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.StudioAnalytics$1
