@@ -102,24 +102,32 @@ function game(){
 			
 		document.getElementsByTagName("body")[0].appendChild(game.butt);
 		window.document.onkeydown = function(e){
-			console.log(e.keyCode);
-			switch(e.keyCode){
-				case 81/*q*/:
+			game.key_handler(e);
 
-					game.hero[0].angle-=0.04363323129985824;//(Math.PI/72)
-					break;
-				case 87/*w*/:
-					game.hero[0].angle+=0.04363323129985824;
-					break;
-				case 70/*f*/:
-					game.hero[1].angle-=0.04363323129985824;
-					break;
-				case 71/*g*/:
-					game.hero[1].angle+=0.04363323129985824;
-					break;
-				default:
-					break;
-			}
+		};
+		window.document.onkeypress = function(e){
+			game.key_handler(e);
+
+		};
+		game.key_handler = function(e){
+		console.log(e.keyCode);
+		switch(e.keyCode){
+			case 81/*q*/:
+
+				game.hero[0].angle-=0.04363323129985824;//(Math.PI/72)
+				break;
+			case 87/*w*/:
+				game.hero[0].angle+=0.04363323129985824;
+				break;
+			case 70/*f*/:
+				game.hero[1].angle-=0.04363323129985824;
+				break;
+			case 71/*g*/:
+				game.hero[1].angle+=0.04363323129985824;
+				break;
+			default:
+				break;
+		}
 
 		};
 	};
