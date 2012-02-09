@@ -15,6 +15,8 @@ function game(){
 	game.buff.height = game.canvas.height;
 	game.buffer = game.buff.getContext("2d");
 	game.ctx = game.canvas.getContext("2d");
+	game.pressed = new Array();
+	game.my=0;
 	/*
 	ctx.beginPath();
 	ctx.moveTo(100,100);
@@ -25,7 +27,8 @@ function game(){
 	ctx.stroke();
 	ctx.fillStyle="#000000";
 	ctx.fillRect(0,0,300,300);
-	var data = ctx.getImageData(0,0,300,300);
+	var data = ctx.getImgame.hero[i].x = x;
+	game.hero[i].y = y;ageData(0,0,300,300);
 	var i=0;
 	
 	for (i=0;i<=5;i++){
@@ -41,6 +44,7 @@ function game(){
 		if(game.status){
 			//console.log("Running");
 			for(var i=0;i<=game.hero.length-1;i++){
+				game.key_handler();
 				game.change_vector(i);
 				game.draw(i);
 			}
@@ -48,7 +52,6 @@ function game(){
 	};
 	game.init = function(){
 		game.player = 0;
-		game.id = null;
 		game.hero = new Array();
 		console.log("init");
 		game.status = false;
@@ -68,7 +71,7 @@ function game(){
 			}
 
 		};
-			game.hero.push({
+			game.hero[game.my] = ({
 				/*
 					Start coordinates
 				*/
@@ -80,53 +83,56 @@ function game(){
 			direction:new Array(0,0),
 			angle:0,
 			color:"#ff1111",
-			multi:2
+			multi:2,
+			line_pause:100,   /*pause*/
+			pause_length:5,
+			immune:false,
+			immune_time:0,
+			bullet:0,
+			freeze:0
 			});
 
-			game.hero.push({
-				/*
-					Start coordinates
-				*/
-			name:"bot",
-			running:true,
-			x:300,
-			y:300,
-			//[x,y] vector 
-			direction:new Array(0,0),
-			angle:0,
-			color:"#ffffff",
-			multi:2
-			});
 			
 		//game.first_communication();
 			
 		document.getElementsByTagName("body")[0].appendChild(game.butt);
 		window.document.onkeydown = function(e){
-			game.key_handler(e);
+			for(var o=0;o<game.pressed.length;o++){
+				if(game.pressed[o] == e.keyCode){
+					return;
+				}
+			}
+			game.pressed.push(e.keyCode);
 
 		};
-		window.document.onkeypress = function(e){
-			game.key_handler(e);
+		window.document.onkeyup = function(e){
+			for(var o=0;o<game.pressed.length;o++){
+				if(game.pressed[o] == e.keyCode){
+					game.pressed.splice(o, 1);
+				}
+			}
+			
 
 		};
-		game.key_handler = function(e){
-		console.log(e.keyCode);
-		switch(e.keyCode){
-			case 81/*q*/:
-
-				game.hero[0].angle-=0.04363323129985824;//(Math.PI/72)
-				break;
-			case 87/*w*/:
-				game.hero[0].angle+=0.04363323129985824;
-				break;
-			case 70/*f*/:
-				game.hero[1].angle-=0.04363323129985824;
-				break;
-			case 71/*g*/:
-				game.hero[1].angle+=0.04363323129985824;
-				break;
-			default:
-				break;
+		game.key_handler = function(){
+		for(var o=0;o<game.pressed.length;o++){
+			switch(game.pressed[o]){
+				case 81/*q*/:
+	
+					game.hero[0].angle-=0.04363323129985824;//(Math.PI/72)
+					break;
+				case 87/*w*/:
+					game.hero[0].angle+=0.04363323129985824;
+					break;
+				case 70/*f*/:
+					game.hero[1].angle-=0.04363323129985824;
+					break;
+				case 71/*g*/:
+					game.hero[1].angle+=0.04363323129985824;
+					break;
+				default:
+					break;
+			}
 		}
 
 		};
@@ -155,10 +161,25 @@ function game(){
 						game.buffer.lineTo(x,y);
 						
 						game.buffer.closePath();
-						game.buffer.stroke();
-						
 						game.hero[i].x = x;
 						game.hero[i].y = y;
+						
+						if(game.hero[i].line_pause == 0){
+							if(game.hero[i].pause_length != 0){
+								game.hero[i].pause_length--;
+								return;
+							}
+							else{
+								game.hero[i].line_pause=100;
+								game.hero[i].pause_length=5;
+							}
+						}
+						else{
+							game.hero[i].line_pause--;
+						}
+						game.buffer.stroke();
+						
+						
 						var buff_data = game.buffer.getImageData(0,0,game.buff.width,game.buff.height);
 						game.ctx.putImageData(buff_data,0,0);
 						
@@ -186,7 +207,7 @@ function game(){
 	};
 	game.first_communication = function(){
 			game.http = new XMLHttpRequest();
-			game.http.open("GET", game.url+"?name="+game.hero[0].name, true);
+			game.http.open("GET", game.url+"?name="+game.hero[game.my].name, true);
 			game.http.send();
 			game.http.onreadystatechange = function(){
 					if(game.http.readyState == 400){
@@ -211,7 +232,6 @@ function game(){
 		for(var u=0;u<=datas.length;u++){
 			var names = datas[u].split("=");
 			game.names[0] = names[1];
-			
 		}
 	};
 
