@@ -2,4 +2,5 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="Global"/>
 <fullyQualifiedTypeName name="Math"/>
+<fullyQualifiedTypeName name="XMLHttpRequest"/>
 </qualifiedTypeNameHistroy>
