@@ -16,7 +16,7 @@ function game(){
 	game.buffer = game.buff.getContext("2d");
 	game.ctx = game.canvas.getContext("2d");
 	game.pressed = new Array();
-	game.my=0;
+	
 	/*
 	ctx.beginPath();
 	ctx.moveTo(100,100);
@@ -50,8 +50,8 @@ function game(){
 			}
 		}
 	};
-	game.init = function(){
-		game.player = 0;
+	game.init = function(nick){
+		game.my=0;
 		game.hero = new Array();
 		console.log("init");
 		game.status = false;
@@ -75,7 +75,7 @@ function game(){
 				/*
 					Start coordinates
 				*/
-			name:"Jonny",
+			name:nick,
 			running:true,
 			x:50,
 			y:50,
@@ -205,15 +205,15 @@ function game(){
 			
 		}
 	};
-	game.first_communication = function(){
+	game.first_communication = function(nick){
 			game.http = new XMLHttpRequest();
-			game.http.open("GET", game.url+"?name="+game.hero[game.my].name, true);
+			game.http.open("GET", game.url+"?name="+nick, true);
 			game.http.send();
 			game.http.onreadystatechange = function(){
 					if(game.http.readyState == 400){
 							var a = game.http.responseText.split(";");
 							game.id = a[0];
-							game.player = a[1];
+							game.my = a[1];
 					}
 			};
 
@@ -240,7 +240,7 @@ function game(){
  * Constructor
  */
 var curve = new game();
-curve.init();
+curve.init("jonny");
 setInterval("curve.loop()","50");
 
 /*

@@ -1,4 +1,6 @@
 <?php
+ob_start();
+session_start();
 require_once 'mysql_connect.php';
 if(!isset($_GET['ID'])){
 			$game_id = mysql_fetch_array(mysql_query("select game_id,id_0,id_1,id_2,id_3 from games where free='true'"));
@@ -34,12 +36,16 @@ if(!isset($_GET['ID'])){
 else{
 	$id = check_inject($_GET['ID']);
 	$ready = mysql_result(mysql_query("select free from games where id=$id"),0);
-	$q = mysql_query("select * from games where id=$id");
-	if($q){
-		while($row = mysql_fetch_array($q)){
-			
-			
+	echo $ready ? "ready=0&" : "ready=1&";
+	if(!$ready){
+		$q = mysql_query("select * from games where id=$id");
+		if($q){
+			while($row = mysql_fetch_array($q)){
+				
+				
+			}
 		}
 	}
 }
+ob_end_flush();
 ?>
