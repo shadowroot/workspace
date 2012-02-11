@@ -16,6 +16,7 @@ function game(){
 	game.buffer = game.buff.getContext("2d");
 	game.ctx = game.canvas.getContext("2d");
 	game.pressed = new Array();
+	game.maze_rects=[];
 	
 	/*
 	ctx.beginPath();
@@ -57,6 +58,7 @@ function game(){
 		game.status = false;
 		/*18*/
 		game.url = "http://localhost/workspace/javascript_achtung_die_kurve/controller.php";
+		//game.first_communication(nick);
 		game.butt = document.createElement("input");
 		game.butt.type = "button";
 		game.butt.id="pause";
@@ -83,9 +85,10 @@ function game(){
 			direction:new Array(0,0),
 			angle:0,
 			color:"#ff1111",
-			multi:2,
+			multi:3,
+			time_multi:0,
 			line_pause:100,   /*pause*/
-			pause_length:5,
+			pause_length:3,
 			immune:false,
 			immune_time:0,
 			bullet:0,
@@ -93,8 +96,8 @@ function game(){
 			});
 
 			
-		//game.first_communication();
-			
+		
+		game.draw_maze();	
 		document.getElementsByTagName("body")[0].appendChild(game.butt);
 		window.document.onkeydown = function(e){
 			for(var o=0;o<game.pressed.length;o++){
@@ -119,16 +122,16 @@ function game(){
 			switch(game.pressed[o]){
 				case 81/*q*/:
 	
-					game.hero[0].angle-=0.04363323129985824;//(Math.PI/72)
+					game.hero[0].angle-=0.1308996938995747;//(Math.PI/24)  15DEG
 					break;
 				case 87/*w*/:
-					game.hero[0].angle+=0.04363323129985824;
+					game.hero[0].angle+=0.1308996938995747;
 					break;
 				case 70/*f*/:
-					game.hero[1].angle-=0.04363323129985824;
+					game.hero[1].angle-=0.1308996938995747;
 					break;
 				case 71/*g*/:
-					game.hero[1].angle+=0.04363323129985824;
+					game.hero[1].angle+=0.1308996938995747;
 					break;
 				default:
 					break;
@@ -171,7 +174,7 @@ function game(){
 							}
 							else{
 								game.hero[i].line_pause=100;
-								game.hero[i].pause_length=5;
+								game.hero[i].pause_length=3;
 							}
 						}
 						else{
@@ -196,6 +199,40 @@ function game(){
 		}////next point color check && frame limits
 		
 	};
+
+	
+	game.draw_maze=function(){
+			
+			game.buffer.fillStyle="#ff1111";
+			u=0;
+			while(game.maze_rects.length<=20){
+				
+				var x = Math.random()*game.canvas.width;
+				var y = Math.random()*game.canvas.height;
+				for(var u=0;u<game.maze_rects.length;u++){
+					if(((((x+70)>game.maze_rects[u][0]) || ((x-70)<game.maze_rects[u][0])) && (((y+120)>game.maze_rects[u][1]) || ((y-120)<game.maze_rects[u][1])) && u%2==0) && x>150 && y>150 && x<game.canvas.width-150 && y<game.canvas.heigth-150){
+						game.buffer.fillRect(x,y,50,100);
+						game.maze_rects.push([x,y]);
+					}
+					else if(((((x-70)>game.maze_rects[u][0]) || ((x+70)<game.maze_rects[u][0])) && (((y+120)>game.maze_rects[u][1]) || ((y-120)<game.maze_rects[u][1]))) && x>150 && y>150 && x<game.canvas.width-150 && y<game.canvas.heigth-150){
+						game.buffer.fillRect(x,y,100,50);
+						game.maze_rects.push([x,y]);
+					}
+					else{
+						x += 150;
+						y += 150;
+						game.buffer.fillRect(x,y,50,100);
+						game.maze_rects.push([x,y]);
+					}
+					
+				}
+				u++;
+				game.maze_rects.push([x,y]);
+			}
+	};
+
+
+	
 	game.change_vector = function(i){
 		if(game.hero[i].running){
 			var x = Math.cos(game.hero[i].angle)*game.hero[i].multi;
@@ -222,26 +259,35 @@ function game(){
 		game.http.open("POST", game.url+"?ID="+game.id, true);
 		game.http.send("x="+game.hero[0].x+"&y="+game.hero[0].y);
 		game.http.onreadystatechange = function(){
-				if(game.http.readyState == 400){
+				if(game.http.readyState == 200){
 						game.http_process(game.http.responseText);
 				}
 		};
 	};
 	game.http_process = function(data){
+		
+		var pos = new Array();
+		pos[0] = data.indexOf("id=");
+		pos[1] = data.indexOf("&",pos[0]);
+		var id = data.substr(pos[0]+3,pos[1]-(pos[0]+3));
+		data = data.substr(0,pos[0]-1)+data.substr(pos[1],data.length-1);
 		var datas = data.split("&");
 		for(var u=0;u<=datas.length;u++){
 			var names = datas[u].split("=");
-			game.names[0] = names[1];
+			eval("game.hero["+id+"]."+names[0]+"= \""+names[1]+"\"");
 		}
 	};
+	
 
 }
 /*
  * Constructor
  */
-var curve = new game();
-curve.init("jonny");
-setInterval("curve.loop()","50");
+
+	var curve = new game();
+	curve.init("jonny");
+	setInterval("curve.loop()","100");
+
 
 /*
  * Controllers
