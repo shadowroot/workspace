@@ -40,18 +40,60 @@ function game(){
 		
 	}
 	*/
+	game.actions = {
+			freeze:-1,
+			freeze_time:0,
+			speed:-1,
+			speed_time:0,
+			stop:0,
+			last:0
+	};
 	game.loop = function(){
 		//console.log("Not Running");
 		if(game.status){
 			//console.log("Running");
 			for(var i=0;i<=game.hero.length-1;i++){
+				if(game.actions.stop == game.hero.length-1){
+					game.actions.last=i;
+					game.status = false;
+				}
+				if(game.hero[i].running == false){
+					game.actions.stop++;
+				}
 				game.key_handler();
+				game.throw_items();
 				game.change_vector(i);
 				game.draw(i);
+				game.result();
+			}
+			if(game.status){
+				console.log("Game won "+game.hero[i].name);
+				
 			}
 		}
 	};
+	game.throw_items = function(){
+			
+	};
+	game.result = function(){
+		
+	};
 	game.init = function(nick){
+		var bullet=new Image();
+		bullet.src="bullet.gif";
+		var time=new Image();
+		time.src="time.gif";
+		var speed=new Image();
+		speed.src="energy.gif";
+		game.items = {
+				bullet:bullet,
+				bullet_time:0,
+				speed:speed,
+				speed_time:0,
+				freeze:time,
+				freeze_time:0
+			};
+		
 		game.my=0;
 		game.hero = new Array();
 		console.log("init");
@@ -91,8 +133,7 @@ function game(){
 			pause_length:3,
 			immune:false,
 			immune_time:0,
-			bullet:0,
-			freeze:0
+			attrs:new Array() //All attributes
 			});
 
 			
@@ -117,7 +158,9 @@ function game(){
 			
 
 		};
-		game.key_handler = function(){
+		
+	};
+	game.key_handler = function(){
 		for(var o=0;o<game.pressed.length;o++){
 			switch(game.pressed[o]){
 				case 81/*q*/:
@@ -139,7 +182,6 @@ function game(){
 		}
 
 		};
-	};
 	game.draw = function(i){
 		if(game.hero[i].running){
 			game.buffer.beginPath();
@@ -204,30 +246,27 @@ function game(){
 	game.draw_maze=function(){
 			
 			game.buffer.fillStyle="#ff1111";
-			u=0;
+			var x;
+			var y;
+			game.buffer.fillRect(200,0,100,50);
+			game.maze_rects.push([200,0]);
+			
 			while(game.maze_rects.length<=20){
 				
-				var x = Math.random()*game.canvas.width;
-				var y = Math.random()*game.canvas.height;
-				for(var u=0;u<game.maze_rects.length;u++){
-					if(((((x+70)>game.maze_rects[u][0]) || ((x-70)<game.maze_rects[u][0])) && (((y+120)>game.maze_rects[u][1]) || ((y-120)<game.maze_rects[u][1])) && u%2==0) && x>150 && y>150 && x<game.canvas.width-150 && y<game.canvas.heigth-150){
+				
+					 x = Math.random()*game.canvas.width;
+					 y = Math.random()*game.canvas.height;
+					if(x<game.canvas.width-150 && x>150 && y<game.canvas.height-150 && y>150 && game.maze_rects.length%2==0){
 						game.buffer.fillRect(x,y,50,100);
 						game.maze_rects.push([x,y]);
+						
 					}
-					else if(((((x-70)>game.maze_rects[u][0]) || ((x+70)<game.maze_rects[u][0])) && (((y+120)>game.maze_rects[u][1]) || ((y-120)<game.maze_rects[u][1]))) && x>150 && y>150 && x<game.canvas.width-150 && y<game.canvas.heigth-150){
+					else if(x<game.canvas.width-150 && x>150 && y<game.canvas.height-150 && y>150){
 						game.buffer.fillRect(x,y,100,50);
 						game.maze_rects.push([x,y]);
+						
 					}
-					else{
-						x += 150;
-						y += 150;
-						game.buffer.fillRect(x,y,50,100);
-						game.maze_rects.push([x,y]);
-					}
-					
-				}
-				u++;
-				game.maze_rects.push([x,y]);
+				
 			}
 	};
 
@@ -257,7 +296,7 @@ function game(){
 	};
 	game.http_comm=function(data){
 		game.http.open("POST", game.url+"?ID="+game.id, true);
-		game.http.send("x="+game.hero[0].x+"&y="+game.hero[0].y);
+		game.http.send("x="+game.hero[game.my].x+"&y="+game.hero[game.my].y+"&attrs="+game.hero[game.my].attrs.join(";"));
 		game.http.onreadystatechange = function(){
 				if(game.http.readyState == 200){
 						game.http_process(game.http.responseText);
