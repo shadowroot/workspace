@@ -1,9 +1,0 @@
-<?php
-if(!isset($_GET['ID'])){
-	$rand = md5(rand());
-	echo $rand;
-}
-else{
-	
-}
-?>

@@ -1,4 +1,0 @@
-<?php
-$rand = md5(rand());
-
-?>

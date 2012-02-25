@@ -1,6 +1,0 @@
-<?php
-
-function inject($data){
-	$data = htmlspecialchars($data);
-}
-?>

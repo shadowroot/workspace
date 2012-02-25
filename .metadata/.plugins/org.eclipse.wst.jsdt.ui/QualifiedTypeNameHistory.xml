@@ -3,5 +3,6 @@
 <fullyQualifiedTypeName name="Global"/>
 <fullyQualifiedTypeName name="XMLHttpRequest"/>
 <fullyQualifiedTypeName name="Array"/>
+<fullyQualifiedTypeName name="Image"/>
 <fullyQualifiedTypeName name="Math"/>
 </qualifiedTypeNameHistroy>
