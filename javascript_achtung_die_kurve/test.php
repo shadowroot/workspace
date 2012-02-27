@@ -1,8 +1,7 @@
+
 <canvas id="_gspace" width="1000" height="400"
 	style="background: #000000;"></canvas>
-<?php
 
-?>
 <script type="text/javascript">
 function game(){
 	var _g = this;
@@ -85,6 +84,7 @@ function game(){
 		false
 	];
 	_g.debug=true;
+	_g.attrs.errors = "";
 	/*
 		ITEMS END
 	*/
@@ -98,6 +98,16 @@ function game(){
 
 		if(_g.debug){
 			_g.started=true;
+		}
+		
+		if(!_g.started){
+			var div = document.createElement("div");
+			var name = _g.attrs.errors.split(";");
+			for(var u=0;u<=name.length-1;u++){
+				div.innerHTML+="<p>"+name[u]+"</p>";
+			}
+			document.body.appendChild(div);
+			_g.attrs.errors = "";
 		}
 		 
 		if((_g.status &&_g.started)){
@@ -539,12 +549,12 @@ function game(){
 					 y = Math.random()*_g.canvas.height;
 					if(x<_g.canvas.width-150 && x>150 && y<_g.canvas.height-150 && y>150 && _g.maze_rects.length%2==0){
 						_g.buffer.fillRect(x,y,50,100);
-						_g.maze_rects.push([x,y]);
+						_g.maze_rects.push([x,y,0]);
 						
 					}
 					else if(x<_g.canvas.width-150 && x>150 && y<_g.canvas.height-150 && y>150){
 						_g.buffer.fillRect(x,y,100,50);
-						_g.maze_rects.push([x,y]);
+						_g.maze_rects.push([x,y,1]);
 						
 					}
 				
@@ -565,9 +575,8 @@ function game(){
 	_g.first_communication = function(nick){
 		console.log("First communication");
 		
-			var buff = _g.buffer.getImageData(0,0,_g.buff.width-1,_g.buff.height-1).data;
 			_g.http.open("POST", _g.url+"?name="+nick, true);
-			_g.http.send(""+JSON.stringify(buff)+"");
+			_g.http.send("");
 			_g.http.onreadystatechange = function(){
 					if(_g.http.readyState == 200){
 							eval('(_g.buffer.putImageData('+_g.http.responseText+',0,0)');

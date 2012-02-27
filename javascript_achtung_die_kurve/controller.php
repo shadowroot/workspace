@@ -6,70 +6,70 @@
  * 
  * 
  * LOG_END
- */
+*/
+
+error_reporting(E_ALL);
 
 ob_start();
 session_start();
+
 require_once 'mysql_connect.php';
 if(!isset($_SESSION['GID'])){
-	$nick = $_GET['name'];
-	$game_query = mysql_query("select game_id,id_0,id_1,id_2,id_3 from games where free='1'");
-	$player=0;
-
-	if((mysql_fetch_array($game_query))>0){
-		$game_id = mysql_fetch_array($game_query);
-		if($game_id['id_1'] == 0){
-			$player = 1;
-			if($game_id['id_2'] == 0){
-				$player = 2;
-				
-				if($game_id['id_3'] == 0){
-					$player = 3;
+	$_COOKIE['error'] = '!$_SESSION[\'GID\']';
+	$nick = check_inject($_GET['name']);
+	$_SESSION['nick'] = $nick;
+	$game_query = mysql_query("select game_id,id_0,id_1,id_2,id_3 from games where free='1'") or die("select[game_query] error");
+	if($row = mysql_fetch_array($game_query)){
+		$_SESSION['GID'] = $row['game_id'];
+		if($row['id_3']){
+			if($row['id_2']){
+				if($row['id_1']){
+					$id=0;
 				}
+				$id=1;
 			}
+			$id=2;
 		}
+		$id=3;
 	}
-	
-	
-	if($player==3){
-		do{$rand = rand(1, 999999999);}while(sizeof(mysql_fetch_array(mysql_query("select * from games where game_id='$rand'"))) <= 0);
-		$_SESSION['GID'] = $rand;
-		$_SESSION['UID'] = $player;
-		mysql_query("insert into games(game_id,id_0,id_1,id_2,id_3,free) values('$rand','0','0','0','1','1')");
+	else{
+		$id=3;
+		mysql_query("insert into games(game_id,id_0,id_1,id_2,id_3,free) values('$rand','0','0','0','1','1')") or die("insert error");
+		mysql_query("insert into ping(game_id,id_0,id_1,id_2,id_3,last) values('$rand','','','','',NOW())") or die("insert[] error");
+		mysql_query("insert into tmp(game_id,id_0,id_1,id_2,id_3) VALUES ('$game_id','','','','')") or die("insert[tmp] error");
+		echo $_SESSION['GID'];
+		
 	}
+	$_SESSION['UID'] = $id;
 	
-	elseif($player == 0){
-		mysql_query("update games set free='0' where game_id=".$game_id['game_id']);
-		}
+	
+	do{$rand = rand(1, 999999999);}while(mysql_fetch_array(mysql_query("select * from games where game_id='$rand'")) != false);
+	
+	$_SESSION['GID'] = $rand;
+	$_SESSION['UID'] = $id;
+	$_SESSION['nick'] = $nick;
+	
 
 	
-	else{
-		mysql_query("update games set id_$player='1' where game_id=".$game_id['game_id']);
+	if($_SESSION['UID'] == 0){
+		mysql_query("update games set free='0' where game_id={$_SESSION['GID']}") or die("update[free] error");
 	}
+
+
+	
+	if($_SESSION['UID'] <= 3){
+		mysql_query("update games set id_{$_SESSION['UID']}='1' where game_id={$_SESSION['GID']}") or die("update[id] error");
+	}
+
 	
 
 
 }
-else{
+elseif($_SESSION['GID'] > 0){
 	$game_id = $_SESSION['GID'];
 	$id = $_SESSION['UID'];
+	$data = $_POST["hero[{$id}]"];
 	
-	if(isset($_POST['hero[0]'])){
-			$data = $_POST['hero[0]'];
-			$g_id=0;
-	}
-	if(isset($_POST['hero[1]'])){
-			$data = $_POST['hero[1]'];
-			$g_id=1;
-	}
-	if(isset($_POST['hero[2]'])){
-			$data = $_POST['hero[2]'];
-			$g_id=2;
-	}
-	if(isset($_POST['hero[3]'])){
-			$data = $_POST['hero[3]'];
-			$g_id=3;
-	}
 	
 	
 	for($i=0;$i<=3;$i++){
@@ -81,24 +81,32 @@ else{
 	
 	// 4 timestamps to control latency/ping
 	
-	$select = mysql_query("select $what from tmp where game_id='$game_id'");
+	$select = mysql_query("select $what from tmp where game_id='$game_id'") or die("select[tmp] error");
 	if($fetch_select = mysql_fetch_array($select)){
 		foreach ($fetch_select as $key=>$value){
-			$send .= $value;
+			$send .= '&'.$value;
 		}
 		
 	}
-	echo $send;
-	$query = mysql_query("update tmp set id_$g_id='$data' where game_id='$game_id'");
-	$ready = mysql_result(mysql_query("select free from games where game_id='$game_id'"),0);
-	echo $ready ? "ready=0&" : "ready=1&";
-	if($ready == 0){
-		$q = mysql_query("select * from games where game_id=$game_id");
-		if($q){
-			while($row = mysql_fetch_array($q)){
-			}
+
+	if(isset($data)){
+		$res = mysql_result(mysql_query("select if ((id_0-100) < last,0,-1),  if((id_1-100) < last,1,-1), if((id_2-100) < last,2,-1), if((id_3-100) < last,3,-1) from ping"));
+		if($res < 0 ){
+			$query = mysql_query("update tmp set id_$id='$data' where game_id='$game_id'")  or die("update[data] error");
+			mysql_query("update ping set id_$id=NOW(), last=NOW() where game_id='$game_id'")  or die("update[ping] error");
+		}
+		else{
+			$send = "attrs.ready_to_start[$res]=true&hero[$res].running=false&attrs.errors=\"High ping at $res;Sorry game stopped;\"";
 		}
 	}
+
+	
+	echo $send;
+	
+
+}
+else{
+	echo "null";	
 }
 ob_end_flush();
 ?>

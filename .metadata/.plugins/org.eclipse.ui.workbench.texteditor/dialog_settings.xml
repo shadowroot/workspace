@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="324" key="DIALOG_WIDTH"/>
-		<item value="151" key="DIALOG_Y_ORIGIN"/>
-		<item value="419" key="DIALOG_HEIGHT"/>
-		<item value="609" key="DIALOG_X_ORIGIN"/>
+		<item value="330" key="DIALOG_WIDTH"/>
+		<item value="133" key="DIALOG_Y_ORIGIN"/>
+		<item value="625" key="DIALOG_X_ORIGIN"/>
+		<item value="421" key="DIALOG_HEIGHT"/>
 		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="_g.http" key="selection"/>
+		<item value="first_communication" key="selection"/>
 		<list key="findhistory">
-			<item value="_g.http"/>
-			<item value="_g.started"/>
-			<item value="_g.status"/>
-			<item value="_g.url"/>
-			<item value="_g.my"/>
-			<item value="_g.action_in_use"/>
-			<item value="_g.ready_to_respawn"/>
-			<item value="_g.already_respawned"/>
+			<item value="first_communication"/>
+			<item value="fir"/>
+			<item value="curve"/>
+			<item value="_g.draw_maze"/>
+			<item value="_g.draw"/>
+			<item value="_g.attrs.maze_rects"/>
+			<item value="_g.maze_rects"/>
+			<item value="ready_to_respawn.speed"/>
 		</list>
 		<list key="replacehistory">
+			<item value="_g"/>
+			<item value="_g.maze_rects"/>
+			<item value="_g.attrs.maze_rects"/>
+			<item value="curve"/>
+			<item value="_g.attrs.respawn_posittion"/>
+			<item value="_g.attrs.already_respawned"/>
 			<item value="_g.attrs.action_in_use"/>
 			<item value="_g.attrs.ready_to_respawn"/>
-			<item value="_g.attrs.already_respawned"/>
-			<item value="_g.attrs.disapear_time"/>
-			<item value="_g.attrs.respawn_posittion"/>
-			<item value="_g.attrs.respawn_time"/>
-			<item value="_g.attrs.actions"/>
-			<item value="1"/>
 		</list>
 	</section>
 </section>
