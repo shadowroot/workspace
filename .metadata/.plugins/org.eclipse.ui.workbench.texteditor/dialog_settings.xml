@@ -2,27 +2,27 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="330" key="DIALOG_WIDTH"/>
-		<item value="133" key="DIALOG_Y_ORIGIN"/>
-		<item value="625" key="DIALOG_X_ORIGIN"/>
+		<item value="213" key="DIALOG_Y_ORIGIN"/>
+		<item value="522" key="DIALOG_X_ORIGIN"/>
 		<item value="421" key="DIALOG_HEIGHT"/>
 		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="true" key="casesensitive"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="first_communication" key="selection"/>
+		<item value="already_respawned" key="selection"/>
 		<list key="findhistory">
+			<item value="already_respawned"/>
+			<item value="attrs.actions"/>
+			<item value="attrs.actions ="/>
+			<item value="bullet lauched"/>
+			<item value="bullet launched"/>
+			<item value="stopped"/>
+			<item value="maze"/>
 			<item value="first_communication"/>
-			<item value="fir"/>
-			<item value="curve"/>
-			<item value="_g.draw_maze"/>
-			<item value="_g.draw"/>
-			<item value="_g.attrs.maze_rects"/>
-			<item value="_g.maze_rects"/>
-			<item value="ready_to_respawn.speed"/>
 		</list>
 		<list key="replacehistory">
 			<item value="_g"/>

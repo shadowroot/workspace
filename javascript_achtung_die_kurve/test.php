@@ -5,7 +5,7 @@
 <script type="text/javascript">
 function game(){
 	var _g = this;
-	_g.hero = null;
+	_g.hero = [];
 	
 	_g.attrs = {};
 	_g.canvas = document.getElementById("_gspace");
@@ -18,7 +18,6 @@ function game(){
 	_g.maze_rects=[];
 	_g.started=false;
 	_g.http = new XMLHttpRequest();
-	_g.id=0;
 	
 	/*
 	 * ITEMS
@@ -27,7 +26,8 @@ function game(){
 	_g.defaults = {
 		respawn_time:100,
 		bullet_speed:50,
-		disapear_time:50
+		disapear_time:50,
+		iteration_number:10
 	};
 	
 	
@@ -57,9 +57,9 @@ function game(){
 			bullet:0
 	};
 	_g.attrs.already_respawned = {
-			freeze:false,
-			speed:false,
-			bullet:false
+			freeze:0,
+			speed:0,
+			bullet:0
 	};
 	_g.attrs.ready_to_respawn = {
 			freeze:false,
@@ -120,8 +120,10 @@ function game(){
 					_g.status = false;
 				}
 				
-				if(_g.hero[i].running == false && !_g.attrs.action_in_use.freeze){
-					_g.attrs.actions.running--;
+				if(!_g.hero[i].running){
+					if(!_g.attrs.action_in_use.freeze || (_g.attrs.action_in_use.freeze && _g.attrs.actions_ids.freeze ==i)){
+						_g.attrs.actions.running--;
+					}
 				}
 				
 				_g.key_handler();
@@ -137,45 +139,87 @@ function game(){
 		/*
 			RESPAWN
 		*/
-		if( _g.attrs.already_respawned.bullet && _g.attrs.disapear_time.bullet>0){
+		if( _g.attrs.already_respawned.bullet==1 && _g.attrs.disapear_time.bullet>0){
 			_g.attrs.disapear_time.bullet--;
 		}
-		if( _g.attrs.already_respawned.freeze && _g.attrs.disapear_time.freeze>0){
+		if( _g.attrs.already_respawned.freeze==1 && _g.attrs.disapear_time.freeze>0){
 			_g.attrs.disapear_time.freeze--;
 		}
-		if( _g.attrs.already_respawned.speed && _g.attrs.disapear_time.speed>0){
+		if( _g.attrs.already_respawned.speed==1 && _g.attrs.disapear_time.speed>0){
 			_g.attrs.disapear_time.speed--;
 		}
 		
-		if( ((!_g.attrs.action_in_use.bullet && _g.attrs.respawn_time.bullet == 0 && !_g.attrs.already_respawned.bullet) || _g.attrs.respawn_time.bullet<=0) && !_g.attrs.ready_to_respawn.bullet &&
+		if( ((!_g.attrs.action_in_use.bullet && _g.attrs.respawn_time.bullet <= 0) || _g.attrs.respawn_time.bullet<=0) && !_g.attrs.ready_to_respawn.bullet  && _g.attrs.already_respawned.bullet<=0 &&
 				_g.attrs.disapear_time.bullet<=0){
-
+			var tf=0;
+			for(var it=0;it<=_g.defaults.iteration_number;it++){
+				
+				for(var u=0;u<=_g.maze_rects.length-1;u++){
 				_g.attrs.respawn_posittion.bullet = [Math.random()*(_g.canvas.width-_g.items.bullet.width),Math.random()*(_g.canvas.height-_g.items.bullet.height)];
 				_g.attrs.respawn_time.bullet = Math.random(0,1)*500;
+					if((_g.maze_rects[u][0]+100 < _g.attrs.respawn_posittion.bullet[0]+_g.items.bullet.width || _g.maze_rects[u][0]-100 > _g.attrs.respawn_posittion.bullet[0]-_g.items.bullet.width) &&
+						(_g.maze_rects[u][1]+100 < _g.attrs.respawn_posittion.bullet[1]+_g.items.bullet.height || _g.maze_rects[u][1]-100 > _g.attrs.respawn_posittion.bullet[1]-_g.items.bullet.height)){	
+						tf++;
+							
+					}
+					else{
+						tf--;
+					}
 				
-				_g.attrs.ready_to_respawn.bullet=true;	
-				
-				
-			
-		}
-		if( ((!_g.attrs.action_in_use.freeze && _g.attrs.respawn_time.freeze == 0 && !_g.attrs.already_respawned.freeze) || _g.attrs.respawn_time.freeze<=0) && !_g.attrs.ready_to_respawn.freeze &&
-				_g.attrs.disapear_time.freeze<=0){
 
+				}
+			}
+			if(tf==_g.maze_rects.length*(_g.defaults.iteration_number+1)){
+				_g.attrs.ready_to_respawn.bullet=true;
+			}
+				
+		}
+		if( ((!_g.attrs.action_in_use.freeze && _g.attrs.respawn_time.freeze <= 0) || _g.attrs.respawn_time.freeze<=0) && !_g.attrs.ready_to_respawn.freeze  && _g.attrs.already_respawned.freeze<=0 &&
+				_g.attrs.disapear_time.freeze<=0){
+			var tf=0;
+			for(var it=0;it<=_g.defaults.iteration_number;it++){
+				
+				for(var u=0;u<=_g.maze_rects.length-1;u++){
 				_g.attrs.respawn_posittion.freeze = [Math.random()*(_g.canvas.width-_g.items.freeze.width),Math.random()*(_g.canvas.height-_g.items.freeze.height)];
 				_g.attrs.respawn_time.freeze = Math.random(0,1)*500;
-
+					if((_g.maze_rects[u][0]+100 < _g.attrs.respawn_posittion.freeze[0]+_g.items.freeze.width || _g.maze_rects[u][0]-100 > _g.attrs.respawn_posittion.freeze[0]-_g.items.freeze.width) &&
+							(_g.maze_rects[u][1]+100 < _g.attrs.respawn_posittion.freeze[1]+_g.items.freeze.height || _g.maze_rects[u][1]-100 > _g.attrs.respawn_posittion.freeze[1]-_g.items.freeze.height)){	
+							tf++;
+							
+					}
+					else{
+						tf--;
+					}
+				}
+			}
+			if(tf==_g.maze_rects.length*(_g.defaults.iteration_number+1)){
 				_g.attrs.ready_to_respawn.freeze=true;
+			}
 
 		}
-		if( ((!_g.attrs.action_in_use.speed && !_g.attrs.already_respawned.speed) || _g.attrs.respawn_time.speed<=0) && _g.attrs.ready_to_respawn.speed && 
+		if( ((!_g.attrs.action_in_use.speed && _g.attrs.respawn_time.speed <= 0 ) || _g.attrs.respawn_time.speed<=0) && !_g.attrs.ready_to_respawn.speed && _g.attrs.already_respawned.speed<=0 && 
 				_g.attrs.disapear_time.speed<=0){
-
-				_g.attrs.respawn_posittion.speed = [Math.random()*(_g.canvas.width-_g.items.speed.width),Math.random()*(_g.canvas.height-_g.items.speed.height)];
-				_g.attrs.respawn_time.speed = Math.random(0,1)*500;
+			var tf=0;
+			for(var it=0;it<=_g.defaults.iteration_number;it++){
 				
-				for(var u=0;_g.maze_rects.length-1;u++){
-				_g.attrs.ready_to_respawn.speed=true;
+				for(var u=0;u<=_g.maze_rects.length-1;u++){
+					_g.attrs.respawn_posittion.speed = [Math.random()*(_g.canvas.width-_g.items.speed.width),Math.random()*(_g.canvas.height-_g.items.speed.height)];
+					_g.attrs.respawn_time.speed = Math.random(0,1)*500;
+					if((_g.maze_rects[u][0]+100 < _g.attrs.respawn_posittion.speed[0]+_g.items.speed.width || _g.maze_rects[u][0]-100 > _g.attrs.respawn_posittion.speed[0]-_g.items.speed.width) &&
+							(_g.maze_rects[u][1]+100 < _g.attrs.respawn_posittion.speed[1]+_g.items.speed.height || _g.maze_rects[u][1]-100 > _g.attrs.respawn_posittion.speed[1]-_g.items.speed.height)){	
+
+						tf++;
+						
+					}
+					else{
+						tf--;
+					}
 				}
+			}
+			if(tf==_g.maze_rects.length*(_g.defaults.iteration_number+1)){
+				_g.attrs.ready_to_respawn.speed=true;
+			}
+				
 
 		}
 		/*
@@ -212,7 +256,7 @@ function game(){
 		*/
 		if(_g.attrs.action_in_use.freeze){
 			_g.attrs.actions.freeze_time--;
-			if(_g.attrs.actions_ids != i){
+			if(_g.attrs.actions_ids.freeze != i){
 				_g.hero[i].running=false;
 			}
 		}
@@ -252,7 +296,6 @@ function game(){
 		END
 		*/
 		_g.my=0;
-		_g.hero = new Array();
 		console.log("init");
 		_g.status = false;
 		/*18*/
@@ -289,7 +332,7 @@ function game(){
 			line_pause:100,   /*pause*/
 			pause_length:3,
 			immune:false,
-			immune_time:0
+			immune_time:0    //  
 			});
 		/*
 		END
@@ -344,81 +387,81 @@ function game(){
 
 		};
 	_g.draw = function(i){
-					if(_g.attrs.ready_to_respawn.bullet){
+					if(_g.attrs.ready_to_respawn.bullet && _g.attrs.already_respawned.bullet < 1){
 						_g.buffer.drawImage(_g.items.bullet,_g.attrs.respawn_posittion.bullet[0],_g.attrs.respawn_posittion.bullet[1],_g.items.bullet.width,_g.items.bullet.height);
-						_g.attrs.already_respawned.bullet=true;
+						_g.attrs.already_respawned.bullet++;
 						_g.attrs.disapear_time.bullet=_g.defaults.disapear_time;
 						_g.attrs.ready_to_respawn.bullet=false;
 						console.log("Bullet respawned");
 					}
-					if(_g.attrs.ready_to_respawn.freeze){
+					if(_g.attrs.ready_to_respawn.freeze && _g.attrs.already_respawned.freeze < 1){
 						_g.buffer.drawImage(_g.items.freeze,_g.attrs.respawn_posittion.freeze[0],_g.attrs.respawn_posittion.freeze[1],_g.items.freeze.width,_g.items.freeze.height);
-						_g.attrs.already_respawned.freeze=true;
+						_g.attrs.already_respawned.freeze++;
 						_g.attrs.disapear_time.freeze=_g.defaults.disapear_time;
 						_g.attrs.ready_to_respawn.freeze=false;
 						console.log("Freeze respawned");
 					}
-					if(_g.attrs.ready_to_respawn.speed){
+					if(_g.attrs.ready_to_respawn.speed && _g.attrs.already_respawned.speed < 1){
 						_g.buffer.drawImage(_g.items.speed,_g.attrs.respawn_posittion.speed[0],_g.attrs.respawn_posittion.speed[1],_g.items.speed.width,_g.items.speed.height);
-						_g.attrs.already_respawned.speed=true;
+						_g.attrs.already_respawned.speed++;
 						_g.attrs.disapear_time.speed=_g.defaults.disapear_time;
 						_g.attrs.ready_to_respawn.speed=false;
 						console.log("Speed respawned");
 					}
-					if(_g.attrs.disapear_time.bullet<=0){
+					if(_g.attrs.disapear_time.bullet<=0 && _g.attrs.already_respawned.bullet == 1){
 						_g.buffer.fillStyle="#000000";
-						_g.buffer.fillRect(_g.attrs.respawn_posittion.bullet[0],_g.attrs.respawn_posittion.bullet[1],_g.items.bullet.width,_g.items.bullet.height);
+						_g.buffer.fillRect(_g.attrs.respawn_posittion.bullet[0]-1,_g.attrs.respawn_posittion.bullet[1]-1,_g.items.bullet.width+2,_g.items.bullet.height+2);
 						_g.buffer.fill();
-						_g.attrs.already_respawned.bullet=false;
+						_g.attrs.already_respawned.bullet--;
 					}
-					if(_g.attrs.disapear_time.speed<=0){
+					if(_g.attrs.disapear_time.speed<=0 && _g.attrs.already_respawned.speed == 1){
 						_g.buffer.fillStyle="#000000";
-						_g.buffer.fillRect(_g.attrs.respawn_posittion.speed[0],_g.attrs.respawn_posittion.speed[1],_g.items.speed.width,_g.items.speed.height);
+						_g.buffer.fillRect(_g.attrs.respawn_posittion.speed[0]-1,_g.attrs.respawn_posittion.speed[1]-1,_g.items.speed.width+2,_g.items.speed.height+2);
 						_g.buffer.fill();
-						_g.attrs.already_respawned.speed=false;
+						_g.attrs.already_respawned.speed--;
 					}
-					if(_g.attrs.disapear_time.freeze<=0){
+					if(_g.attrs.disapear_time.freeze<=0 && _g.attrs.already_respawned.freeze == 1 ){
 						_g.buffer.fillStyle="#000000";
-						_g.buffer.fillRect(_g.attrs.respawn_posittion.freeze[0],_g.attrs.respawn_posittion.freeze[1],_g.items.freeze.width,_g.items.freeze.height);
+						_g.buffer.fillRect(_g.attrs.respawn_posittion.freeze[0]-1,_g.attrs.respawn_posittion.freeze[1]-1,_g.items.freeze.width+2,_g.items.freeze.height+2);
 						_g.buffer.fill();
-						_g.attrs.already_respawned.freeze=false;
+						_g.attrs.already_respawned.freeze--;
 					}
 					
 							
 					/*
 						ACTION STARTERS
 					*/
-					if(_g.attrs.already_respawned.bullet && (_g.hero[i].x > _g.attrs.respawn_posittion.bullet[0] && _g.hero[i].x < _g.items.bullet.width+_g.attrs.respawn_posittion.bullet[0]) 
+					if(_g.attrs.already_respawned.bullet==1 && (_g.hero[i].x > _g.attrs.respawn_posittion.bullet[0] && _g.hero[i].x < _g.items.bullet.width+_g.attrs.respawn_posittion.bullet[0]) 
 							&& (_g.hero[i].y > _g.attrs.respawn_posittion.bullet[1] && _g.hero[i].y<_g.items.bullet.height+_g.attrs.respawn_posittion.bullet[1])){
 						_g.buffer.fillStyle="#000000";
-						_g.buffer.fillRect(_g.attrs.respawn_posittion.bullet[0]+10,_g.attrs.respawn_posittion.bullet[1]+10,_g.items.bullet.width,_g.items.bullet.height);
+						_g.buffer.fillRect(_g.attrs.respawn_posittion.bullet[0],_g.attrs.respawn_posittion.bullet[1],_g.items.bullet.width,_g.items.bullet.height);
 						_g.buffer.fill();
 						_g.attrs.action_in_use.bullet=true;
-						_g.attrs.already_respawned.bullet=false;
+						_g.attrs.already_respawned.bullet--;
 						_g.attrs.actions.bullet_vector = [_g.hero[i].direction[0],_g.hero[i].direction[1]];
-						_g.attrs.actions.bullet = [x,y];
+						_g.attrs.actions.bullet = [_g.hero[i].x,_g.hero[i].y];
 						_g.attrs.actions_ids.bullet=i;
 						console.log("Bullet in use");
 					}
 					
-					if(_g.attrs.already_respawned.freeze && (_g.hero[i].x > _g.attrs.respawn_posittion.freeze[0] && _g.hero[i].x < _g.items.freeze.width+_g.attrs.respawn_posittion.freeze[0]) 
+					if(_g.attrs.already_respawned.freeze==1 && (_g.hero[i].x > _g.attrs.respawn_posittion.freeze[0] && _g.hero[i].x < _g.items.freeze.width+_g.attrs.respawn_posittion.freeze[0]) 
 							&& (_g.hero[i].y > _g.attrs.respawn_posittion.freeze[1] && _g.hero[i].y<_g.items.freeze.height+_g.attrs.respawn_posittion.freeze[1])){
 						_g.buffer.fillStyle="#000000";
 						_g.buffer.fillRect(_g.attrs.respawn_posittion.freeze[0],_g.attrs.respawn_posittion.freeze[1],_g.items.freeze.width,_g.items.freeze.height);
 						_g.buffer.fill();
 						_g.attrs.action_in_use.freeze=true;
-						_g.attrs.already_respawned.freeze=false;
+						_g.attrs.already_respawned.freeze--;
 						_g.attrs.actions.freeze_time = 20;
 						_g.attrs.actions_ids.freeze = i;
 						console.log("Freeze in use");
 					}
 					
-					if(_g.attrs.already_respawned.speed && (_g.hero[i].x > _g.attrs.respawn_posittion.speed[0] && _g.hero[i].x < _g.items.speed.width+_g.attrs.respawn_posittion.speed[0]) 
+					if(_g.attrs.already_respawned.speed==1 && (_g.hero[i].x > _g.attrs.respawn_posittion.speed[0] && _g.hero[i].x < _g.items.speed.width+_g.attrs.respawn_posittion.speed[0]) 
 							&& (_g.hero[i].y > _g.attrs.respawn_posittion.speed[1] && _g.hero[i].y<_g.items.speed.height+_g.attrs.respawn_posittion.speed[1])){
 						_g.buffer.fillStyle="#000000";
 						_g.buffer.fillRect(_g.attrs.respawn_posittion.speed[0],_g.attrs.respawn_posittion.speed[1],_g.items.speed.width,_g.items.speed.height);
 						_g.buffer.fill();
-						_g.attrs.already_respawned.speed=false;
+						_g.attrs.already_respawned.speed--;
 						_g.attrs.action_in_use.speed=true;
 						_g.attrs.actions.speed_time=30;
 						_g.attrs.actions_ids.speed=i;
@@ -428,7 +471,7 @@ function game(){
 					
 					if(_g.attrs.action_in_use.bullet){
 						console.log("Bullet lauched");
-						
+						_g.attrs.action_in_use.bullet=false;
 						
 						_g.buffer.beginPath();
 						_g.buffer.strokeStyle="#000000";
@@ -441,24 +484,24 @@ function game(){
 						_g.buffer.beginPath();
 						_g.buffer.strokeStyle="#ffffff";
 						_g.buffer.fillStyle="#000000";
-						var new_x = _g.attrs.actions.bullet[0] + _g.attrs.actions.bullet_vector[0]*50;
-						var new_y = _g.attrs.actions.bullet[1] + _g.attrs.actions.bullet_vector[1]*50;
-						_g.buffer.lineTo(new_x,new_y);
-						_g.buffer.stroke();
-						var d =_g.buffer.getImageData(new_x,new_y,1,1).data;
+						var new_x = curve.attrs.actions.bullet[0] + curve.attrs.actions.bullet_vector[0]*50;
+						var new_y = curve.attrs.actions.bullet[1] + curve.attrs.actions.bullet_vector[1]*50;
+						curve.buffer.lineTo(new_x,new_y);
+						curve.buffer.stroke();
+						var d =curve.buffer.getImageData(new_x,new_y,1,1).data;
 						if(d[0] != 0 || d[1] != 0 || d[2] != 0){
-							_g.buffer.fillRect(new_x,new_y,50,50);
-							s.bullet=false;
+							curve.buffer.fillRect(new_x,new_y,50,50);
+							return;
 						}
 						_g.buffer.closePath();
 						_g.attrs.actions.bullet = [new_x,new_y];
 						console.log("Bullet hit");
 					}
 		if(_g.hero[i].running){
-			
+
 			var x = _g.hero[i].x+_g.hero[i].direction[0];
 			var y = _g.hero[i].y+_g.hero[i].direction[1];
-			
+
 			/*
 			RESPAWNERS
 			*/
@@ -474,14 +517,15 @@ function game(){
 						
 						
 						if((x<_g.canvas.width) && (x>0) && (y<_g.canvas.height) && (y>0)
-								 && ((!_g.attrs.already_respawned.bullet) || ((x<_g.attrs.respawn_posittion.bullet[0] ) || ((_g.attrs.respawn_posittion.bullet[0]+_g.items.bullet.width) < x )
-								 && (_g.attrs.respawn_posittion.bullet[1]>y) || ((_g.attrs.respawn_posittion.bullet[1]+_g.items.bullet.height) < y)))
-								&& ((!_g.attrs.already_respawned.speed) || ((_g.attrs.respawn_posittion.speed[0]>x || ((_g.attrs.respawn_posittion.speed[0]+_g.items.speed.width) < x )
-								 && (_g.attrs.respawn_posittion.speed[1]>y) || ((_g.attrs.respawn_posittion.speed[1]+_g.items.speed.height) < y))))
-								 && ((!_g.attrs.already_respawned.freeze) || ( (_g.attrs.respawn_posittion.freeze[0]>x ) || ((_g.attrs.respawn_posittion.freeze[0]+_g.items.freeze.width) < x )
-								 && ( _g.attrs.respawn_posittion.freeze[1]>y) || ((_g.attrs.respawn_posittion.freeze[1]+_g.items.freeze.height) < y)))
+								 && ((!_g.attrs.already_respawned.bullet) || ((x<_g.attrs.respawn_posittion.bullet[0] ) || ((_g.attrs.respawn_posittion.bullet[0]+_g.items.bullet.width) < x ))
+								 && (_g.attrs.respawn_posittion.bullet[1]>y) || ((_g.attrs.respawn_posittion.bullet[1]+_g.items.bullet.height) < y))
+								&& ((!_g.attrs.already_respawned.speed) || ((_g.attrs.respawn_posittion.speed[0]>x || ((_g.attrs.respawn_posittion.speed[0]+_g.items.speed.width) < x ))
+								 && (_g.attrs.respawn_posittion.speed[1]>y) || ((_g.attrs.respawn_posittion.speed[1]+_g.items.speed.height) < y)))
+								 && ((!_g.attrs.already_respawned.freeze) || ( (_g.attrs.respawn_posittion.freeze[0]>x ) || ((_g.attrs.respawn_posittion.freeze[0]+_g.items.freeze.width) < x ))
+								 && ( _g.attrs.respawn_posittion.freeze[1]>y) || ((_g.attrs.respawn_posittion.freeze[1]+_g.items.freeze.height) < y))
 							){
 							var data = _g.buffer.getImageData(x+_g.hero[i].direction[0],y+_g.hero[i].direction[1],1,1).data;
+							
 								for (var u=0;u<=2;u++){
 									if(data[u] != 0){
 										_g.hero[i].running = false;
@@ -489,16 +533,13 @@ function game(){
 										var div = document.createElement("div");
 										div.innerHTML = _g.hero[i].name+ " ended.";
 										document.body.appendChild(div);
-										return;
+										break;
+										// return;
 									}
 									
 								}
 							}
-						else{
-							
-							_g.hero[i].running = false;
-							console.log("Stopped");
-						}
+
 
 
 						_g.buffer.beginPath();

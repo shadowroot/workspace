@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="47" version="2.0">
+<workbench progressCount="46" version="2.0">
 <workbenchAdvisor/>
 <window height="714" maximized="true" width="1024" x="0" y="30">
 <fastViewData fastViewLocation="1024"/>
@@ -97,20 +97,20 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/javascript_achtung_die_kurve/dos.js"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="108" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.php.editor" name="test.php" partName="test.php" path="/projects/workspace/javascript_achtung_die_kurve/test.php" title="test.php" tooltip="javascript_achtung_die_kurve/test.php" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.php.editor" name="test.php" partName="test.php" path="/projects/workspace/javascript_achtung_die_kurve/test.php" title="test.php" tooltip="javascript_achtung_die_kurve/test.php" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/javascript_achtung_die_kurve/test.php"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1496" selectionTopPixel="1257"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8213" selectionTopPixel="5047"/>
 </editor>
 <editor id="org.eclipse.php.editor" name="mysql_connect.php" partName="mysql_connect.php" path="/projects/workspace/javascript_achtung_die_kurve/mysql_connect.php" title="mysql_connect.php" tooltip="javascript_achtung_die_kurve/mysql_connect.php" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/javascript_achtung_die_kurve/mysql_connect.php"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="273" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="387" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.emf.ecore.presentation.EcoreEditorID" name="My.ecore" partName="My.ecore" path="/projects/workspace/javascript_achtung_die_kurve/My.ecore" title="My.ecore" tooltip="javascript_achtung_die_kurve/My.ecore" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/javascript_achtung_die_kurve/My.ecore"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.php.editor" name="controller.php" partName="controller.php" path="/projects/workspace/javascript_achtung_die_kurve/controller.php" title="controller.php" tooltip="javascript_achtung_die_kurve/controller.php" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.php.editor" name="controller.php" partName="controller.php" path="/projects/workspace/javascript_achtung_die_kurve/controller.php" title="controller.php" tooltip="javascript_achtung_die_kurve/controller.php" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/javascript_achtung_die_kurve/controller.php"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="111" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1430" selectionTopPixel="495"/>
 </editor>
 </editors>
 <views>
@@ -176,9 +176,7 @@
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
 <child filterId="org.eclipse.pde.ui.ExternalPluginLibrariesFilter1" isEnabled="true"/>
@@ -208,9 +206,7 @@
 </view>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List">
 <viewState linkWithEditor="true" presentation="org.eclipse.mylyn.tasks.ui.categorized">
-<sorter groupBy="CATEGORY_QUERY">
-<sorter>
-<sort0 sortDirection="1" sortKey="PRIORITY"/>
+<sorter groupBy="CATEGORY_QUERY">&#x0A;<sorter>&#x0A;<sort0 sortDirection="1" sortKey="PRIORITY"/>
 <sort1 sortDirection="1" sortKey="RANK"/>
 <sort2 sortDirection="1" sortKey="DATE_CREATED"/>
 <sort3 sortDirection="1" sortKey="NONE"/>
@@ -501,7 +497,7 @@
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
@@ -519,7 +515,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2496318" ratioLeft="339" ratioRight="1019" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.74873525" ratioLeft="444" ratioRight="149" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="LabelNotFound"/>
@@ -532,13 +528,13 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@95525e" ratio="0.74975467" ratioLeft="764" ratioRight="255" relationship="2" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.5" ratioLeft="222" ratioRight="222" relationship="4" relative="org.eclipse.ui.internal.ViewStack@95525e">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
@@ -552,159 +548,159 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/javascript_achtung_die_kurve/controller.php"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/javascript_achtung_die_kurve/mysql_connect.php"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/javascript_achtung_die_kurve/test.php"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/javascript_achtung_die_kurve/test.php"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/javascript_achtung_die_kurve/controller.php"/>
 <editor factoryID="org.eclipse.mylyn.tasks.ui.elementFactories.task.editor" id="org.eclipse.mylyn.tasks.ui.editors.task" taskHandle="local-1"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/javascript_achtung_die_kurve/mysql_connect.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/javascript_achtung_die_kurve/test.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/javascript_achtung_die_kurve/mysql_connect.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/javascript_achtung_die_kurve/test.php"/>
 </editors>
-<item historyLabel="mysql_connect.php" index="1">
-<position info="not_deleted" x="205" y="0"/>
-</item>
-<item historyLabel="controller.php" index="0">
-<position/>
-</item>
-<item historyLabel="controller.php" index="0">
-<position/>
-</item>
-<item historyLabel="controller.php" index="0">
-<position info="not_deleted" x="261" y="0"/>
-</item>
-<item historyLabel="controller.php" index="0">
-<position info="not_deleted" x="258" y="0"/>
-</item>
-<item historyLabel="test.php" index="2">
-<position info="not_deleted" x="16122" y="0"/>
-</item>
-<item historyLabel="controller.php" index="0">
-<position info="not_deleted" x="5" y="0"/>
-</item>
-<item historyLabel="test.php" index="3">
-<position info="not_deleted" x="17362" y="0"/>
-</item>
-<item historyLabel="test.php" index="3">
-<position info="not_deleted" x="6714" y="0"/>
-</item>
-<item historyLabel="controller.php" index="0">
-<position info="not_deleted" x="93" y="0"/>
-</item>
-<item historyLabel="test.php" index="3">
-<position info="not_deleted" x="17805" y="0"/>
-</item>
-<item historyLabel="controller.php" index="0">
-<position info="not_deleted" x="436" y="0"/>
-</item>
-<item historyLabel="test.php" index="3">
-<position info="not_deleted" x="17016" y="0"/>
-</item>
-<item historyLabel="controller.php" index="0">
-<position info="not_deleted" x="436" y="0"/>
-</item>
-<item historyLabel="controller.php" index="0">
-<position info="not_deleted" x="1166" y="0"/>
-</item>
-<item historyLabel="test.php" index="3">
-<position info="not_deleted" x="17016" y="0"/>
-</item>
-<item historyLabel="controller.php" index="4">
-<position info="not_deleted" x="2004" y="0"/>
-</item>
-<item historyLabel="test.php" index="3">
-<position info="not_deleted" x="547" y="0"/>
-</item>
-<item historyLabel="controller.php" index="4">
-<position info="not_deleted" x="578" y="0"/>
-</item>
-<item historyLabel="test.php" index="3">
-<position info="not_deleted" x="17010" y="0"/>
-</item>
-<item historyLabel="controller.php" index="4">
+<item historyLabel="controller.php" index="1">
 <position info="not_deleted" x="1156" y="0"/>
 </item>
-<item historyLabel="test.php" index="3">
-<position info="not_deleted" x="17010" y="0"/>
-</item>
-<item historyLabel="controller.php" index="4">
-<position info="not_deleted" x="1156" y="0"/>
-</item>
-<item historyLabel="controller.php" index="4">
+<item historyLabel="controller.php" index="1">
 <position info="not_deleted" x="1760" y="0"/>
 </item>
-<item historyLabel="controller.php" index="4">
+<item historyLabel="controller.php" index="1">
 <position info="not_deleted" x="5" y="0"/>
 </item>
-<item historyLabel="test.php" index="3">
+<item historyLabel="test.php" index="0">
 <position info="not_deleted" x="16245" y="0"/>
 </item>
-<item historyLabel="controller.php" index="4">
+<item historyLabel="controller.php" index="1">
 <position info="not_deleted" x="65" y="0"/>
 </item>
-<item historyLabel="controller.php" index="4">
+<item historyLabel="controller.php" index="1">
 <position info="not_deleted" x="1130" y="0"/>
 </item>
-<item historyLabel="test.php" index="3">
+<item historyLabel="test.php" index="0">
 <position info="not_deleted" x="3218" y="0"/>
 </item>
-<item historyLabel="controller.php" index="4">
+<item historyLabel="controller.php" index="1">
 <position info="not_deleted" x="1564" y="0"/>
 </item>
-<item historyLabel="test.php" index="3">
+<item historyLabel="test.php" index="0">
 <position info="not_deleted" x="16581" y="0"/>
 </item>
-<item historyLabel="controller.php" index="4">
+<item historyLabel="controller.php" index="1">
 <position info="not_deleted" x="65" y="0"/>
 </item>
-<item historyLabel="New Task" index="5"/>
-<item historyLabel="controller.php" index="4">
+<item historyLabel="New Task" index="2"/>
+<item historyLabel="controller.php" index="1">
 <position info="not_deleted" x="144" y="0"/>
 </item>
-<item historyLabel="test.php" index="3">
+<item historyLabel="test.php" index="0">
 <position info="not_deleted" x="16581" y="0"/>
 </item>
-<item historyLabel="controller.php" index="4">
+<item historyLabel="controller.php" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="make all to $_SESSION " index="5"/>
-<item historyLabel="controller.php" index="4">
+<item historyLabel="make all to $_SESSION " index="2"/>
+<item historyLabel="controller.php" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="controller.php" index="4">
+<item historyLabel="controller.php" index="1">
 <position info="not_deleted" x="111" y="0"/>
 </item>
-<item historyLabel="controller.php" index="4">
+<item historyLabel="controller.php" index="1">
 <position/>
 </item>
-<item historyLabel="test.php" index="3">
+<item historyLabel="test.php" index="0">
 <position info="not_deleted" x="17646" y="0"/>
 </item>
-<item historyLabel="controller.php" index="4">
+<item historyLabel="controller.php" index="1">
 <position info="not_deleted" x="1794" y="0"/>
 </item>
-<item historyLabel="controller.php" index="4">
+<item historyLabel="controller.php" index="1">
 <position info="not_deleted" x="271" y="0"/>
 </item>
-<item historyLabel="controller.php" index="4">
+<item historyLabel="controller.php" index="1">
 <position info="not_deleted" x="1833" y="0"/>
 </item>
-<item historyLabel="test.php" index="3">
+<item historyLabel="test.php" index="0">
 <position info="not_deleted" x="17199" y="1"/>
 </item>
-<item historyLabel="controller.php" index="4">
+<item historyLabel="controller.php" index="1">
 <position info="not_deleted" x="2621" y="0"/>
 </item>
-<item historyLabel="test.php" index="3">
+<item historyLabel="test.php" index="0">
 <position info="not_deleted" x="1496" y="0"/>
 </item>
-<item historyLabel="controller.php" index="4">
+<item historyLabel="controller.php" index="1">
 <position info="not_deleted" x="2621" y="0"/>
 </item>
-<item historyLabel="mysql_connect.php" index="6">
+<item historyLabel="mysql_connect.php" index="3">
 <position info="not_deleted" x="273" y="0"/>
 </item>
-<item active="true" historyLabel="controller.php" index="4">
+<item historyLabel="controller.php" index="1">
 <position info="not_deleted" x="239" y="0"/>
+</item>
+<item historyLabel="test.php" index="4">
+<position/>
+</item>
+<item historyLabel="controller.php" index="1">
+<position info="not_deleted" x="111" y="0"/>
+</item>
+<item historyLabel="mysql_connect.php" index="5">
+<position info="not_deleted" x="5" y="0"/>
+</item>
+<item historyLabel="controller.php" index="1">
+<position info="not_deleted" x="176" y="0"/>
+</item>
+<item historyLabel="mysql_connect.php" index="5">
+<position info="not_deleted" x="200" y="0"/>
+</item>
+<item historyLabel="controller.php" index="1">
+<position info="not_deleted" x="2113" y="0"/>
+</item>
+<item historyLabel="test.php" index="4">
+<position info="not_deleted" x="87" y="0"/>
+</item>
+<item historyLabel="controller.php" index="1">
+<position info="not_deleted" x="2716" y="0"/>
+</item>
+<item historyLabel="test.php" index="4">
+<position info="not_deleted" x="16813" y="0"/>
+</item>
+<item historyLabel="mysql_connect.php" index="5">
+<position/>
+</item>
+<item historyLabel="controller.php" index="1">
+<position info="not_deleted" x="1610" y="0"/>
+</item>
+<item historyLabel="mysql_connect.php" index="5">
+<position/>
+</item>
+<item historyLabel="controller.php" index="1">
+<position info="not_deleted" x="1218" y="0"/>
+</item>
+<item historyLabel="mysql_connect.php" index="5">
+<position info="not_deleted" x="387" y="0"/>
+</item>
+<item historyLabel="controller.php" index="1">
+<position info="not_deleted" x="1218" y="0"/>
+</item>
+<item historyLabel="controller.php" index="1">
+<position info="not_deleted" x="1121" y="0"/>
+</item>
+<item historyLabel="test.php" index="4">
+<position info="not_deleted" x="16813" y="0"/>
+</item>
+<item historyLabel="test.php" index="4">
+<position/>
+</item>
+<item historyLabel="controller.php" index="1">
+<position info="not_deleted" x="1121" y="0"/>
+</item>
+<item historyLabel="test.php" index="6">
+<position info="not_deleted" x="13473" y="0"/>
+</item>
+<item historyLabel="controller.php" index="1">
+<position info="not_deleted" x="1430" y="0"/>
+</item>
+<item active="true" historyLabel="test.php" index="6">
+<position info="not_deleted" x="13473" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
