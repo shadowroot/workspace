@@ -76,10 +76,10 @@ elseif($_SESSION['GID'] > 0){
 			$what .= "id_$i, ";
 		}
 	}
+	$what .= "null";
 	$send="";
 	
 	// 4 timestamps to control latency/ping
-	
 	$select = mysql_query("select $what from tmp where game_id='$game_id'") or die("select[tmp] error");
 	if($fetch_select = mysql_fetch_array($select)){
 		foreach ($fetch_select as $key=>$value){

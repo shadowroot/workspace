@@ -95,12 +95,9 @@ function game(){
 		for(var i=0;i<=_g.attrs.ready_to_start.length-1;i++){
 			_g.started=_g.started && _g.attrs.ready_to_start[i];
 		}
-
-		if(_g.debug){
-			_g.started=true;
-		}
 		
-		if(!_g.started){
+		if(_g.attrs.errors != "" && _g.started){
+			
 			var div = document.createElement("div");
 			var name = _g.attrs.errors.split(";");
 			for(var u=0;u<=name.length-1;u++){
@@ -108,31 +105,43 @@ function game(){
 			}
 			document.body.appendChild(div);
 			_g.attrs.errors = "";
-		}
-		 
-		if((_g.status &&_g.started)){
-			_g.started=true;
-			//console.log("Running");
-			for(var i=0;i<=_g.hero.length-1;i++){
-				
-				if(_g.attrs.actions.running == 1){
-					_g.attrs.actions.last=i;
-					_g.status = false;
-				}
-				
-				if(!_g.hero[i].running){
-					if(!_g.attrs.action_in_use.freeze || (_g.attrs.action_in_use.freeze && _g.attrs.actions_ids.freeze ==i)){
-						_g.attrs.actions.running--;
-					}
-				}
-				
-				_g.key_handler();
-				_g.throw_items(i);
-				_g.change_vector(i);
-				_g.draw(i);
-				_g.http_comm();
+			if(_g.debug){
+				alert(_g.attrs.errors);
 			}
+			_g.started=false;
 			
+		}
+		else{
+
+			if(_g.debug){
+				_g.started=true;
+			}
+				
+			 
+			if((_g.status &&_g.started)){
+				_g.started=true;
+				//console.log("Running");
+				for(var i=0;i<=_g.hero.length-1;i++){
+					
+					if(_g.attrs.actions.running == 1){
+						_g.attrs.actions.last=i;
+						_g.status = false;
+					}
+					
+					if(!_g.hero[i].running){
+						if(!_g.attrs.action_in_use.freeze || (_g.attrs.action_in_use.freeze && _g.attrs.actions_ids.freeze ==i)){
+							_g.attrs.actions.running--;
+						}
+					}
+					
+					_g.key_handler();
+					_g.throw_items(i);
+					_g.change_vector(i);
+					_g.draw(i);
+					_g.http_comm();
+				}
+				
+			}
 		}
 	};
 	_g.throw_items = function(i){
@@ -614,26 +623,28 @@ function game(){
 		}
 	};
 	_g.first_communication = function(nick){
-		console.log("First communication");
+		//console.log("First communication");
 		
 			_g.http.open("POST", _g.url+"?name="+nick, true);
 			_g.http.send("");
-			_g.http.onreadystatechange = function(){
-					if(_g.http.readyState == 200){
-							eval('(_g.buffer.putImageData('+_g.http.responseText+',0,0)');
-					}
-			};
+
 
 	};
 	_g.http_comm=function(){
-		console.log("communication ");
-		_g.http.open("POST", _g.url, true);
-		_g.http.send("hero["+_g.my+"]="+JSON.stringify(_g.hero[_g.my])+"&attrs="+JSON.stringify(_g.attrs));
-		_g.http.onreadystatechange = function(){
-				if(_g.http.readyState == 200){
-						_g.http_process(_g.http.responseText);
-				}
-		};
+		//console.log("communication ");
+			_g.http.open("POST", _g.url, true);
+			_g.http.send("hero["+_g.my+"]="+JSON.stringify(_g.hero[_g.my])+"&attrs="+JSON.stringify(_g.attrs));
+			_g.http.onreadystatechange = function(){
+					if(_g.http.readyState == 4){
+						var text = _g.http.responseText;
+						if(text != ""){
+							_g.http_process(text);
+						}
+						else{
+							_g.attrs.errors = _g.attrs.errors+"Communication null;";
+						}
+					}
+			};
 	};
 	_g.http_process = function(data){
 		console.log("communication "+data);
