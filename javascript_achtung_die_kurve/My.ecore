@@ -3,6 +3,6 @@
     xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="">
   <eClassifiers xsi:type="ecore:EClass" name="game">
-    <eOperations/>
+    <eOperations name="draw" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
   </eClassifiers>
 </ecore:EPackage>
