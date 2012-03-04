@@ -30,7 +30,7 @@ function game(){
 		iteration_number:10
 	};
 	
-	
+	_g.dbg = "";
 	_g.attrs.actions = {
 			freeze_time:0,
 			speed_time:0,
@@ -656,18 +656,10 @@ function game(){
 			};
 	};
 	_g.http_process = function(data){
-		console.log("communication "+data);
-		/*
-			var pos = new Array();
-			pos[0] = data.indexOf("id=");
-			pos[1] = data.indexOf("&",pos[0]);
-			var id = data.substr(pos[0]+3,pos[1]-(pos[0]+3));
-			data = data.substr(0,pos[0]-1)+data.substr(pos[1],data.length-1);
-		*/
 		var datas = data.split("&");
 					for(var u=0;u<=datas.length-1;u++){
 						var names = datas[u].split("=");
-						eval('(_g.'+names[0]+' = '+names[1]+')');
+						eval('_g.'+names[0]+' = '+names[1]+'');
 					}
 			
 	};
