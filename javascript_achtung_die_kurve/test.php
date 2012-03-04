@@ -161,24 +161,29 @@ function game(){
 		if( ((!_g.attrs.action_in_use.bullet && _g.attrs.respawn_time.bullet <= 0) || _g.attrs.respawn_time.bullet<=0) && !_g.attrs.ready_to_respawn.bullet  && _g.attrs.already_respawned.bullet<=0 &&
 				_g.attrs.disapear_time.bullet<=0){
 			var tf=0;
-			for(var it=0;it<=_g.defaults.iteration_number;it++){
-				
-				for(var u=0;u<=_g.maze_rects.length-1;u++){
+
+
 				_g.attrs.respawn_posittion.bullet = [Math.random()*(_g.canvas.width-_g.items.bullet.width),Math.random()*(_g.canvas.height-_g.items.bullet.height)];
 				_g.attrs.respawn_time.bullet = Math.random(0,1)*500;
-					if((_g.maze_rects[u][0]+100 < _g.attrs.respawn_posittion.bullet[0]+_g.items.bullet.width || _g.maze_rects[u][0]-100 > _g.attrs.respawn_posittion.bullet[0]-_g.items.bullet.width) &&
-						(_g.maze_rects[u][1]+100 < _g.attrs.respawn_posittion.bullet[1]+_g.items.bullet.height || _g.maze_rects[u][1]-100 > _g.attrs.respawn_posittion.bullet[1]-_g.items.bullet.height)){	
-						tf++;
-							
+				
+				for(var u=0;u<=_g.maze_rects.length-1;u++){
+				
+					if((_g.maze_rects[u][0]+100 > _g.attrs.respawn_posittion.bullet[0] && _g.maze_rects[u][0] < _g.attrs.respawn_posittion.bullet[0]+_g.items.bullet.width) &&
+							(_g.maze_rects[u][1]+100 > _g.attrs.respawn_posittion.bullet[1] && _g.maze_rects[u][1] < _g.attrs.respawn_posittion.bullet[1]+_g.items.bullet.height)){	
+
+						tf--;
+						
 					}
 					else{
-						tf--;
+						tf++;
 					}
 				
 
 				}
-			}
-			if(tf==_g.maze_rects.length*(_g.defaults.iteration_number+1)){
+			
+			
+			if(tf==_g.maze_rects.length){
+				
 				_g.attrs.ready_to_respawn.bullet=true;
 			}
 				
@@ -186,22 +191,25 @@ function game(){
 		if( ((!_g.attrs.action_in_use.freeze && _g.attrs.respawn_time.freeze <= 0) || _g.attrs.respawn_time.freeze<=0) && !_g.attrs.ready_to_respawn.freeze  && _g.attrs.already_respawned.freeze<=0 &&
 				_g.attrs.disapear_time.freeze<=0){
 			var tf=0;
-			for(var it=0;it<=_g.defaults.iteration_number;it++){
-				
-				for(var u=0;u<=_g.maze_rects.length-1;u++){
+			
 				_g.attrs.respawn_posittion.freeze = [Math.random()*(_g.canvas.width-_g.items.freeze.width),Math.random()*(_g.canvas.height-_g.items.freeze.height)];
 				_g.attrs.respawn_time.freeze = Math.random(0,1)*500;
-					if((_g.maze_rects[u][0]+100 < _g.attrs.respawn_posittion.freeze[0]+_g.items.freeze.width || _g.maze_rects[u][0]-100 > _g.attrs.respawn_posittion.freeze[0]-_g.items.freeze.width) &&
-							(_g.maze_rects[u][1]+100 < _g.attrs.respawn_posittion.freeze[1]+_g.items.freeze.height || _g.maze_rects[u][1]-100 > _g.attrs.respawn_posittion.freeze[1]-_g.items.freeze.height)){	
-							tf++;
-							
+			
+				for(var u=0;u<=_g.maze_rects.length-1;u++){
+
+					if((_g.maze_rects[u][0]+100 > _g.attrs.respawn_posittion.freeze[0] && _g.maze_rects[u][0] < _g.attrs.respawn_posittion.freeze[0]+_g.items.freeze.width) &&
+							(_g.maze_rects[u][1]+100 > _g.attrs.respawn_posittion.freeze[1] && _g.maze_rects[u][1] < _g.attrs.respawn_posittion.freeze[1]+_g.items.freeze.height)){	
+
+						tf--;
+						
 					}
 					else{
-						tf--;
+						tf++;
 					}
 				}
-			}
-			if(tf==_g.maze_rects.length*(_g.defaults.iteration_number+1)){
+			
+			
+			if(tf==_g.maze_rects.length){
 				_g.attrs.ready_to_respawn.freeze=true;
 			}
 
@@ -209,23 +217,24 @@ function game(){
 		if( ((!_g.attrs.action_in_use.speed && _g.attrs.respawn_time.speed <= 0 ) || _g.attrs.respawn_time.speed<=0) && !_g.attrs.ready_to_respawn.speed && _g.attrs.already_respawned.speed<=0 && 
 				_g.attrs.disapear_time.speed<=0){
 			var tf=0;
-			for(var it=0;it<=_g.defaults.iteration_number;it++){
-				
+			
+			_g.attrs.respawn_posittion.speed = [Math.random()*(_g.canvas.width-_g.items.speed.width),Math.random()*(_g.canvas.height-_g.items.speed.height)];
+			_g.attrs.respawn_time.speed = Math.random(0,1)*500;
+			
 				for(var u=0;u<=_g.maze_rects.length-1;u++){
-					_g.attrs.respawn_posittion.speed = [Math.random()*(_g.canvas.width-_g.items.speed.width),Math.random()*(_g.canvas.height-_g.items.speed.height)];
-					_g.attrs.respawn_time.speed = Math.random(0,1)*500;
-					if((_g.maze_rects[u][0]+100 < _g.attrs.respawn_posittion.speed[0]+_g.items.speed.width || _g.maze_rects[u][0]-100 > _g.attrs.respawn_posittion.speed[0]-_g.items.speed.width) &&
-							(_g.maze_rects[u][1]+100 < _g.attrs.respawn_posittion.speed[1]+_g.items.speed.height || _g.maze_rects[u][1]-100 > _g.attrs.respawn_posittion.speed[1]-_g.items.speed.height)){	
 
-						tf++;
+					if((_g.maze_rects[u][0]+100 > _g.attrs.respawn_posittion.speed[0] && _g.maze_rects[u][0] < _g.attrs.respawn_posittion.speed[0]+_g.items.speed.width) &&
+							(_g.maze_rects[u][1]+100 > _g.attrs.respawn_posittion.speed[1] && _g.maze_rects[u][1] < _g.attrs.respawn_posittion.speed[1]+_g.items.speed.height)){	
+
+						tf--;
 						
 					}
 					else{
-						tf--;
+						tf++;
 					}
 				}
-			}
-			if(tf==_g.maze_rects.length*(_g.defaults.iteration_number+1)){
+			
+			if(tf==_g.maze_rects.length){
 				_g.attrs.ready_to_respawn.speed=true;
 			}
 				
