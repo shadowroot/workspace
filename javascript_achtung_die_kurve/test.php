@@ -317,7 +317,7 @@ function game(){
 		console.log("init");
 		_g.status = false;
 		/*18*/
-		_g.url = "http://localhost/workspace/javascript_achtung_die_kurve/controller.php";
+		_g.url = "http://localhost:1234";
 		
 		_g.butt = document.createElement("input");
 		_g.butt.type = "button";

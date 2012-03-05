@@ -2,17 +2,18 @@
 <section name="Workbench">
 	<item value="C:\Program Files (x86)\JMF2.1.1e\lib" key="LAST_PATH_SETTING"/>
 	<item value="78" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth0"/>
-	<item value="141" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth1"/>
+	<item value="/home/jonny/Downloads/mysql-connector-java-5.1.18" key="JavaClasspathTab.LAST_PATH_SETTING"/>
 	<item value="1" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.sortColumn"/>
+	<item value="141" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth1"/>
 	<item value="73" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth2"/>
 	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
 		<item value="true" key="ShowStatusLine"/>
-		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode&gt;=crib/src&amp;lt;socket{run.java[run&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=auta/src&amp;lt;auta{jpg.java[SwingCapture&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=auta/src&amp;lt;auta{SwingCapture.java[SwingCapture&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=auta/src&amp;lt;auta{run.java[run&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=auta/src&amp;lt;auta{racer.java[racer&lt;/infoNode&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode&gt;=crib/src&amp;lt;socket{run.java[run&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=auta/src&amp;lt;auta{jpg.java[SwingCapture&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=auta/src&amp;lt;auta{SwingCapture.java[SwingCapture&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=auta/src&amp;lt;auta{run.java[run&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=auta/src&amp;lt;auta{racer.java[racer&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=javascript_curve_server_side/src&amp;lt;{server.java[server&lt;/infoNode&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
 		<section name="DialogBoundsSettings">
 			<item value="540" key="DIALOG_WIDTH"/>
 			<item value="0" key="DIALOG_Y_ORIGIN"/>
-			<item value="109" key="DIALOG_X_ORIGIN"/>
 			<item value="617" key="DIALOG_HEIGHT"/>
+			<item value="109" key="DIALOG_X_ORIGIN"/>
 			<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		</section>
 	</section>
