@@ -1,4 +1,4 @@
-#Mon Mar 05 17:42:24 CET 2012
+#Wed Mar 07 10:34:22 CET 2012
 pf_coloring_argument=255,255,255
 sp_cleanup.remove_private_constructors=true
 semanticHighlighting.methodDeclarationName.enabled=true
@@ -135,7 +135,7 @@ sp_cleanup.correct_indentation=false
 sourceHoverBackgroundColor.SystemDefault=false
 java_default=216,216,216
 sp_cleanup.make_parameters_final=false
-content_assist_number_of_computers=14
+content_assist_number_of_computers=16
 sp_cleanup.remove_unused_local_variables=false
 spelling_ignore_ampersand_in_properties=true
 content_assist_proposals_foreground=0,0,0

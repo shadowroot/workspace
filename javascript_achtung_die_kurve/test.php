@@ -1,6 +1,6 @@
 
-<canvas id="_gspace" width="1000" height="400"
-	style="background: #000000;"></canvas>
+<canvas id="_gspace" width="1000"
+	height="400" style="background: #000000;"></canvas>
 
 <script type="text/javascript">
 function game(){
@@ -307,7 +307,7 @@ function game(){
 				
 				speed:speed,   //image
 				
-				freeze:time    //image
+				freeze:time    //image 
 				
 		};
 		/*
@@ -317,7 +317,7 @@ function game(){
 		console.log("init");
 		_g.status = false;
 		/*18*/
-		_g.url = "http://localhost:1234";
+		_g.url = "http://localhost/workspace/javascript_achtung_die_kurve/controller.php";
 		
 		_g.butt = document.createElement("input");
 		_g.butt.type = "button";
@@ -636,15 +636,25 @@ function game(){
 		
 			_g.http.open("POST", _g.url+"?name="+nick, true);
 			_g.http.send("");
-
+			_g.http.onreadystatechange = function(){
+				if(_g.http.readyState == 4){
+					var text = _g.http.responseText;
+					if(text != ""){
+						_g.http_process(text);
+					}
+					else{
+						_g.attrs.errors = _g.attrs.errors+"Communication null;";
+					}
+				}
+		};
 
 	};
 	_g.http_comm=function(){
 		//console.log("communication ");
 			_g.http.open("POST", _g.url, true);
-			_g.http.setRequestHeader("Content-type", "text/plain");
+			_g.http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 			//var text = Base64.encode("hero["+_g.my+"]="+JSON.stringify(_g.hero[_g.my])+"&attrs="+JSON.stringify(_g.attrs));
-			_g.http.send("hero["+_g.my+"]="+JSON.stringify(_g.hero[_g.my])+"&attrs="+JSON.stringify(_g.attrs));
+			_g.http.send("hero["+_g.my+"]="+JSON.stringify(_g.hero[_g.my]));
 			_g.http.onreadystatechange = function(){
 					if(_g.http.readyState == 4){
 						var text = _g.http.responseText;
@@ -661,145 +671,14 @@ function game(){
 		var datas = data.split("&");
 					for(var u=0;u<=datas.length-1;u++){
 						var names = datas[u].split("=");
-						eval('_g.'+names[0]+' = '+names[1]+'');
+						eval('(_g.'+names[0]+' = '+names[1]+')');
 					}
 			
 	};
 	
 
 }
-var Base64 = {
-		// private property
-		_keyStr : "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
 
-		// public method for encoding
-		encode : function (input) {
-		    var output = "";
-		    var chr1, chr2, chr3, enc1, enc2, enc3, enc4;
-		    var i = 0;
-
-		    input = Base64._utf8_encode(input);
-
-		    while (i < input.length) {
-
-		        chr1 = input.charCodeAt(i++);
-		        chr2 = input.charCodeAt(i++);
-		        chr3 = input.charCodeAt(i++);
-
-		        enc1 = chr1 >> 2;
-		        enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
-		        enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
-		        enc4 = chr3 & 63;
-
-		        if (isNaN(chr2)) {
-		            enc3 = enc4 = 64;
-		        } else if (isNaN(chr3)) {
-		            enc4 = 64;
-		        }
-
-		        output = output +
-		        Base64._keyStr.charAt(enc1) + Base64._keyStr.charAt(enc2) +
-		        Base64._keyStr.charAt(enc3) + Base64._keyStr.charAt(enc4);
-
-		    }
-
-		    return output;
-		},
-
-		// public method for decoding
-		decode : function (input) {
-		    var output = "";
-		    var chr1, chr2, chr3;
-		    var enc1, enc2, enc3, enc4;
-		    var i = 0;
-
-		    input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
-
-		    while (i < input.length) {
-
-		        enc1 = Base64._keyStr.indexOf(input.charAt(i++));
-		        enc2 = Base64._keyStr.indexOf(input.charAt(i++));
-		        enc3 = Base64._keyStr.indexOf(input.charAt(i++));
-		        enc4 = Base64._keyStr.indexOf(input.charAt(i++));
-
-		        chr1 = (enc1 << 2) | (enc2 >> 4);
-		        chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
-		        chr3 = ((enc3 & 3) << 6) | enc4;
-
-		        output = output + String.fromCharCode(chr1);
-
-		        if (enc3 != 64) {
-		            output = output + String.fromCharCode(chr2);
-		        }
-		        if (enc4 != 64) {
-		            output = output + String.fromCharCode(chr3);
-		        }
-
-		    }
-
-		    output = Base64._utf8_decode(output);
-
-		    return output;
-
-		},
-
-		// private method for UTF-8 encoding
-		_utf8_encode : function (string) {
-		    string = string.replace(/\r\n/g,"\n");
-		    var utftext = "";
-
-		    for (var n = 0; n < string.length; n++) {
-
-		        var c = string.charCodeAt(n);
-
-		        if (c < 128) {
-		            utftext += String.fromCharCode(c);
-		        }
-		        else if((c > 127) && (c < 2048)) {
-		            utftext += String.fromCharCode((c >> 6) | 192);
-		            utftext += String.fromCharCode((c & 63) | 128);
-		        }
-		        else {
-		            utftext += String.fromCharCode((c >> 12) | 224);
-		            utftext += String.fromCharCode(((c >> 6) & 63) | 128);
-		            utftext += String.fromCharCode((c & 63) | 128);
-		        }
-
-		    }
-
-		    return utftext;
-		},
-
-		// private method for UTF-8 decoding
-		_utf8_decode : function (utftext) {
-		    var string = "";
-		    var i = 0;
-		    var c = c1 = c2 = 0;
-
-		    while ( i < utftext.length ) {
-
-		        c = utftext.charCodeAt(i);
-
-		        if (c < 128) {
-		            string += String.fromCharCode(c);
-		            i++;
-		        }
-		        else if((c > 191) && (c < 224)) {
-		            c2 = utftext.charCodeAt(i+1);
-		            string += String.fromCharCode(((c & 31) << 6) | (c2 & 63));
-		            i += 2;
-		        }
-		        else {
-		            c2 = utftext.charCodeAt(i+1);
-		            c3 = utftext.charCodeAt(i+2);
-		            string += String.fromCharCode(((c & 15) << 12) | ((c2 & 63) << 6) | (c3 & 63));
-		            i += 3;
-		        }
-
-		    }
-		    return string;
-		}
-};
 /*
  * Constructor
  */

@@ -9,7 +9,7 @@ function check_inject($data){
 	$data = htmlspecialchars($data);
 	$data = strip_tags($data);
 	$data = stripslashes($data);
-	$data = mysql_escape_string($data);
+	//$data = mysql_escape_string($data);
 
 	return $data;
 }
