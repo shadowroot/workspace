@@ -72,7 +72,7 @@ public class serial
                     }
                     if(buffer[0] == 0x00 && start != null){
                     	end = new Date();
-                    	run.add_time(start,end);
+                    	MyTask.add_time(start,end);
                     	start= null;
                     }
                 }

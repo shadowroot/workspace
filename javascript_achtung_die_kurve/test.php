@@ -34,8 +34,8 @@ function game(){
 	_g.attrs.actions = {
 			freeze_time:0,
 			speed_time:0,
-			running:0,  //How many is still running
-			bullet:[],  //bullet posittion
+			running:0,  //How many is still running 
+			bullet:[],  //bullet posittion 
 			bullet_vector:[],
 			bullet_speed:50,
 			bullet_width:5,
@@ -96,7 +96,7 @@ function game(){
 			_g.started=_g.started && _g.attrs.ready_to_start[i];
 		}
 		
-		if(_g.attrs.errors != "" && _g.started){
+		if(_g.attrs.errors != "" && _g.started && !_g.debug){
 			
 			var div = document.createElement("div");
 			var name = _g.attrs.errors.split(";");
@@ -377,7 +377,7 @@ function game(){
 			
 
 		};
-		
+		setInterval(function(){_g.loop();},"100");
 	};
 	/*
 	INIT END
@@ -543,7 +543,6 @@ function game(){
 								 && ( _g.attrs.respawn_posittion.freeze[1]>y) || ((_g.attrs.respawn_posittion.freeze[1]+_g.items.freeze.height) < y))
 							){
 							var data = _g.buffer.getImageData(x+_g.hero[i].direction[0],y+_g.hero[i].direction[1],1,1).data;
-							
 								for (var u=0;u<=2;u++){
 									if(data[u] != 0){
 										_g.hero[i].running = false;
@@ -671,7 +670,9 @@ function game(){
 		var datas = data.split("&");
 					for(var u=0;u<=datas.length-1;u++){
 						var names = datas[u].split("=");
-						eval('(_g.'+names[0]+' = '+names[1]+')');
+						if(names[0].indexOf("attrs.ready_to_start") < 0){
+							eval('(_g.'+names[0]+' = '+names[1]+')');
+						}
 					}
 			
 	};
@@ -685,7 +686,7 @@ function game(){
 
 	var curve = new game();
 	curve.init("jonny");
-	setInterval("curve.loop()","100");
+	
 
 
 /*

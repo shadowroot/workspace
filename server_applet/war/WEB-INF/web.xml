@@ -7,13 +7,13 @@
 
   <!-- Servlets -->
   <servlet>
-    <servlet-name>greetServlet</servlet-name>
-    <servlet-class>my.pkg.test.server.GreetingServiceImpl</servlet-class>
+    <servlet-name>datasafe</servlet-name>
+    <servlet-class>com.trone.database.input</servlet-class>
   </servlet>
   
   <servlet-mapping>
-    <servlet-name>greetServlet</servlet-name>
-    <url-pattern>/server_applet/greet</url-pattern>
+    <servlet-name>datasafe</servlet-name>
+    <url-pattern>/put</url-pattern>
   </servlet-mapping>
   
   <!-- Default page to serve -->

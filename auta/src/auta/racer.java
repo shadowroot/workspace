@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.TextListener;
 
 
 
@@ -20,6 +21,7 @@ public class racer extends JFrame implements ActionListener{
 	private static Button submit = null;
 	private static int y_ = 40;
 	private static Dimension d = new Dimension(480, 640);
+	private static String[] credentials=null;
 	
 
 	public void new_racer(String name){
@@ -39,14 +41,15 @@ public class racer extends JFrame implements ActionListener{
 	public void menu(){
 		l = new Label[4];
 		t = new TextField[4];
-		l[1] = new Label("Jméno");	
+		l[0] = new Label("Jméno");	
+		t[0] = new TextField(20);
+		l[1] = new Label("Příjmení");
 		t[1] = new TextField(20);
-		l[2] = new Label("Příjmení");
+		l[2] = new Label("Kategorie");
 		t[2] = new TextField(20);
-		l[3] = new Label("Kategorie");
+		l[3] = new Label("Klub");
 		t[3] = new TextField(20);
-		
-		for (int i = 1;i<=3;i++){
+		for (int i = 0;i<=t.length-1;i++){
 			
 			p.add(l[i]);
 			p.add(t[i]);
@@ -66,11 +69,23 @@ public class racer extends JFrame implements ActionListener{
 
 			// TODO: code to handle submit 
 			if(e.getActionCommand() == "submit"){
-				
+				try{
+					credentials = new String[t.length];
+				for(int i=0;i<=t.length-1;i++){
+					credentials[i]=t[i].getText();
+				}
 				fr.setVisible(false);
+				}
+				catch (Exception f) {
+					System.out.println(f.getMessage());
+				}
 			}
 
 		
+	}
+	
+	public String[] getCredentials(){
+		return credentials;
 	}
 	
 	

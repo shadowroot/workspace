@@ -60,9 +60,6 @@ if(!isset($_SESSION['GID'])){
 	if($id == 3){
 		mysql_query("update games set free='0' where game_id={$_SESSION['GID']}") or die("update[free] error");
 	}
-
-
-	
 	if($id <= 3){
 		mysql_query("update games set id_{$id}='1' where game_id={$_SESSION['GID']}") or die("update[id] error");
 	}

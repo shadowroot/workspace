@@ -1,0 +1,2 @@
+serviceClass: my.pkg.test.client.GreetingService
+path: E44C4F4700DE50DDD07E4389EFDF0AA2.gwt.rpc
